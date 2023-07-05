@@ -1,48 +1,6 @@
 // Finish slider and hover , create arrows for slider.
 
 const projectCards = Array.from(document.querySelectorAll(".project-card"));
-const sliderContainer = document.querySelector(".container");
-const rightArrow = document.querySelector(".right-arrow");
-const leftArrow = document.querySelector(".left-arrow");
-let currentIndex = 0;
-
-function updateSlider() {
-  projectCards.forEach((card, index) => {
-    card.classList.toggle("active", index === currentIndex);
-  });
-  console.log("Карта изменилась!");
-}
-function goNextCard() {
-  if (currentIndex < projectCards.length - 1) {
-    currentIndex++;
-  } else {
-    currentIndex = 0;
-  }
-  console.log("Next button clicked"); // Добавить эту строку
-  updateSlider();
-}
-
-function goBackCard() {
-  if (currentIndex > 0) {
-    currentIndex--;
-  } else {
-    currentIndex = projectCards.length - 1;
-  }
-  console.log("Back button clicked"); // Добавить эту строку
-  updateSlider();
-}
-
-updateSlider();
-
-leftArrow.addEventListener("click", () => {
-  console.log("Left arrow clicked"); // Добавить эту строку
-  goBackCard();
-});
-
-rightArrow.addEventListener("click", () => {
-  console.log("Right arrow clicked"); // Добавить эту строку
-  goNextCard();
-});
 
 projectCards.forEach((card) => {
   const iframeContainer = card.querySelector(".iframe-container");
@@ -55,16 +13,12 @@ projectCards.forEach((card) => {
     let visit = card.querySelector(".visit");
     let button = card.querySelector(".btn-primary");
     let btnClose = card.querySelector(".btn-close");
-    const rightArrow = document.querySelector(".right-arrow");
-    const leftArrow = document.querySelector(".left-arrow");
 
     const title = card.querySelector(".project-title");
     const parag = card.querySelector("p");
     const image = card.querySelector(".project-img");
     const projectDesc = card.querySelector(".project-desc");
 
-    rightArrow.classList.toggle("expanded");
-    leftArrow.classList.toggle("expanded");
     projectDesc.classList.toggle("expanded");
     image.classList.toggle("expanded");
     card.classList.toggle("expanded");

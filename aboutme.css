@@ -35,9 +35,8 @@ Resets margins and paddings
 
 body {
   margin: 0;
-    font-family: "Roboto", sans-serif;
+  font-family: 'Quicksand', sans-serif;
     background-image: linear-gradient(to right, #555272, #524e71, #4e4a70, #4b476f, #47436e, #45416a, #423e66, #403c62, #3e3b5b, #3b3954, #39384d, #373646);
-
     
   }
 
@@ -227,8 +226,8 @@ body {
   }
 
   h1 {
-
-    font-size: 64px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 58px;
     color: white;
     margin: 0;
     font-weight: 700;
@@ -237,12 +236,11 @@ body {
   }
   
 
-  h2 {
+  p {
     font-size: 22px;
-    font-weight: 400;
     letter-spacing: 1.3px;
     text-align: center;
-    width: 700px;
+    width: 800px;
   }
 
  span {
