@@ -311,3 +311,63 @@ font-size: 18px;
  .infoto {
   width: 400px;
  }
+
+
+ 
+@media (max-width: 844px) {
+  nav {
+    display: flex;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 11px 3px #000000;
+  }
+
+  p {
+    text-align: center;
+    width: 380px;
+    font-size: 16px;
+  }
+
+  .section-1{
+    display: flex;
+    align-items: start;
+    padding: 8rem 1rem;
+  z-index: 1;
+  
+  }
+
+  .title {
+    gap: 1.5rem;
+  }
+
+  h1 {
+    font-size: 38px;
+    color: white;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+ span {
+    color:  #FEC342;
+    font-size: 48px;
+  }
+
+
+  
+  .title-two{
+    padding: 1rem 0;
+  }
+
+
+}
