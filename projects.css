@@ -31,9 +31,8 @@
 
 body {
   margin: 0;
-    font-family: "Roboto", sans-serif;
     background-image: linear-gradient(to right, #555272, #524e71, #4e4a70, #4b476f, #47436e, #45416a, #423e66, #403c62, #3e3b5b, #3b3954, #39384d, #373646);
-
+    font-family: 'Quicksand', sans-serif;
     
   }
 
@@ -48,8 +47,10 @@ body {
     height: 60px;
     display: flex;
     justify-content: center;
+    height: 35px;
     align-items: center;
     padding: 0 20px;
+    box-shadow: 0px 0px 11px 3px #000000;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -108,7 +109,7 @@ body {
     position: relative;
     text-decoration: none;
     color: var(--textnavbar);
-    margin: 10px;
+    padding: 10px;
     z-index: 1;
   }
   li  {
@@ -127,20 +128,23 @@ body {
 
   .container {
     position: relative;
+    overflow: hidden;
     display: flex;
     max-width: 100%;
     max-height: 100%;
     padding: 10px;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 25px;
+    align-items: start;
+    gap: 20px;
     border-radius: 20px;
     background: #555081;
     background-position: 100%;
     background-repeat: no-repeat;
     background-image: url(Images/Property\ 1=Default.svg);
   }
+
+
 
   
 
@@ -153,7 +157,6 @@ body {
     flex-direction: column;
     text-align: center;
     border-radius: 20px;
-    border: 1px solid #000;
     background: var(--ebebeb, #EBEBEB);
     cursor: pointer;
   }
@@ -169,11 +172,45 @@ body {
     gap: 5px;
   }
 
-  .projects {
+  .projects-one {
     display: flex;
     gap: 2rem;
+    animation: projects-one-animation linear 1s;
+    overflow-x: scroll;
   }
 
+  @keyframes projects-one-animation {
+    0% {
+      opacity: 0;
+      transform: translate(180px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0deg);
+    
+    }
+  }
+
+  .projects-two {
+    overflow-x: scroll;
+    display: flex;
+    gap: 2rem;
+    animation: projects-two-animation linear 1s;
+  }
+
+  @keyframes projects-two-animation {
+    0% {
+      opacity: 0;
+      transform: translate(-180px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0deg);
+    
+    }
+  }
 
 .project-card.expanded {
   position: absolute;
@@ -261,6 +298,7 @@ p.expanded {
 
 iframe {
   display: none;
+  background-color: white;
 }
 
 .expanded-iframe {

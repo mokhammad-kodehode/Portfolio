@@ -48,7 +48,7 @@ body {
 
   nav {
     background-image: linear-gradient(to right, #706d8a, #716c95, #676294, #5c5887, #68629d, #635e95, #52507f, #504c7b, #4c496f, #5f5b89, #585778, #373646);
-    height: 60px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
