@@ -14,60 +14,84 @@
 <body>
         <header>
             <nav class="navbar">
-                <div class="logo">MOHAMMAD DZHABRAILOV</div>
-                <ul class="items">
+                <div class="navbar_logo">MOHAMMAD DZHABRAILOV</div>
+                <ul class="navbar_items">
                     <li>
-                        <a href="aboue.html" > Home</a> 
-                        <img src="Images/itemanimone.svg" class="oneline" alt=""> 
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt="">
+                        <a href="aboue.html" >Home</a> 
+                        <div class="items_line_one"></div>
+                        <div class="items_line_two"></div>
+                        <!-- <img src="Images/itemanimone.svg" class="oneline" alt=""> 
+                        <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
+                    </li>
+                    <li class="fix">
+                        <a  href="aboue.html" >About me</a> 
+                        <div class="items_line_one"></div>
+                        <div class="items_line_two"></div>
+                        <!-- <img src="Images/itemanimone.svg" class="oneline" alt=""> 
+                        <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                     </li>
                     <li>
-                        <a href="aboue.html" > About me</a> 
-                        <img src="Images/itemanimone.svg" class="oneline" alt=""> 
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt="">
-                    </li>
-                    <li>
-                        <a href="projects.html">Projects</a> 
-                        <img src="Images/itemanimone.svg" class="oneline" alt="">
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt="">
+                        <a href="projects.html"> Projects</a> 
+                        <div class="items_line_one"></div>
+                        <div class="items_line_two"></div>
+                        <!-- <img src="Images/itemanimone.svg" class="oneline" alt="">
+                        <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                     <li>
                         <a href="contact.html">Contact</a>
-                        <img src="Images/itemanimone.svg" class="oneline" alt="">
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt="">
+                        <div class="items_line_one"></div>
+                        <div class="items_line_two"></div>
+                        <!-- <img src="Images/itemanimone.svg" class="oneline" alt="">
+                        <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                     </li>
              </ul>
             </nav>
         </header>
   <main>
-    <section class="section-1">
-        <div class="title">
+    <section class="container">
+        <div class="container_title">
            <h1>Hi. I'm <span>Mohammad</span></h1>
            <div class="info">
-                <p class="pitch">I am ambitious, motivated and ready to reach the heights as a front-end developer
+                <p class="pitch">I am ambitious, creative, motivated and ready to reach the heights as a front-end developer
                 . With full observance of all these qualities, 
                 I can offer a special approach to work with projects.</p>
-                <div class="title-two">
+                <div class="about_me">
                     <h2>Front-end web <span>developer</span> </h2>
                     <h2>UI/UX <span>designer</span> </h2>
-                     <h2>Programmer and <span>great guy</span> </h2>
+                    <h2>Programmer and <span>great guy</span> </h2>
                 </div>
            </div>
             <a target="_blank" href="contact.html">
                 <button class="btn" >Contact me</button>
             </a>
         </div>
-        <canvas id="myCanvas" resize="true">
-
-        </canvas>
-
-        <!-- <div class='box'>
-            <div class='wave -one'></div>
-            <div class='wave -two'></div>
-            <div class='wave -three'></div>
-        </div> -->
-
     </section>
-</main>
     
+</main>
+
+<footer>
+    <div class="my_skills">
+        <p>MY SKILLS</p>
+            <a 
+                target="_blank" 
+                href="https://github.com/mokhammad-kodehode">
+                <img class="icon" src="Images/icons/mdi_github.svg" alt="">
+            </a>
+        <img class="icon" src="Images/icons/js.svg" alt="">
+        <img class="icon" src="Images/icons/html.svg" alt="">
+        <img class="icon" src="Images/icons/css.svg" alt="">
+        <img class="icon" src="Images/icons/figma.svg"  alt="">
+        <img class="icon" src="Images/icons/react.svg" alt="">
+    </div>
+    <div class="social">
+        <a href=""><img class="icon" src="Images/icons/facebook.svg" alt=""></a>
+        <a href=""><img class="icon" src="Images/icons/mdi_github.svg" alt=""></a>
+        <a href=""><img class="icon" src="Images/icons/instagram.svg" alt=""></a>
+        <a href=""><img class="icon" src="Images/icons/telegram.svg" alt=""></a>
+        <a href=""><img class="icon" src="Images/icons/linkedin.svg" alt=""></a>
+    </div>
+</footer>
+<canvas id="myCanvas">
+
+</canvas>
 </body>
 </html>

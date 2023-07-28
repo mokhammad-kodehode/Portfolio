@@ -9,53 +9,19 @@ projectCards.forEach((card) => {
 
   //creating evenlist for each projectcard
   card.addEventListener("click", () => {
-    let skills = card.querySelector(".skills");
-    let visit = card.querySelector(".visit");
+    const parag = card.querySelector("p");
+    const projectDesc = card.querySelector(".project-desc");
+
     let button = card.querySelector(".btn-primary");
     let btnClose = card.querySelector(".btn-close");
 
-    const title = card.querySelector(".project-title");
-    const parag = card.querySelector("p");
-    const image = card.querySelector(".project-img");
-    const projectDesc = card.querySelector(".project-desc");
-
     projectDesc.classList.toggle("expanded");
-    image.classList.toggle("expanded");
     card.classList.toggle("expanded");
-    title.classList.toggle("expanded");
     parag.classList.toggle("expanded");
-
-    if (!skills) {
-      skills = document.createElement("img");
-      skills.src = "images/Skilicons.svg";
-      skills.alt = "Skills Image";
-      skills.classList.add("skills");
-      const footer = card.querySelector(".footer");
-      footer.appendChild(skills);
-    } else {
-      skills.remove();
-    }
-
-    if (!visit) {
-      visit = document.createElement("a");
-      linkImage = document.createElement("img");
-      linkImage.src = "images/link.png";
-      linkImage.classList.add("linkimg");
-      visit.textContent = "Visit";
-      visit.target = "blank";
-      visit.href =
-        "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/";
-      visit.classList.add("visit");
-      const footer = card.querySelector(".footer");
-      visit.appendChild(linkImage);
-      footer.appendChild(visit);
-    } else {
-      visit.remove();
-    }
 
     if (!button) {
       button = document.createElement("button");
-      button.textContent = "Open";
+      button.textContent = "Review";
       button.classList.add("btn-primary");
       footer.appendChild(button);
 
@@ -65,13 +31,11 @@ projectCards.forEach((card) => {
         if (!iframeContainer.classList.contains("expanded")) {
           iframe.classList.add("expanded-iframe");
 
-          // Создать кнопку btn-close
           btnClose = document.createElement("button");
           btnClose.textContent = "X";
           btnClose.classList.add("btn-close");
           iframeContainer.appendChild(btnClose);
 
-          // Добавить слушатель события клика на кнопку btn-close
           btnClose.addEventListener("click", (event) => {
             event.stopPropagation();
             iframe.classList.remove("expanded-iframe");
@@ -92,7 +56,6 @@ projectCards.forEach((card) => {
     }
   });
 });
-
 console.log(projectCards);
 
 paper.install(window);
@@ -100,7 +63,7 @@ paper.install(window);
 window.onload = function () {
   const h = window.innerHeight;
   const w = window.innerWidth;
-  const halfH = h * 0.7;
+  const halfH = h * 0.8;
   const speed = 0.09;
   const strokeWidth = 25;
   const frequency = 4;
@@ -122,7 +85,7 @@ window.onload = function () {
 
   const path = [];
 
-  const offsetRandom = 1;
+  const offsetRandom = 2;
   const randomOffsets = [];
   const maxDistRandom = 3;
   const randomDistances = [];

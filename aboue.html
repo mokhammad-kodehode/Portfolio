@@ -8,54 +8,87 @@
     <script defer src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="aboutme.css">
+    <script src="libraries/paperjs-v0.12.17/docs/assets/js/paper.js"></script>
 </head>
 <body>
         <header>
             <nav class="navbar">
-                <div class="logo">MOHAMMAD DZHABRAILOV</div>
-                <ul class="items">
+                <div class="navbar_logo">MOHAMMAD DZHABRAILOV</div>
+                <ul class="navbar_items">
                     <li>
                         <a href="index.html" > Home</a> 
-                        <img src="Images/itemanimone.svg" class="oneline" alt=""> 
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt="">
+                        <!-- <img src="Images/itemanimone.svg" class="oneline" alt=""> 
+                        <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                     </li>
                     <li>
                         <a href="aboue.html" > About me</a> 
-                        <img src="Images/itemanimone.svg" class="oneline" alt=""> 
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt="">
+                        <!-- <img src="Images/itemanimone.svg" class="oneline" alt=""> 
+                        <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                     </li>
                     <li>
                         <a href="projects.html">Projects</a> 
-                        <img src="Images/itemanimone.svg" class="oneline" alt="">
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt="">
+                        <!-- <img src="Images/itemanimone.svg" class="oneline" alt="">
+                        <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                     <li>
                         <a href="contact.html">Contact</a>
-                        <img src="Images/itemanimone.svg" class="oneline" alt="">
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt="">
+                        <!-- <img src="Images/itemanimone.svg" class="oneline" alt="">
+                        <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                     </li>
              </ul>
             </nav>
         </header>
 
-    <section class="section-1">
-        <div class="title">
+    <section class="container">
+        <!-- <img class="photo" src="Images/photo.svg" alt=""> -->
+        <div class="container_title">
            <h1><span>About me</span></h1>
-           <div class="info">
-               <p>My name is Mohammad, I am a front-end developer. 
+            <p>My name is Mohammad, I am a front-end developer.
+                In the last 6 months I have been studing with Kodehode, a front-end focued course.
                 All my life I have been interested in modern technologies and this led 
                 me to study IT. In a short time,
-                 I was able to master everything that is needed for front-end
-                  development and realized that I had found my calling. 
-                  I used to be an entrepreneur, I had several successful 
-                  businesses and projects in the service and entertainment
-                   sectors. Thanks to this, I was able to gain experience
-                    in commerce and marketing. Now I have a great desire 
-                    to combine all my skills and create something big.
+                I was able to master everything that is needed for front-end
+                development and realized that I had found my calling. 
+                I used to be an entrepreneur, I had several successful 
+                businesses and projects in the service and entertainment
+                sectors. Thanks to this, I was able to gain experience
+                in commerce and marketing. Now I have a great desire 
+                to combine all my skills and create something big.
                 I love art, traveling, taking photos, playing video games,
                  spending time with family and friends. </p>
-           </div>
+           <!-- <div class="my_skills">
+            <img  src="Images/icons/mdi_github.svg" alt="">
+            <img  src="Images/icons/js.svg" alt="">
+            <img  src="Images/icons/html.svg" alt="">
+            <img  src="Images/icons/css.svg" alt="">
+            <img  src="Images/icons/figma.svg"  alt="">
+            <img  src="Images/icons/react.svg" alt="">
+        </div> -->
         </div>
     </section>
-    
+    <canvas id="myCanvas" >
+
+    </canvas>
+    <footer>
+        <div class="my_skills">
+            <p>MY SKILLS</p>
+                <a 
+                    target="_blank" 
+                    href="https://github.com/mokhammad-kodehode">
+                    <img class="icon" src="Images/icons/mdi_github.svg" alt="">
+                </a>
+            <img class="icon" src="Images/icons/js.svg" alt="">
+            <img class="icon" src="Images/icons/html.svg" alt="">
+            <img class="icon" src="Images/icons/css.svg" alt="">
+            <img class="icon" src="Images/icons/figma.svg"  alt="">
+            <img class="icon" src="Images/icons/react.svg" alt="">
+        </div>
+        <div class="social">
+            <a href=""><img class="icon"  src="Images/icons/facebook.svg" alt=""></a>
+            <a href=""><img class="icon" src="Images/icons/mdi_github.svg" alt=""></a>
+            <a href=""><img class="icon" src="Images/icons/instagram.svg" alt=""></a>
+            <a href=""><img class="icon" src="Images/icons/telegram.svg" alt=""></a>
+            <a href=""><img class="icon" src="Images/icons/linkedin.svg" alt=""></a>
+        </div>
+    </footer>
 </body>
 </html>

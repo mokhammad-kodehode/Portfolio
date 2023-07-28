@@ -34,10 +34,9 @@ Resets margins and paddings
 
 body {
   margin: 0;
-    font-family: "Roboto", sans-serif;
     background-image: linear-gradient(to right, #555272, #524e71, #4e4a70, #4b476f, #47436e, #45416a, #423e66, #403c62, #3e3b5b, #3b3954, #39384d, #373646);
-
-    
+    font-family: 'Quicksand', sans-serif;
+  
   }
 
 
@@ -48,14 +47,13 @@ body {
 
   nav {
     background-image: linear-gradient(to right, #706d8a, #716c95, #676294, #5c5887, #68629d, #635e95, #52507f, #504c7b, #4c496f, #5f5b89, #585778, #373646);
-    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
-    width: 100%;
+    height: 35px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 0px 11px 3px #000000;
   }
 
   .logo {
@@ -65,8 +63,9 @@ body {
     text-shadow: -2px 2px 3px black;
     z-index: 2;
     position: absolute;
-    transform: translate(-630px);
+    left: 1rem;
   }
+
 
 
   .lineanum {
@@ -166,17 +165,6 @@ body {
     transition: 0.7s;
   }
 
-  .active .oneline {
-    transform: translate(30px, -60px);
-    bottom: -10px;
-    left: 0px;
-  }
-
-  .active .twoline {
-    transform: translate(30px, -60px);
-    bottom: -10px;
-    left: 0px;
-  }
 
   li:hover .twoline {
     transform: translate(30, -60px);
@@ -207,21 +195,25 @@ body {
 
   .section-1{
     position: relative;
-    height: 640px;
+    height: 654px;
     display: block;
     margin-top: 50px;
     justify-content: center;
     align-items: center;
+    background-size: cover;
      background-position: 100%;
      background-repeat: no-repeat;
      background-image: url(Images/Property\ 1=Default.svg);
   
   }
 
+  
+
   .items {
     display: flex;
-    gap: 20px;
+    gap: 3rem;
   }
+
 
   fieldset {
     display: flex;
@@ -232,6 +224,7 @@ gap: 15px;
 padding:  50px;
 width: 450px;
 border-radius: 10px;
+
   }
 
   input {
@@ -244,6 +237,11 @@ height: 35px;
 background: #555081;
 border-radius: 10px;
   }
+
+  input:focus {
+   outline: none;
+      }
+    
 
   input::placeholder {
     color: white;
@@ -262,12 +260,24 @@ height: 155px;
   align-items: center;
   color: #ffffff;
   gap: 20px;
- 
+  animation: section-animation linear 1s;
 
   }
 
-  h1 {
+  @keyframes section-animation {
+    0% {
+      opacity: 0;
+      padding-right: 100px;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0deg);
+    }
+  }
 
+  h1 {
+    font-family: 'Roboto', sans-serif;
     font-size: 64px;
     color: #fab41e;
     margin: 0;
@@ -283,6 +293,7 @@ height: 155px;
     letter-spacing: 1.3px;
     text-align: center;
     width: 700px;
+    font-family: 'Roboto', sans-serif;
   }
 
 
@@ -301,9 +312,14 @@ border-radius: 30px;
 background: none;
 color: #ffffff;
 font-size: 18px;
+cursor: pointer;
  }
 
-
+ .btn:hover {
+  background: #FEC342;
+  color: #555081; 
+  font-weight: 500;
+ }
 
  /* .image {
   background-image: url(Images/Ellipse\ 1.svg);
