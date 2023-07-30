@@ -372,8 +372,42 @@ wave animation
 
 .navbar_dropdown {
   display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top:4rem;
+  right: 0;
+  width: 100%;
+  background-color: rgba(85, 80, 129, 0.9);
+  height: 150px;
+  z-index: 2;
+  box-shadow: 0px 0px 11px -3px #000000;
+  padding: 5px 0;
 }
 
+.navbar_items_dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  gap: 3rem;
+
+}
+
+
+.menu-btn {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+}
 
 @media (max-width: 844px) {
 
@@ -484,7 +518,7 @@ wave animation
      align-items: center;
      z-index: 1;
      height: 100%;
-     padding: 40px 0;
+     padding: 50px 0;
      width: 100%;
     
   }
