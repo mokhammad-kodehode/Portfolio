@@ -63,7 +63,7 @@ Resets margins and paddings
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 35px;
+    height: 40px;
     position: relative;
     overflow: hidden;
     box-shadow: 0px 0px 11px 3px #000000;
@@ -106,12 +106,12 @@ Resets margins and paddings
   width: 130px;
   height: 35px;
   position: absolute;
-  left: -3px;
+  left: 10px;
   top: 90px;
-  transition:ease-in-out 0.6s;
+  transition:ease-in-out 0.8s;
   background-color:  rgba(150, 143, 216, 0.5);
   transform: rotate(55deg);
-  
+  box-shadow: 1px 1px 10px 1px #000000;
 }
 
 .items_line_two{
@@ -121,7 +121,7 @@ Resets margins and paddings
   position: absolute;
   left: -62px;
   bottom: 80px;
-  transition: ease-in-out  0.6s;
+  transition: ease-in-out  0.8s;
   background-color: rgba(183, 36, 92, 0.8);
   transform: rotate(55deg);
 }
@@ -149,11 +149,6 @@ li:hover .items_line_two{
   transform:rotate(55deg) translate(-50px,-50px);
   left: -61px;
   top: 60px;
-}
-
-li:hover a{
-  font-weight: 700;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 1);
 }
 
 /* 
@@ -207,6 +202,18 @@ li:hover a{
   color: #ffffff;
   gap: 2rem;
   animation: section-animation linear 1s;
+  }
+
+  @keyframes section-animation {
+    0% {
+      opacity: 0;
+      padding-right: 100px;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0deg);
+    }
   }
 
   .container_title h1 {
@@ -303,35 +310,13 @@ cursor: pointer;
 
 
 
-.my_skills , .social {
-  padding: 0 40px;
-  display: flex;
-  gap: 0.5rem;
-  position: relative;
-  height: 50px;
-  align-items: center;
-  
-}
-
-.icon {
-  width: 35px;
-  transition: linear 0.3s;
-  position: relative;
-}
-
-.icon:hover {
-  height: auto;
-  width: 60px;
-}
-
-
  #myCanvas {
   width: 100%;
   height: 100%;
   position: absolute;
   z-index:0;
   top: 50px;
-  transform: rotate(-10deg) translate(150px);
+  transform: rotate(-20deg) translate(150px);
 }
 
 
@@ -385,18 +370,40 @@ wave animation
 } */
 
 
+.navbar_dropdown {
+  display: none;
+}
+
+
 @media (max-width: 844px) {
 
+
+  body {
+
+     background-image: url(Images/Property\ 1=Default.svg);
+  }
+
+  .menu-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+  }
 
   nav {
     background-color: rgba(85, 80, 129, 0.5);
     /* background-image: linear-gradient(to right, #706d8a, #716c95, #676294, #5c5887, #68629d, #635e95, #52507f, #504c7b, #4c496f, #5f5b89, #585778, #373646); */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 5px;
-    height: 70px;
+    height: 50px;
     position: relative;
     overflow: hidden;
     box-shadow: 0px 0px 11px 3px #000000;
@@ -411,28 +418,54 @@ wave animation
     left: 1rem;
   }
 
-  
-  ul {
-    list-style-type: none;
-  }
-  li a {
-    position: relative;
-    text-decoration: none;
-    color: var(--textnavbar);
-    z-index: 1;
-    padding: 0 10px;
-    transition: ease-in-out 0.3s;
-  }
-  li  {
-    text-align: center;
-    position: relative;
-  }
+.navbar_dropdown {
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top:4rem;
+  right: 0;
+  width: 100%;
+  background-color: rgba(85, 80, 129, 0.9);
+  height: 150px;
+  z-index: 2;
+  box-shadow: 0px 0px 11px -3px #000000;
+  padding: 5px 0;
+}
+
+.navbar_items_dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  gap: 3rem;
+
+}
 
   .navbar_items {
-    display: flex;
-    gap: 0px;
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 3rem;
     padding: 0;
+    gap: 0.5rem;
+    align-self: center;
   }
+
+  .navbar_item_name {
+    color: white;
+   font-size: 12px;
+  }
+
+ li {
+  text-align: center;
+
+  }
+
+  li a{
+    padding: 0;
+    margin: 0;
+    }
 
 .items_line_one {
   display: none;
@@ -447,12 +480,13 @@ wave animation
 
   .container{
      display: flex;
-     justify-content: start;
+     justify-content: flex-start;
      align-items: center;
      z-index: 1;
      height: 100%;
      padding: 40px 0;
      width: 100%;
+    
   }
 
  
@@ -463,13 +497,13 @@ wave animation
   align-items: flex-start;
   color: #ffffff;
   padding-left: 5px;
-  gap: 2rem;
+  gap: 22px;
   animation: section-animation linear 1s;
   }
 
 
   .container_title h1 {
-    font-size: 64px;
+    font-size: 52px;
     width: 320px;
     color: white;
     margin: 0;
@@ -481,8 +515,8 @@ wave animation
 
 
   .pitch {
-    width: 400px;
-    font-size: 20px;
+    width: 100%;
+    font-size: 18px;
   }
 
   h2 {
@@ -492,8 +526,19 @@ wave animation
     font-family: 'Roboto', sans-serif;
   }
 
+
+.orange {
+  background-color: #FEC342;
+}
+
+.orange_text {
+  background-color: #FEC342;
+}
+
  span {
     color:  #FEC342;
+    margin: 0;
+    padding: 0;
   }
 
  .info {
@@ -506,6 +551,7 @@ wave animation
 
  a {
   text-decoration: none;
+  
  }
 
  .btn {
@@ -514,14 +560,14 @@ wave animation
   justify-content: center;
   align-items: center;
   padding: 10px;
-  width: 144px;
-  height: 55px;
+  width: 122px;
+  height: 45px;
   border: 2px solid #FEC342;
   border-radius: 30px;
   background: rgba(150, 143, 216, 0.3);
   color: #ffffff;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   cursor: pointer;
  }
 
@@ -542,37 +588,11 @@ wave animation
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  height: 50px;
   position: relative;
   box-shadow: 0px 0px 11px 3px #000000;
 }
 
-
-
- .social {
-  padding: 0px;
-  justify-content: center;
-  display: flex;
-  gap: 1.5rem;
-  position: relative;
-  align-items: center;
-  
-}
-
-.my_skills {
-  display: none;
-}
-
-.icon {
-  width: 45px;
-  transition: linear 0.3s;
-  position: relative;
-}
-
-.icon:hover {
-  height: auto;
-  width: 60px;
-}
 
 
  #myCanvas {
@@ -581,8 +601,9 @@ wave animation
   height: 100%;
   position: absolute;
   z-index:0;
-  top: 50px;
-  transform: rotate(-10deg) translate(150px);
+  bottom: 0;
+  left: 0;
+  transform: rotate(-10deg) ;
 }
 
 }

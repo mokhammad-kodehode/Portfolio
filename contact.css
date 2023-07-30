@@ -56,6 +56,8 @@ body {
     box-shadow: 0px 0px 11px 3px #000000;
   }
 
+
+
   .logo {
     color: white;
     font-weight: 1000;
@@ -195,9 +197,8 @@ body {
 
   .section-1{
     position: relative;
-    height: 654px;
-    display: block;
-    margin-top: 50px;
+    height: 600px;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
@@ -220,16 +221,29 @@ body {
 flex-direction: column;
 justify-content: start;
 align-items: start;
-gap: 15px;
-padding:  50px;
-width: 450px;
+gap: 10px;
+padding:  30px;
+width: 600px;
 border-radius: 10px;
 
   }
 
+  footer {
+    z-index: 1;
+    background-color: rgba(150, 143, 216, 0.5);
+    /* background-image: linear-gradient(to right, #706d8a, #716c95, #676294, #5c5887,#716c95, #68629d, #635e95, #52507f, #504c7b, #4c496f, #5f5b89, #585778,#676294,#716c95, #706d8a); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    position: relative;
+    box-shadow: 0px 0px 11px 3px #000000;
+    padding: 0 40px;
+  }
+
   input {
 color: white;
-padding: 18px 49px;
+padding: 18px 10px;
 gap: 10px;
 border: none;
 width: 450px;
@@ -237,6 +251,7 @@ height: 35px;
 background: #555081;
 border-radius: 10px;
   }
+  
 
   input:focus {
    outline: none;
@@ -259,7 +274,6 @@ height: 155px;
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  gap: 20px;
   animation: section-animation linear 1s;
 
   }
@@ -278,7 +292,7 @@ height: 155px;
 
   h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 64px;
+    font-size: 52px;
     color: #fab41e;
     margin: 0;
     font-weight: 700;

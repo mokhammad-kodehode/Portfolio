@@ -1,5 +1,10 @@
 // Finish slider and hover , create arrows for slider.
 
+function toggleNav() {
+  const navLinks = document.getElementById("navLinks");
+  navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
+}
+
 const projectCards = Array.from(document.querySelectorAll(".project-card"));
 
 projectCards.forEach((card) => {

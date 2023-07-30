@@ -200,10 +200,6 @@ li:hover a{
 
 
 
-  .project-desc {
-
-  }
-
   .project-desc p {
     display: none;
   }
@@ -213,17 +209,6 @@ li:hover a{
   }
 
 
-
-
-  .my_skills , .social {
-    padding: 0 40px;
-    display: flex;
-    gap: 0.5rem;
-    position: relative;
-    height: 50px;
-    align-items: center;
-    
-  }
 
 
   .icon {
@@ -274,6 +259,9 @@ li:hover a{
     
     }
   }
+
+
+
 
   .footer ul {
     display: none;
