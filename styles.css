@@ -457,11 +457,11 @@ wave animation
   position: absolute;
   align-items: center;
   justify-content: center;
-  top:4rem;
+  top:3rem;
   right: 0;
   width: 100%;
   background-color: rgba(85, 80, 129, 0.9);
-  height: 150px;
+  height: 100px;
   z-index: 2;
   box-shadow: 0px 0px 11px -3px #000000;
   padding: 5px 0;
@@ -560,10 +560,6 @@ wave animation
     font-family: 'Roboto', sans-serif;
   }
 
-
-.orange {
-  background-color: #FEC342;
-}
 
 .orange_text {
   background-color: #FEC342;
