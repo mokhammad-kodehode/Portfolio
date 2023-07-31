@@ -222,9 +222,6 @@ li:hover a{
   }
   
 
-.project-desc {
-
-}
 
   .project-desc p {
     display: none;
@@ -654,20 +651,21 @@ li {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    padding: 5px 0;
   }
 
   .projects {
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
-    max-height: 630px;
+    max-height: 100%;
     flex-direction: row;
     position: relative;
-    width: 430px;
-    border-radius: 20px;
-    background-color: rgba(150, 143, 216, 0.1);
-    gap: 0.6rem;
-    box-shadow: 0px 0px 10px 1px #000000;
+    width: 100%;
+    border-radius: none;
+    background-color: rgba(150, 143, 216, 0);;
+    gap: 1rem;
+    box-shadow: none;
   }
 
   .container h1 {
@@ -679,8 +677,8 @@ li {
     overflow: hidden;
     display: flex;
     font-family: 'Quicksand', sans-serif;
-    width: 410px;
-    height: 270px;
+    width: 370px;
+    height: 200px;
     flex-direction: column;
     text-align: center;
     border-radius: 20px;
@@ -692,7 +690,7 @@ li {
   .project-card.expanded {
   position: fixed;
   left: 0;
-  top: 3.2rem;
+  top: 3.5rem;
   width: 100%;
   height: 640px;
   border: none;
@@ -706,7 +704,7 @@ li {
 .project-card.expanded .project-desc{
   width: 100%;
   padding: 20px 0;
-  height: 50%;
+  height: 100%;
   gap: 1rem;
   background-image: linear-gradient(to right, #706d8a, #716c95, #676294, #5c5887, #68629d, #635e95, #52507f, #504c7b, #4c496f, #5f5b89, #585778, #373646);
   display: flex;
@@ -717,7 +715,7 @@ li {
 }
 
 .project-card.expanded p{
- width: 450px;
+ width: 390px;
  font-size: 16px;
 
 }
@@ -729,15 +727,16 @@ li {
 }
  
 
-  h1 {
-    font-size: 38px;
+
+  .project-title{
+    font-size: 24px;
+    font-family: 'Robot', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-align: center;
     color: white;
-    margin: 0;
-    font-weight: 700;
-    letter-spacing: 1.3px;
-    font-family: 'Roboto', sans-serif;
+    padding-top: 5px;
   }
-  
 
   h2 {
     font-size: 28px;
@@ -777,6 +776,28 @@ li {
 
   #myCanvas {
     display: none;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #555081, rgb(255, 255, 255));
+    border-radius: 10px;
+    opacity: 0.3;
+    transition: 0.9s;
+  }
+  ::-webkit-scrollbar-button {
+    opacity: 0;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    opacity: 0;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    opacity: 0.3;
+    background: linear-gradient(45deg, var(--textcolor), var(--textnavbar));
   }
   
   
