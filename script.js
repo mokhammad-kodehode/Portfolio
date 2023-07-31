@@ -35,6 +35,10 @@ projectCards.forEach((card) => {
     card.classList.toggle("expanded");
     parag.classList.toggle("expanded");
 
+    const projectsContainer = document.querySelector(".projects");
+    projectsContainer.style.overflow =
+      projectsContainer.style.overflow === "hidden" ? "auto" : "hidden";
+
     if (!button) {
       button = document.createElement("button");
       button.textContent = "Preview";

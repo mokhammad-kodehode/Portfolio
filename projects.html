@@ -15,9 +15,14 @@
     <header>
         <nav class="navbar">
             <div class="navbar_logo">MOHAMMAD DZHABRAILOV</div>
-            <ul class="navbar_items">
+            <div class="menu-btn" onclick="toggleNav()">
+                <div id="bar" class="bar"></div>
+                <div id="bar" class="bar"></div>
+                <div id="bar" class="bar"></div>
+              </div>
+            <ul class="navbar_items" >
                 <li>
-                    <a href="aboue.html" >Home</a> 
+                    <a href="index.html" >Home</a> 
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
                     <!-- <img src="Images/itemanimone.svg" class="oneline" alt=""> 
@@ -45,6 +50,35 @@
                 </li>
          </ul>
         </nav>
+        <div class="navbar_dropdown" id="navLinks">
+            <ul class="navbar_items_dropdown" >
+                <li>
+                    <a class="orange" href="index.html"> <img src="Images/icons/Home.svg" alt="" srcset=""></a>
+                    <p class="navbar_item_name orange_text">Home</p> 
+                </li>
+                <li>
+                    <a  href="aboue.html">
+                        <img src="Images/icons/person.svg" >
+                    </a> 
+                    <p class="navbar_item_name">About me</p> 
+                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt=""> 
+                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <img src="Images/icons/projects.svg" >
+                    </a> 
+                    <p class="navbar_item_name">Projects</p>
+                <li>
+                    <a href="contact.html">
+                        <img src="Images/icons/post.svg" >
+                    </a>
+                    <p class="navbar_item_name">Contact</p>
+                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt="">
+                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
+                </li>
+         </ul>
+         </div>
     </header>
     <canvas id="myCanvas">
 
@@ -52,7 +86,9 @@
         <section class="container">
             <h1>PROJECTS</h1>
             <div class="projects">
-                    <div data-tooltip="Click on a project for more information" class="project-card">
+                <div
+                     data-tooltip="Click on a project for more information"
+                     class="project-card">
                     <img class="project-img" src="Images/Planet.png" alt="">
                         <div class="project-desc">
                            <h2 class="project-title">Planet project</h2>
