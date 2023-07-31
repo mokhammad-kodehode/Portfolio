@@ -2,6 +2,17 @@
 
 function toggleNav() {
   const navLinks = document.getElementById("navLinks");
+  const bars = document.querySelectorAll(".bar");
+  const orangeColorRGB = "rgb(254, 195, 66)";
+
+  Array.from(bars).forEach((bar) => {
+    const computedStyle = window.getComputedStyle(bar);
+    const backgroundColor = computedStyle.backgroundColor;
+
+    bar.style.backgroundColor =
+      backgroundColor === orangeColorRGB ? "white" : "#FEC342";
+  });
+
   navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
 }
 

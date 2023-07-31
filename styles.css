@@ -518,7 +518,7 @@ wave animation
      align-items: center;
      z-index: 1;
      height: 100%;
-     padding: 100px 0;
+     padding: 130px 0;
      width: 100%;
     
   }
@@ -561,9 +561,6 @@ wave animation
   }
 
 
-.orange_text {
-  background-color: #FEC342;
-}
 
  span {
     color:  #FEC342;
