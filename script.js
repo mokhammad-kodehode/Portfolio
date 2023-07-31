@@ -26,7 +26,7 @@ projectCards.forEach((card) => {
 
     if (!button) {
       button = document.createElement("button");
-      button.textContent = "Review";
+      button.textContent = "Preview";
       button.classList.add("btn-primary");
       footer.appendChild(button);
 

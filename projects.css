@@ -193,12 +193,40 @@ li:hover a{
     flex-direction: column;
     text-align: center;
     border-radius: 20px;
-    background: var(--ebebeb, #EBEBEB);
+    background-color: rgba(41, 41, 57, 0.7);
+    backdrop-filter: blur(5px);
     cursor: pointer;
     
   }
 
+  .project-card[data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+  
+  .project-card[data-tooltip]:hover::before {
+    opacity: 1;
+    visibility: visible;
+  }
+  
 
+.project-desc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 80px;
+}
 
   .project-desc p {
     display: none;
@@ -212,22 +240,19 @@ li:hover a{
 
 
   .icon {
-    width: 30px;
+    width: 20px;
     transition: linear 0.3s;
   }
 
-  .icon:hover {
-    height: auto;
-    width: 50px;
-  }
 
 
   .project-title{
-    font-size: 22px;
+    font-size: 32px;
     font-family: 'Robot', sans-serif;
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
     text-align: center;
+    color: white;
   }
 
   
@@ -303,6 +328,12 @@ background-image: url(Images/Property\ 1=Default.svg);
 cursor: auto;
 }
 
+.project-card.expanded[data-tooltip]:hover::before {
+  content: "X";
+  opacity: 1;
+  visibility: visible;
+}
+
 .project-card.expanded p {
 display: block;
 }
@@ -322,6 +353,7 @@ display: block;
   width: 100%;
   padding: 20px;
   gap: 1rem;
+  height: 40%;
   /* background-image: linear-gradient(to right, #706d8a, #716c95, #676294, #5c5887, #68629d, #635e95, #52507f, #504c7b, #4c496f, #5f5b89, #585778, #373646); */
   display: flex;
   flex-direction: column;
