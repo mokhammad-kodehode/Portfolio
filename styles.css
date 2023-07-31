@@ -518,7 +518,7 @@ wave animation
      align-items: center;
      z-index: 1;
      height: 100%;
-     padding: 110px 0;
+     padding: 100px 0;
      width: 100%;
     
   }
@@ -527,11 +527,10 @@ wave animation
 .container_title {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   align-items: flex-start;
   color: #ffffff;
   padding-left: 5px;
-  gap: 22px;
   animation: section-animation linear 1s;
   }
 
