@@ -518,7 +518,7 @@ wave animation
      align-items: center;
      z-index: 1;
      height: 100%;
-     padding: 100px 0;
+     padding: 70px 0;
      width: 100%;
     
   }
@@ -536,7 +536,7 @@ wave animation
 
 
   .container_title h1 {
-    font-size: 52px;
+    font-size: 58px;
     width: 320px;
     color: white;
     margin: 0;
