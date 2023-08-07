@@ -61,7 +61,7 @@ Resets margins and paddings
     background-color: rgba(85, 80, 129, 0.5);
     /* background-image: linear-gradient(to right, #706d8a, #716c95, #676294, #5c5887, #68629d, #635e95, #52507f, #504c7b, #4c496f, #5f5b89, #585778, #373646); */
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     height: 40px;
     position: relative;
@@ -70,12 +70,12 @@ Resets margins and paddings
   }
 
   .navbar_logo {
-    padding-left:30px ;
     color: white;
     font-weight: 1000;
     font-size: 20px;
     text-shadow: -2px 2px 3px black;
     left: 1rem;
+    position: fixed;
   }
 
   
@@ -99,7 +99,6 @@ Resets margins and paddings
   .navbar_items {
     display: flex;
     gap: 3rem;
-    padding-left: 15rem;
   }
 
 .items_line_one {
@@ -322,8 +321,9 @@ cursor: pointer;
   height: 100%;
   position: absolute;
   z-index:0;
-  top: 50px;
-  transform: rotate(-20deg) translate(150px);
+  top:50% ;
+  left: 25%;
+  transform: rotate(-25deg);
 }
 
 
@@ -424,6 +424,7 @@ wave animation
   padding: 0 30%;
   align-items: center;
   animation: socials 1s linear;
+  transition: .5s;
 }
 
 @keyframes socials {

@@ -80,12 +80,18 @@ console.log(projectCards);
 
 paper.install(window);
 
+// Get a reference to the canvas object
+const canvas = document.getElementById("myCanvas");
+
+// Create an empty project and a view for the canvas:
+paper.setup(canvas);
+
 window.onload = function () {
   const h = window.innerHeight;
   const w = window.innerWidth;
-  const halfH = h * 0.8;
+  const halfH = h * 0.2;
   const speed = 0.09;
-  const strokeWidth = 25;
+  const strokeWidth = 55;
   const frequency = 4;
   const pathCount = 8;
 
@@ -105,19 +111,13 @@ window.onload = function () {
 
   const path = [];
 
-  const offsetRandom = 2;
+  const offsetRandom = 3;
   const randomOffsets = [];
   const maxDistRandom = 3;
   const randomDistances = [];
   const randomHeights = [];
 
   const magnitued = 0.1;
-
-  // Get a reference to the canvas object
-  const canvas = document.getElementById("myCanvas");
-
-  // Create an empty project and a view for the canvas:
-  paper.setup(canvas);
 
   for (let i = 0; i < pathCount; i++) {
     randomOffsets[i] = Math.random() * offsetRandom;
