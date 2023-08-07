@@ -38,6 +38,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     z-index: -1;
     overflow: hidden;
+    transition: .5s;
 }
 
 
