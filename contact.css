@@ -54,7 +54,7 @@ body {
     background-color: rgba(85, 80, 129, 0.5);
     /* background-image: linear-gradient(to right, #706d8a, #716c95, #676294, #5c5887, #68629d, #635e95, #52507f, #504c7b, #4c496f, #5f5b89, #585778, #373646); */
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     height: 40px;
     position: relative;
@@ -63,12 +63,12 @@ body {
   }
 
   .navbar_logo {
-    padding-left:30px ;
     color: white;
     font-weight: 1000;
     font-size: 20px;
     text-shadow: -2px 2px 3px black;
     left: 1rem;
+    position: fixed;
   }
 
   
@@ -91,7 +91,6 @@ body {
   .navbar_items {
     display: flex;
     gap: 3rem;
-    padding-left: 15rem;
   }
 
 .items_line_one {
@@ -231,7 +230,7 @@ box-shadow: 0px 0px 10px 1px #000000;
     /* background-image: linear-gradient(to right, #706d8a, #716c95, #676294, #5c5887,#716c95, #68629d, #635e95, #52507f, #504c7b, #4c496f, #5f5b89, #585778,#676294,#716c95, #706d8a); */
     display: flex;
     padding: 0 40px;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     height: 65px;
     position: relative;
@@ -343,9 +342,27 @@ cursor: pointer;
   display: flex;
   gap: 0.7rem;
   position: relative;
-  padding: 0 30%;
   align-items: center;
   animation: socials 1s linear;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  left: 2rem;
+  position: fixed;
+  animation: text 2s linear;
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes socials {
@@ -381,6 +398,10 @@ cursor: pointer;
      background-image: url(Images/Property\ 1=Default.svg);
   }
 
+  h1 {
+    font-size: 32px;
+  }
+
   .menu-btn {
     cursor: pointer;
     display: flex;
@@ -414,6 +435,7 @@ cursor: pointer;
     font-size: 20px;
     text-shadow: -2px 2px 3px black;
     left: 1rem;
+    position: relative;
   }
 
 .navbar_dropdown {
@@ -475,6 +497,49 @@ cursor: pointer;
 }
 
 
+
+
+form {
+  display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: center;
+gap: 10px;
+padding:  20px;
+width: 100%;
+border-radius: 10px;
+background-color: none;
+box-shadow: none;
+
+}
+
+
+.container_form_input {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: start;
+}
+
+input {
+padding: 5px;
+gap: 10px;
+border: none;
+width: 350px;
+height: 35px;
+background: #f3f3f4;
+border-radius: 10px;
+}
+
+
+
+.email {
+  width: 350px;
+ height: 155px;
+}
+
+
   .container{
      display: flex;
      justify-content: center;
@@ -489,7 +554,7 @@ cursor: pointer;
 .container_title {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: c;
   align-items: flex-start;
   color: #ffffff;
   padding-left: 5px;

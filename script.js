@@ -89,7 +89,7 @@ paper.setup(canvas);
 window.onload = function () {
   const h = window.innerHeight;
   const w = window.innerWidth;
-  const halfH = h * 0.2;
+  const halfH = h * 0.3;
   const speed = 0.09;
   const strokeWidth = 55;
   const frequency = 4;
@@ -97,10 +97,10 @@ window.onload = function () {
 
   const pathPoints = 10;
   const pathColors = [
-    "rgba(85, 80, 129, 0.8)",
+    "rgba(85, 80, 129, 1)",
     "rgba(255, 255, 255, 0.5)",
     "rgba(85, 80, 129, 0.5)",
-    "rgba(255, 255, 255, 0.8)",
+    "rgba(255, 255, 255, 1)",
     "rgba(85, 80, 129, 0.5)",
     "rgba(183, 36, 92, 0.5)",
     "rgba(255, 255, 255, 0.5)",
@@ -111,7 +111,7 @@ window.onload = function () {
 
   const path = [];
 
-  const offsetRandom = 3;
+  const offsetRandom = 2;
   const randomOffsets = [];
   const maxDistRandom = 3;
   const randomDistances = [];
