@@ -326,6 +326,7 @@ li:hover a{
   content: "Click to close";
   opacity: 1;
   visibility: visible;
+  top: 10px;
 }
 
 .project-card.expanded p {
@@ -353,10 +354,9 @@ display: block;
 
 .project-card.expanded:hover .project-desc{
   width: 100%;
-  height: 250px;
+  height: 280px;
   position: absolute;
   bottom: 0;
-  padding-top: 25px;
   gap: 1rem;
   background-color: rgba(41, 41, 57, 0.9);
   display: flex;
@@ -386,7 +386,7 @@ display: block;
 
 .project-card.expanded .project-title {
  font-size: 36px;
- color: #f5f4f4;
+ color: #FEC342;
  font-weight: 700;
  font-family: 'Roboto', sans-serif;
 }
@@ -485,7 +485,7 @@ cursor: pointer;
     opacity: 0.7;
     top: 0px;
     left: 0px;
-    z-index: -1;
+    z-index: 0;
     transform: rotate(-20deg) translate(150px);
   }
   
@@ -591,62 +591,66 @@ cursor: pointer;
    left: 1rem;
  }
 
-.navbar_dropdown {
- display: none;
- position: absolute;
- align-items: center;
- justify-content: center;
- top:3rem;
- right: 0;
- width: 100%;
- background-color: rgba(85, 80, 129, 0.9);
- height: 100px;
- z-index: 2;
- box-shadow: 0px 0px 11px -3px #000000;
- padding: 5px 0;
-}
-
-.navbar_items_dropdown {
- display: flex;
- align-items: center;
- justify-content: center;
- padding: 0;
-
-}
-
- .navbar_items {
-   display: none;
-   left: 0px;
-   padding: 0;
-   gap: 0.5rem;
-   align-self: center;
- }
-
- .navbar_item_name {
-   color: white;
-  font-size: 12px;
-  width: 70px;
- }
-
-li {
- text-align: center;
- padding: 0;
- margin: 0;
- }
- 
-
-
-.items_line_one {
- display: none;
- 
-}
-
-.items_line_two{
- display: none;
-}
+ .navbar_dropdown {
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top:3rem;
+  right: 0;
+  width: 100%;
+  background-color: rgba(85, 80, 129, 0.9);
+  height: 100px;
+  z-index: 2;
+  box-shadow: 0px 0px 11px -3px #000000;
+  padding: 5px 0;
+  }
+  
+  .navbar_items_dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  gap: 3rem;
+  
+  }
+  
+  .navbar_items {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 3rem;
+    padding: 0;
+    gap: 0.5rem;
+    align-self: center;
+  }
+  
+  .navbar_item_name {
+    color: white;
+   font-size: 12px;
+  }
+  
+  li {
+  text-align: center;
+  
+  }
+  
+  li a{
+    padding: 0;
+    margin: 0;
+    }
+  
+  .items_line_one {
+  display: none;
+  
+  }
+  
+  .items_line_two{
+  display: none;
+  }
 
   .container {
-    height: 650px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -671,7 +675,7 @@ li {
   
 .project-card.expanded:hover .project-desc{
   width: 100%;
-  height: 350px;
+  height: 400px;
   position: absolute;
   bottom: 0;
   padding: 5px 0;
@@ -777,6 +781,19 @@ li {
     color: rgb(255, 255, 255);
     font-weight: bold;
   }
+
+  footer {
+    z-index: 1;
+    background-color: rgba(150, 143, 216, 0.5);
+    /* background-image: linear-gradient(to right, #706d8a, #716c95, #676294, #5c5887,#716c95, #68629d, #635e95, #52507f, #504c7b, #4c496f, #5f5b89, #585778,#676294,#716c95, #706d8a); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    position: relative;
+    box-shadow: 0px 0px 11px 3px #000000;
+  }
+  
 
   #myCanvas {
     display: none;

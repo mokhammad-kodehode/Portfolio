@@ -183,7 +183,7 @@ li:hover .items_line_two{
   .container{
      overflow: hidden;
      position: relative;
-     height: 640px;
+     height: 635px;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -300,12 +300,12 @@ cursor: pointer;
   background-color: rgba(150, 143, 216, 0.5);
   /* background-image: linear-gradient(to right, #706d8a, #716c95, #676294, #5c5887,#716c95, #68629d, #635e95, #52507f, #504c7b, #4c496f, #5f5b89, #585778,#676294,#716c95, #706d8a); */
   display: flex;
+  padding: 0 40px;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: space-between;
   height: 65px;
   position: relative;
   box-shadow: 0px 0px 11px 3px #000000;
-  padding: 0 40px;
 }
 
 
@@ -408,6 +408,51 @@ wave animation
   width: 30px;
   height: 3px;
   background-color: #fff;
+}
+
+.social {
+  display: flex;
+  gap: 0.7rem;
+  position: relative;
+  padding: 0 30%;
+  align-items: center;
+  animation: socials 1s linear;
+}
+
+@keyframes socials {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.icon {
+  width: 45px;
+  transition: linear 0.3s;
+  position: relative;
+  animation: icons 0.9s linear;
+}
+
+/* @keyframes icons {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+} */
+
+.icon:hover {
+  height: auto;
+  width: 60px;
 }
 
 @media (max-width: 844px) {
@@ -534,9 +579,21 @@ wave animation
   animation: section-animation linear 1s;
   }
 
+  @keyframes section-animation {
+    0% {
+      opacity: 0;
+      padding-right: 100px;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0deg);
+    }
+  }
+
 
   .container_title h1 {
-    font-size: 58px;
+    font-size: 54px;
     width: 320px;
     color: white;
     margin: 0;
@@ -548,24 +605,27 @@ wave animation
 
 
   .pitch {
-    width: 100%;
+    width: 380px;
     font-size: 18px;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     letter-spacing: 1.3px;
     font-family: 'Roboto', sans-serif;
   }
 
-
+  h3 {
+    display: none;
+  }
 
  span {
     color:  #FEC342;
     margin: 0;
     padding: 0;
   }
+
 
  .info {
   display: flex;
@@ -619,7 +679,12 @@ wave animation
   box-shadow: 0px 0px 11px 3px #000000;
 }
 
-
+.icon {
+  width: 35px;
+  transition: linear 0.3s;
+  position: relative;
+  animation: icons 0.9s linear;
+}
 
  #myCanvas {
   display: none;

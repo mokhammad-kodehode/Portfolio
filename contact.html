@@ -10,65 +10,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
-        <header>
-            <nav class="navbar">
-                <div class="logo">MOHAMMAD DZHABRAILOV</div>
-                <div class="lineanum">
-                    <img  class="navimage" src="Images/animline2.svg" alt=""> 
-                    <img  class="navimage2" src="Images/AnimLine.svg" alt="">
-                </div> 
-                <ul class="items">
-                    <li>
-                        <a href="index.html" > Home</a> 
-                        <img src="Images/itemanimone.svg" class="oneline" alt=""> 
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt="">
-                    </li>
-                    <li>
-                        <a href="aboue.html" > About me</a> 
-                        <img src="Images/itemanimone.svg" class="oneline" alt=""> 
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt="">
-                    </li>
-                    <li>
-                        <a href="projects.html">Projects</a> 
-                        <img src="Images/itemanimone.svg" class="oneline" alt="">
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt="">
-                    <li class="active">
-                        <a href="contact.html">Contact</a>
-                        <img src="Images/itemanimone.svg" class="oneline" alt="">
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt="">
-                    </li>
-             </ul>
-            </nav>
-        </header>
+    <header>
+        <nav class="navbar">
+            <div class="navbar_logo">MOHAMMAD DZHABRAILOV</div>
+            <div class="menu-btn" onclick="toggleNav()">
+                <div id="bar" class="bar"></div>
+                <div id="bar" class="bar"></div>
+                <div id="bar" class="bar"></div>
+              </div>
+            <ul class="navbar_items" >
+                <li>
+                    <a href="index.html" >Home</a> 
+                    <div class="items_line_one"></div>
+                    <div class="items_line_two"></div>
+                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt=""> 
+                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
+                </li>
+                <li class="fix">
+                    <a  href="aboue.html" >About me</a> 
+                    <div class="items_line_one"></div>
+                    <div class="items_line_two"></div>
+                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt=""> 
+                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
+                </li>
+                <li>
+                    <a href="projects.html"> Projects</a> 
+                    <div class="items_line_one"></div>
+                    <div class="items_line_two"></div>
+                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt="">
+                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
+                <li>
+                    <a href="contact.html">Contact</a>
+                    <div class="items_line_one"></div>
+                    <div class="items_line_two"></div>
+                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt="">
+                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
+                </li>
+         </ul>
+        </nav>
+        <div class="navbar_dropdown" id="navLinks">
+            <ul class="navbar_items_dropdown" >
+                <li>
+                    <a class="orange" href="index.html"> <img src="Images/icons/Home.svg" alt="" srcset=""></a>
+                    <p class="navbar_item_name orange_text">Home</p> 
+                </li>
+                <li>
+                    <a  href="aboue.html">
+                        <img src="Images/icons/person.svg" >
+                    </a> 
+                    <p class="navbar_item_name">About me</p> 
+                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt=""> 
+                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <img src="Images/icons/projects.svg" >
+                    </a> 
+                    <p class="navbar_item_name">Projects</p>
+                <li>
+                    <a href="contact.html">
+                        <img src="Images/icons/post.svg" >
+                    </a>
+                    <p class="navbar_item_name">Contact</p>
+                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt="">
+                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
+                </li>
+         </ul>
+         </div>
+    </header>
 
-    <section class="section-1">
-        <div class="title">
+    <section class="container">
+        <div class="container_title">
            <h1>Contact Me</h1>
-           <form action="">
-                <fieldset>
-                    <legend>Send email</legend>
-                    <div>
-                        <label for="Name">Name</label>
-                        <input  type="text" placeholder="Name">
-                    </div>
-                    <div>
-                        <label for="Email">Email</label>
-                        <input  type="text" placeholder="Email">
-                    </div>
-                    <div>
-                        <label for="Title">Title</label>
-                        <input  type="text" placeholder="Title">
-                    </div>
-                    <label for="Messege">Messege</label>
-                    <input class="email" type="text" placeholder="Messege">
-                    <button class="btn" >Send</button>
-                </fieldset>
+           <div class="container_form">
+                <form action="">
+                        <legend>Send email</legend>
+                        <div class="container_form_input">
+                            <label for="Name">Name</label>
+                            <input id="name"  type="text" placeholder="Text your name">
+                        </div>
+                        <div class="container_form_input">
+                            <label for="Email">Email</label>
+                            <input id="email" type="text" placeholder="Text your email">
+                        </div>
+                        <div class="container_form_input">
+                            <label for="Title">Title</label>
+                            <input id="title"  type="text" placeholder="Title">
+                        </div>
+                        <div class="container_form_input">
+                            <label for="Messege">Messege</label>
+                            <input id="messege" class="email" type="text" placeholder="Messege">
+                            <button class="btn" >Send</button>
+                        </div>
+                            
             </form>
+           </div>
+
         </div>
     </section>
 
     <footer>
-        <h3>PROJECTS</h3>
+        <h3>CONTACT ME</h3>
                 <div class="social">
             <a href=""><img class="icon"  src="Images/icons/facebook.svg" alt=""></a>
             <a href=""><img class="icon" src="Images/icons/mdi_github.svg" alt=""></a>
