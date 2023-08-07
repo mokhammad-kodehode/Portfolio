@@ -251,7 +251,7 @@ gap: 10px;
 border: none;
 width: 450px;
 height: 35px;
-background: #f3f3f4;
+background: rgba(150, 143, 216, 0.5);
 border-radius: 10px;
   }
   
@@ -262,7 +262,7 @@ border-radius: 10px;
     
 
   input::placeholder {
-    color: rgb(99, 99, 99);
+    color: rgb(230, 230, 230);
   }
   
 
