@@ -170,7 +170,7 @@ li:hover a{
     position: relative;
     border-radius: 20px;
     background-color: rgba(150, 143, 216, 0.1);
-    animation: projects-one-animation linear 0.7s;
+    animation: projects-one-animation linear 1s;
     padding: 10px;
     gap: 0.6rem;
     box-shadow: 0px 0px 10px 1px #000000;
@@ -193,7 +193,7 @@ li:hover a{
     display: flex;
     font-family: 'Quicksand', sans-serif;
     width: 100%;
-    height: 38vh;
+    height: 36vh;
     flex-direction: column;
     text-align: center;
     border-radius: 20px;
@@ -261,12 +261,12 @@ li:hover a{
   @keyframes projects-one-animation {
     0% {
       opacity: 0;
-      transform: translate(180px);
+      transform: scale(0);
     }
   
     100% {
       opacity: 1;
-      transform: translate(0deg);
+      transform: scale(1);
     
     }
   }
@@ -490,7 +490,10 @@ cursor: pointer;
   top:50% ;
   left: 25%;
   transform: rotate(-25deg);
+  transition: 10s;
 }
+
+
   
    
   footer {
