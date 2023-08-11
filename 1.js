@@ -1,6 +1,43 @@
 const body = document.body;
 const themeSwitcher = document.getElementById("theme-switch-checkbox");
 const projectCards = Array.from(document.querySelectorAll(".project-card"));
+const projectsOne = document.querySelector(".projects");
+const projectsTwo = document.querySelector(".projects-two");
+const projectsBtnOne = document.getElementById("show_one");
+const projectsBtnTwo = document.getElementById("show_two");
+const projectsBtnOneResp = document.getElementById("show_one_resp");
+const projectsBtnTwoResp = document.getElementById("show_two_resp");
+
+projectsBtnOneResp.classList.add("active");
+projectsBtnOne.classList.add("active");
+
+projectsBtnOne.addEventListener("click", () => {
+  projectsOne.style.display = "grid";
+  projectsTwo.style.display = "none";
+  projectsBtnOne.classList.add("active");
+  projectsBtnTwo.classList.remove("active");
+});
+
+projectsBtnTwo.addEventListener("click", () => {
+  projectsTwo.style.display = "grid";
+  projectsOne.style.display = "none";
+  projectsBtnTwo.classList.add("active");
+  projectsBtnOne.classList.remove("active");
+});
+
+projectsBtnOneResp.addEventListener("click", () => {
+  projectsOne.style.display = "flex";
+  projectsTwo.style.display = "none";
+  projectsBtnOne.classList.add("active");
+  projectsBtnTwo.classList.remove("active");
+});
+
+projectsBtnTwoResp.addEventListener("click", () => {
+  projectsTwo.style.display = "flex";
+  projectsOne.style.display = "none";
+  projectsBtnTwo.classList.add("active");
+  projectsBtnOne.classList.remove("active");
+});
 
 themeSwitcher.addEventListener("change", () => {
   body.classList.toggle("light-theme", themeSwitcher.checked);
@@ -30,6 +67,65 @@ function toggleNav() {
 
   navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
 }
+
+projectCards.forEach((card) => {
+  const iframeContainer = card.querySelector(".iframe-container");
+  const footer = card.querySelector(".footer");
+  const iframe = iframeContainer.querySelector("iframe");
+
+  //creating evenlist for each projectcard
+  card.addEventListener("click", () => {
+    const parag = card.querySelector("p");
+    const projectDesc = card.querySelector(".project-desc");
+
+    let button = card.querySelector(".btn-primary");
+    let btnClose = card.querySelector(".btn-close");
+
+    projectDesc.classList.toggle("expanded");
+    card.classList.toggle("expanded");
+    parag.classList.toggle("expanded");
+
+    const projectsContainer = document.querySelector(".projects");
+    projectsContainer.style.overflow =
+      projectsContainer.style.overflow === "hidden" ? "auto" : "hidden";
+
+    if (!button) {
+      button = document.createElement("button");
+      button.textContent = "Preview";
+      button.classList.add("btn-primary");
+      footer.appendChild(button);
+
+      button.addEventListener("click", (event) => {
+        event.stopPropagation();
+
+        if (!iframeContainer.classList.contains("expanded")) {
+          iframe.classList.add("expanded-iframe");
+
+          btnClose = document.createElement("button");
+          btnClose.textContent = "X";
+          btnClose.classList.add("btn-close");
+          iframeContainer.appendChild(btnClose);
+
+          btnClose.addEventListener("click", (event) => {
+            event.stopPropagation();
+            iframe.classList.remove("expanded-iframe");
+            iframeContainer.classList.remove("expanded");
+            btnClose.remove();
+          });
+        } else {
+          iframe.classList.remove("expanded-iframe");
+          iframeContainer.classList.remove("expanded");
+          btnClose.remove();
+        }
+
+        iframeContainer.classList.toggle("expanded");
+      });
+    } else {
+      button.remove();
+      btnClose.remove();
+    }
+  });
+});
 
 paper.install(window);
 

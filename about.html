@@ -14,11 +14,11 @@
     <header>
         <nav class="navbar">
             <div class="navbar_logo">MOHAMMAD DZHABRAILOV</div>
-            <div class="menu-btn" onclick="toggleNav()">
+            <button class="menu-btn" onclick="toggleNav()">
                 <div id="bar" class="bar"></div>
                 <div id="bar" class="bar"></div>
                 <div id="bar" class="bar"></div>
-              </div>
+              </button>
             <ul class="navbar_items" >
                 <li>
                     <a href="index.html" >Home</a> 
@@ -28,7 +28,7 @@
                     <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                 </li>
                 <li class="fix">
-                    <a  href="aboue.html" >About me</a> 
+                    <a  href="about.html" >About me</a> 
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
                     <!-- <img src="Images/itemanimone.svg" class="oneline" alt=""> 
@@ -48,6 +48,10 @@
                     <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                 </li>
          </ul>
+         <div class="theme-switch">
+            <input type="checkbox" id="theme-switch-checkbox">
+            <label for="theme-switch-checkbox"></label>
+          </div>
         </nav>
         <div class="navbar_dropdown" id="navLinks">
             <ul class="navbar_items_dropdown" >
@@ -56,7 +60,7 @@
                     <p class="navbar_item_name orange_text">Home</p> 
                 </li>
                 <li>
-                    <a  href="aboue.html">
+                    <a  href="about.html">
                         <img src="Images/icons/person.svg" >
                     </a> 
                     <p class="navbar_item_name">About me</p> 
@@ -104,20 +108,13 @@
                 I love art, traveling, taking photos, playing video games,
                  spending time with family and friends.
             </p>
-           <!-- <div class="my_skills">
-            <img  src="Images/icons/mdi_github.svg" alt="">
-            <img  src="Images/icons/js.svg" alt="">
-            <img  src="Images/icons/html.svg" alt="">
-            <img  src="Images/icons/css.svg" alt="">
-            <img  src="Images/icons/figma.svg"  alt="">
-            <img  src="Images/icons/react.svg" alt="">
-        </div> -->
         </div>
     </section>
     <canvas id="myCanvas" >
 
     </canvas>
     <footer>
+
         <h3>ABOUT ME</h3>
         <div class="my_skills">
                 <a 
@@ -125,10 +122,13 @@
                     href="https://github.com/mokhammad-kodehode">
                     <img class="icon" src="Images/icons/mdi_github.svg" alt="">
                 </a>
-            <img class="icon" src="Images/icons/js.svg" alt="">
-            <img class="icon" src="Images/icons/html.svg" alt="">
-            <img class="icon" src="Images/icons/css.svg" alt="">
-            <img class="icon" src="Images/icons/figma.svg"  alt="">
+                    <img class="icon" src="Images/icons/js.svg" alt="">
+                    <img class="icon" src="Images/icons/html.svg" alt="">
+                    <img class="icon" src="Images/icons/css.svg" alt="">
+                <a href="https://www.figma.com/file/BR7sRsVDhA91byOoT0aUtI/Mohammad-Portfolio?type=design&node-id=0%3A1&mode=design&t=wjugJLyJqorrGqOW-1">
+                    <img class="icon" src="Images/icons/figma.svg"  alt="">
+                </a>
+            
             <img class="icon" src="Images/icons/react.svg" alt="">
         </div>
         <!-- <div class="social">
