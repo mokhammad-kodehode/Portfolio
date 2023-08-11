@@ -222,10 +222,11 @@ li:hover .items_line_two{
     height: 0;
     border-style: solid;
     border-width: 40px  40px 40px;
-    border-color: transparent transparent transparent var(--secondary-text-color);}
+    border-color: transparent transparent transparent white;}
 
     .left_arrow:hover:before {
       opacity: 1;
+      border-color: transparent transparent transparent var(--secondary-text-color);
     }
 
     .right_arrow {
@@ -249,11 +250,13 @@ li:hover .items_line_two{
       height: 0;
       border-style: solid;
       border-width: 40px  40px 40px;
-      border-color: transparent transparent transparent var(--secondary-text-color);}
+      border-color: transparent transparent transparent white;}
 
       .right_arrow:hover:before {
         opacity: 1;
+        border-color: transparent transparent transparent var(--secondary-text-color);
       }
+
 
   .projects_btn {
     display: flex;
@@ -268,9 +271,9 @@ li:hover .items_line_two{
 
   .show_btn {
     cursor: pointer;
-    width: 35px;
-    height: 35px;
-    background-color: var(--secondary-text-color);
+    width: 25px;
+    height: 25px;
+    background-color: white;
     border-radius: 50%;
     font-size: 16px;
     border: none;
@@ -279,9 +282,10 @@ li:hover .items_line_two{
   }
 
   .show_btn.active {
-    background-color: white;
-    width: 25px;
-    height: 25px;
+    background-color: var(--secondary-text-color);
+    width: 35px;
+    height: 35px;
+    cursor: default;
   }
 
   .show_btn_resp {

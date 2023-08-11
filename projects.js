@@ -196,6 +196,8 @@ let button; // Объявляем переменную button
 let btnClose;
 let isIframeExpanded = false;
 
+// fuction for create project ca
+
 const createProjectCard = (project) => {
   const projectCard = document.createElement("div");
   projectCard.className = "project-card";
@@ -206,8 +208,8 @@ const createProjectCard = (project) => {
 
   const projectImage = document.createElement("img");
   projectImage.className = "project-img";
-  projectImage.src = project.imageSrc; // Поправлено имя свойства
-  projectImage.alt = project.title; // Добавлен атрибут alt для изображения
+  projectImage.src = project.imageSrc;
+  projectImage.alt = project.title;
   projectCard.appendChild(projectImage);
 
   const projectDesc = document.createElement("div");
@@ -265,14 +267,21 @@ const createProjectCard = (project) => {
     parag.classList.toggle("expanded");
 
     const isExpanded = projectCard.classList.contains("expanded");
+    const isFromSecondArray =
+      projectCard.parentElement === projectsTwoContainer;
 
-    // Если элемент projectDesc раскрыт, скрываем left и right
-    // if (isExpanded) {
-    //   left.style.display = "none";
-    //   right.style.display = "none";
-    // } else {
-    //   right.style.display = "block";
-    // }
+    left.style.display = isFromSecondArray
+      ? isExpanded
+        ? "none"
+        : "block"
+      : "none";
+    right.style.display = isFromSecondArray
+      ? "none"
+      : isExpanded
+      ? "none"
+      : "block";
+    projectsBtnOne.style.display = isExpanded ? "none" : "block";
+    projectsBtnTwo.style.display = isExpanded ? "none" : "block";
 
     projectsOne.style.overflow =
       projectsOne.style.overflow === "hidden" ? "auto" : "hidden";
