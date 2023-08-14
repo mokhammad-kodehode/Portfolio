@@ -65,20 +65,21 @@ const projects = [
 
 const projectsTwo = [
   {
-    title: "Planet project",
-    languages: "HTML , CSS",
+    title: "KinoYoo",
+    languages: "Figma",
     description:
       "The Saturn Information Website is a project I developed for my portfolio, showcasing my proficiency in HTML and CSS. This website serves as a comprehensive resource dedicated to providing insightful information about Saturn, the sixth planet from the Sun in our solar system.",
-    imageSrc: "Images/Planet.png",
+    imageSrc: "Images/Kinoyoo.jpg",
     iframeSrc:
-      "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/",
-    gitLink: "https://github.com/mokhammad-kodehode/Age-calculator.git",
+      "https://www.figma.com/proto/YAZ44hbU2ndRoZOUCZTz7I/Mohammad?type=design&node-id=25-4&t=hOAd9IEdYiU3fa4w-1&scaling=scale-down-width&page-id=25%3A2&starting-point-node-id=25%3A4&mode=design",
+    gitLink:
+      "https://www.figma.com/file/YAZ44hbU2ndRoZOUCZTz7I/Mohammad?type=design&node-id=25%3A2&mode=design&t=YOiVeGJq6Tfegdck-1",
     pageSrc: "",
   },
 
   {
     title: "Password generator",
-    languages: "HTML , CSS, JavaScript",
+    languages: "HTML  CSS JavaScript",
     description:
       "The Password Generator is a project I developed to showcase my programming skills and provide a practical utility for generating strong and secure passwords. This project demonstrates my proficiency in web development, specifically using HTML, CSS, and JavaScript.",
     imageSrc: "Images/pass.jpg",
@@ -181,15 +182,15 @@ projectsBtnTwo.addEventListener("click", () => {
 projectsBtnOneResp.addEventListener("click", () => {
   projectsOne.style.display = "flex";
   projectsTwoContainer.style.display = "none";
-  projectsBtnOne.classList.add("active");
-  projectsBtnTwo.classList.remove("active");
+  projectsBtnOneResp.classList.add("active");
+  projectsBtnTwoResp.classList.remove("active");
 });
 
 projectsBtnTwoResp.addEventListener("click", () => {
   projectsTwoContainer.style.display = "flex";
   projectsOne.style.display = "none";
-  projectsBtnTwo.classList.add("active");
-  projectsBtnOne.classList.remove("active");
+  projectsBtnTwoResp.classList.add("active");
+  projectsBtnOneResp.classList.remove("active");
 });
 
 let button; // Объявляем переменную button
