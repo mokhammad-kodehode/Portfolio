@@ -318,6 +318,22 @@ color: white;
     color: rgb(230, 230, 230);
     
   }
+
+  textarea::placeholder {
+    color: rgb(230, 230, 230);
+    
+  }
+
+  textarea {
+    padding: 18px 10px;
+    gap: 10px;
+    border: none;
+    width: 450px;
+    height: 35px;
+    background: var(--primary-bg-color);
+    border-radius: 10px;
+    color: white;
+      }
   
 
   .email {
