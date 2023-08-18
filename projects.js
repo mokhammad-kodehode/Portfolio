@@ -3,7 +3,7 @@ const projects = [
     title: "Planet project",
     languages: "HTML  CSS",
     description:
-      "The Saturn Information Website is a project I developed for my portfolio, showcasing my proficiency in HTML and CSS. This website serves as a comprehensive resource dedicated to providing insightful information about Saturn, the sixth planet from the Sun in our solar system.",
+      "The Saturn Information Website is a group project I developed for my portfolio, showcasing my proficiency in HTML and CSS. This website serves as a comprehensive resource dedicated to providing insightful information about Saturn, the sixth planet from the Sun in our solar system.",
     imageSrc: "Images/Planet.png",
     iframeSrc:
       "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/",
