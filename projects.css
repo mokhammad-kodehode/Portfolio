@@ -511,6 +511,11 @@ display: block;
   display: block;
 }
 
+.project-card.expanded .visit {
+  display: block;
+  font-family: "Roboto",sans-serif;
+}
+
 .project-card.expanded ul {
   display: flex;
   gap: 10px;
@@ -594,11 +599,26 @@ p.expanded {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 60%;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .footer_link {
  display: none;
+}
+
+.visit {
+  display: none;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding-top: 8px;
 }
 
 
@@ -905,13 +925,15 @@ footer {
 
   .projects-two {
     display: none;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     overflow: auto;
     flex-direction: row;
     position: relative;
     width: 100%;
     border-radius: none;
-    background-color: rgba(150, 143, 216, 0);;
+    background-color: rgba(150, 143, 216, 0.5);;
     gap: 1rem;
     box-shadow: none;
   }
@@ -959,7 +981,7 @@ footer {
   top: 3.5rem;
   z-index: 1;
   width: 99%;
-  height: 640px;
+  height: 85%;
   border: none;
   z-index: 1;
   transition: 0.5 ease-out;

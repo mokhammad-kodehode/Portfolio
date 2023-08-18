@@ -7,6 +7,7 @@
     <title>Document</title>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/c8568fcb0c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -84,31 +85,34 @@
     </header>
 
     <section class="container">
-        <h1>Contact Me</h1>
+        <h1>Contact</h1>
         <div class="container_title">
            <div class="container_form">
                 <form action="">
-                        <legend>Send email</legend>
-                        <div class="container_form_input">
-                            <label for="Name">Name</label>
-                            <input id="name"  type="text" placeholder="Text your name">
+                        <legend>Contact Me</legend>
+                        <div class="names">
+                            <div class="container_form_input">
+                                <label for="first-name">Name</label>
+                                <input class="names_input" id="first-name"  type="text" placeholder="Enter your name">
+                            </div>
+                            <div class="container_form_input">
+                                <label for="last-name">Last name</label>
+                                <input class="names_input" id="last-name"  type="text" placeholder="Enter your last name">
+                            </div>
                         </div>
                         <div class="container_form_input">
-                            <label for="Email">Email</label>
-                            <input id="email" type="text" placeholder="Text your email">
+                            <label for="email">Email</label>
+                            <input id="email" type="text" placeholder="Enter your email">
                         </div>
                         <div class="container_form_input">
-                            <label for="Title">Title</label>
+                            <label for="title">Title</label>
                             <input id="title"  type="text" placeholder="Title">
                         </div>
                         <div class="container_form_input">
-                            <label for="Messege">Messege</label>
-                            <textarea id="messege" class="email" type="text" placeholder="Messege"></textarea>
-                            <button class="btn" >Send</button>
-
-                            <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
-
+                            <label for="message">Message</label>
+                            <textarea id="message" class="email" type="text" placeholder="Message"></textarea>
                         </div>
+                        <button class="btn" >Send</button>
                             
             </form>
            </div>
@@ -117,13 +121,13 @@
     </section>
 
     <footer>
-        <h3>CONTACT ME</h3>
-                <div class="social">
-            <a href=""><img class="icon"  src="Images/icons/facebook.svg" alt=""></a>
-            <a href=""><img class="icon" src="Images/icons/mdi_github.svg" alt=""></a>
-            <a href=""><img class="icon" src="Images/icons/instagram.svg" alt=""></a>
-            <a href=""><img class="icon" src="Images/icons/telegram.svg" alt=""></a>
-            <a href=""><img class="icon" src="Images/icons/linkedin.svg" alt=""></a>
+        <h3>CONTACT</h3>
+        <div class="social">
+            <a target="_blank" href=""><i class="fa-brands fa-facebook icon"></i></a>
+            <a target="_blank" href="https://github.com/mokhammad-kodehode?tab=repositories"><i class="fa-brands fa-github icon"></i></a>
+            <a target="_blank" href=""><i class="fa-brands fa-instagram icon"></i></a>
+            <a target="_blank" href="https://t.me/stechkinshop"><i class="fa-brands fa-telegram icon"></i></a>
+            <a target="_blank" href=""><i class="fa-brands fa-linkedin icon"></i></a>
         </div>
     </footer>
     
