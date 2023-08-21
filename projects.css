@@ -523,10 +523,15 @@ li:hover .items_line_two{
 }
 
 .project-card.expanded[data-tooltip]:hover::before {
-  content: "Click to close";
+  content: "X";
+  margin-left: 600px;
   opacity: 1;
   visibility: visible;
-  top: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .project-card.expanded p {
@@ -670,16 +675,17 @@ iframe {
 
 .btn-close {
   border: none;
-  top: 3px;
-  right: 20px;
+  top: 10px;
+  right: 30px;
   display: block;
   color: white;
-  font-size: 22px;
+  text-align: center;
+  font-size: 18px;
   position: absolute;
   width: 30px;
   height: 30px;
-  border-radius: 30px;
-  background-color: rgba(8, 7, 7, 0.5);
+  border-radius: 50%;
+  background-color: rgba(32, 28, 28, 0.8);
   cursor: pointer;
   z-index: 2;
 }
@@ -984,9 +990,6 @@ footer {
 }
 
 
-  .container h1 {
-    display: block;
-  }
 
   .project-card {
     position: relative;

@@ -305,7 +305,7 @@ const createProjectCard = (project) => {
   visit.appendChild(visitIcon);
 
   const gitLink = createLink(
-    "", // Пустой текст, чтобы не добавлять текстовое содержимое
+    "",
     project.gitLink,
     "_blank",
     "Link to GitHub page"

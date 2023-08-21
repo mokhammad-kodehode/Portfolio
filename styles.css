@@ -545,7 +545,6 @@ wave animation
 
 .icon:hover {
   color: var(--secondary-text-color);
-  font-size: 58px;
 }
 
 @media (max-width: 844px) {

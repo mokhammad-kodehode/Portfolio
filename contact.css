@@ -286,7 +286,7 @@ flex-direction: column;
 justify-content: start;
 align-items: start;
 gap: 10px;
-padding:  20px;
+padding:  25px 50px;
 width: 100%;
 border-radius: 10px;
 background-color: var(--secondary-bg-color);
@@ -500,7 +500,6 @@ h3 {
 
 .icon:hover {
   color: var(--secondary-text-color);
-  font-size: 58px;
 }
 
 @media (max-width: 844px) {
@@ -513,6 +512,15 @@ h3 {
     height: 24px;
     margin-right: 2rem;
   }
+
+  .names {
+    display: flex;
+    gap: 5px;
+  }
+
+.names_input{
+  width: 172px;
+}
   
   body {
 
@@ -521,6 +529,7 @@ h3 {
 
   h1 {
     font-size: 32px;
+    display: none;
   }
 
   .menu-btn {
@@ -623,10 +632,10 @@ h3 {
 form {
   display: flex;
 flex-direction: column;
-justify-content: start;
-align-items: center;
-gap: 10px;
-padding:  20px;
+justify-content: center;
+align-items: start;
+gap: 8px;
+padding:  25px 10px;
 width: 100%;
 border-radius: 10px;
 background-color: none;
@@ -638,7 +647,7 @@ box-shadow: none;
 .container_form_input {
   display: flex;
   align-items: start;
-  gap: 10px;
+  gap: 5px;
   flex-direction: column;
   justify-content: start;
 }
@@ -668,7 +677,7 @@ border-radius: 10px;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  padding: 5px 0;
+  padding: 0 0;
 }
 
 
@@ -676,10 +685,10 @@ border-radius: 10px;
 .container_title {
   display: flex;
   flex-direction: column;
-  justify-content: c;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
-  padding-left: 5px;
+  padding-left: 0px;
   animation: section-animation linear 1s;
   }
 

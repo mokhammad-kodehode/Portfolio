@@ -1,0 +1,75 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-bg-color);
+    font-family: 'Quicksand', sans-serif;
+    z-index: -1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* Scale canvas with resize attribute to full size */
+
+
+/* A minimal css reset -
+Resets margins and paddings
+*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --primary-bg-color:linear-gradient(to right, #555272, #524e71, #4e4a70, #4b476f, #47436e, #45416a, #423e66, #403c62, #3e3b5b, #3b3954, #39384d, #373646);
+    --secondary-bg-color: rgba(130, 123, 189, 0.8);
+    --textcolor: #FEC342;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #FEC342;
+  }
+
+ .light-theme {
+  --primary-bg-color:  #7468d8;
+  --primary-text-color: rgb(255, 255, 255);
+  --secondary-text-color: #FEC342;
+ }
+
+.container_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #ffffff;
+    width: 600px;
+    border: 1px solid white;
+    padding: 50px;
+    margin-bottom: 200px;
+    gap: 20px;
+    }
+
+    .container{
+        overflow: hidden;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+     a {
+        font-style: none;
+        color: var(--secondary-text-color);
+     }
+
+     p {
+        font-size: 22px;
+     }
+
+     h1 {
+        color: #FEC342;
+        font-size: 42px;
+     }
+   
