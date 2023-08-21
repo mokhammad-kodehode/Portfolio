@@ -129,6 +129,31 @@ body {
   transform: rotate(55deg);
 }
 
+li.active .items_line_one{
+  border-radius: 20px;
+  width: 130px;
+  height: 35px;
+  position: absolute;
+  left: -64px;
+  top: 60px;
+  transition:ease-in-out 0.3s;
+  background-color:  rgba(150, 143, 216, 0.5);
+  transform:rotate(55deg) translate(-50px,-50px);
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.8);
+}
+
+li.active .items_line_two{
+  border-radius: 20px;
+  width: 130px;
+  height: 35px;
+  position: absolute;
+  transition: ease-in-out  0.3s;
+  background-color: rgba(183, 36, 92, 0.8);
+  transform:rotate(55deg) translate(50px,50px);
+  bottom: 80px;
+  left: -8px;
+}
+
 li:hover .items_line_one {
   transform:rotate(55deg) translate(-50px,-50px);
   left: -64px;

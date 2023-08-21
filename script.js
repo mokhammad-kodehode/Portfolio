@@ -1,6 +1,20 @@
 const body = document.body;
 const themeSwitcher = document.getElementById("theme-switch-checkbox");
 const projectCards = Array.from(document.querySelectorAll(".project-card"));
+const navbarItems = document.querySelectorAll(".navbar_item");
+const activateItem = document.getElementById("active_one");
+
+navbarItems.forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    if (item !== activateItem) {
+      activateItem.classList.remove("active");
+    }
+  });
+
+  item.addEventListener("mouseleave", () => {
+    activateItem.classList.add("active");
+  });
+});
 
 themeSwitcher.addEventListener("change", () => {
   body.classList.toggle("light-theme", themeSwitcher.checked);

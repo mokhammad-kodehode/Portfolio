@@ -1,3 +1,5 @@
+// Define the projects using an array of objects
+
 const projects = [
   {
     title: "Planet project",
@@ -18,9 +20,10 @@ const projects = [
     description:
       "The Password Generator is a project I developed to showcase my programming skills and provide a practical utility for generating strong and secure passwords. This project demonstrates my proficiency in web development, specifically using HTML, CSS, and JavaScript.",
     imageSrc: "Images/pass.jpg",
-    iframeSrc: "https://mokhammad-kodehode.github.io/password-generator/",
-    gitLink: "https://github.com/mokhammad-kodehode/Age-calculator.git",
-    pageSrc: "https://mokhammad-kodehode.github.io/password-generator/",
+    iframeSrc: "https://mokhammad-kodehode.github.io/Password-generator-main/",
+    gitLink:
+      "https://github.com/mokhammad-kodehode/Password-generator-main.git",
+    pageSrc: "https://mokhammad-kodehode.github.io/Password-generator-main/",
   },
 
   {
@@ -39,9 +42,11 @@ const projects = [
     description:
       "The Age Calculator is a powerful and user-friendly tool designed to effortlessly calculate your age based on your birthdate. Whether you're curious about your current age or need to determine the age of someone else, this handy calculator provides accurate results within seconds.",
     imageSrc: "Images/Age.jpg",
-    iframeSrc: "https://mokhammad-kodehode.github.io/Age-calculator/",
+    iframeSrc:
+      "https://mokhammad-kodehode.github.io/Age-calculator-main/Age-calculator-main/",
     gitLink: "",
-    pageSrc: "https://mokhammad-kodehode.github.io/Age-calculator/",
+    pageSrc:
+      "https://mokhammad-kodehode.github.io/Age-calculator-main/Age-calculator-main/",
   },
   {
     title: "Calculator",
@@ -129,6 +134,8 @@ const projectsTwo = [
   },
 ];
 
+// Get references to various DOM elements
+
 const body = document.body;
 const themeSwitcher = document.getElementById("theme-switch-checkbox");
 const projectsOne = document.querySelector(".projects");
@@ -139,6 +146,24 @@ const projectsBtnOneResp = document.getElementById("show_one_resp");
 const projectsBtnTwoResp = document.getElementById("show_two_resp");
 const right = document.querySelector(".right_arrow");
 const left = document.querySelector(".left_arrow");
+const navbarItems = document.querySelectorAll(".navbar_item");
+const activateItem = document.getElementById("active_one");
+
+// Handle mouseenter and mouseleave events for navbar items
+
+navbarItems.forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    if (item !== activateItem) {
+      activateItem.classList.remove("active");
+    }
+  });
+
+  item.addEventListener("mouseleave", () => {
+    activateItem.classList.add("active");
+  });
+});
+
+// Handle clicking the right arrow to switch to projectsTwo
 
 right.addEventListener("click", () => {
   projectsOne.style.display = "none";
@@ -148,6 +173,8 @@ right.addEventListener("click", () => {
   projectsBtnTwo.classList.add("active");
   projectsBtnOne.classList.remove("active");
 });
+
+// Handle clicking the left arrow to switch back to projectsOne
 
 left.addEventListener("click", () => {
   projectsOne.style.display = "grid";
@@ -161,6 +188,8 @@ left.addEventListener("click", () => {
 projectsBtnOneResp.classList.add("active");
 projectsBtnOne.classList.add("active");
 
+// Handle clicking the "Show Projects One" button
+
 projectsBtnOne.addEventListener("click", () => {
   left.style.display = "none";
   right.style.display = "block";
@@ -169,6 +198,8 @@ projectsBtnOne.addEventListener("click", () => {
   projectsBtnOne.classList.add("active");
   projectsBtnTwo.classList.remove("active");
 });
+
+// Handle clicking the "Show Projects Two" button
 
 projectsBtnTwo.addEventListener("click", () => {
   left.style.display = "block";
@@ -179,12 +210,16 @@ projectsBtnTwo.addEventListener("click", () => {
   projectsBtnOne.classList.remove("active");
 });
 
+// Handle clicking the "Show Projects One respositive" button
+
 projectsBtnOneResp.addEventListener("click", () => {
   projectsOne.style.display = "flex";
   projectsTwoContainer.style.display = "none";
   projectsBtnOneResp.classList.add("active");
   projectsBtnTwoResp.classList.remove("active");
 });
+
+// Handle clicking the "Show Projects One respositive" button
 
 projectsBtnTwoResp.addEventListener("click", () => {
   projectsTwoContainer.style.display = "flex";
@@ -193,11 +228,29 @@ projectsBtnTwoResp.addEventListener("click", () => {
   projectsBtnOneResp.classList.remove("active");
 });
 
-let button; // Объявляем переменную button
-let btnClose;
-let isIframeExpanded = false;
+// fuction to create a link
 
-// fuction for create project ca
+const createLink = (text, href, target, title) => {
+  const link = document.createElement("a");
+  link.textContent = text;
+  link.href = href;
+  link.target = target;
+  if (title) {
+    link.title = title;
+  }
+  return link;
+};
+
+// fuction to create a image
+
+const createImage = (src, alt) => {
+  const image = document.createElement("img");
+  image.src = src;
+  image.alt = alt;
+  return image;
+};
+
+// fuction to create a project card
 
 const createProjectCard = (project) => {
   const projectCard = document.createElement("div");
@@ -206,6 +259,10 @@ const createProjectCard = (project) => {
     "data-tooltip",
     "Click on a project for more information"
   );
+
+  let button;
+  let btnClose;
+  let isIframeExpanded = false;
 
   const projectImage = document.createElement("img");
   projectImage.className = "project-img";
@@ -238,11 +295,8 @@ const createProjectCard = (project) => {
   links.className = "links";
   footer.appendChild(links);
 
-  const visit = document.createElement("a");
+  const visit = createLink("Visit page", project.pageSrc, "_blank");
   visit.className = "visit";
-  visit.textContent = "Visit page";
-  visit.href = project.pageSrc;
-  visit.target = "_blank";
   links.appendChild(visit);
 
   const visitIcon = document.createElement("i");
@@ -250,16 +304,17 @@ const createProjectCard = (project) => {
   visit.appendChild(document.createTextNode(" "));
   visit.appendChild(visitIcon);
 
-  const gitLink = document.createElement("a");
+  const gitLink = createLink(
+    "", // Пустой текст, чтобы не добавлять текстовое содержимое
+    project.gitLink,
+    "_blank",
+    "Link to GitHub page"
+  );
   gitLink.className = "footer_link";
-  gitLink.href = project.gitLink;
-  gitLink.target = "_blank";
   links.appendChild(gitLink);
 
-  const gitImage = document.createElement("img");
-  gitImage.src = "Images/icons/Gitlink.svg";
-  gitImage.alt = "GitHub Link";
-  gitLink.title = "Link to GitHub page";
+  const gitImage = createImage("Images/icons/Gitlink.svg", "GitHub Link");
+
   gitLink.appendChild(gitImage);
 
   const languagess = document.createElement("li");
@@ -347,7 +402,8 @@ const createProjectCard = (project) => {
   return projectCard;
 };
 
-// Function for adding project card to container
+// Function to add project cards to a container
+
 const addProjectsToContainer = (projects, container) => {
   projects.forEach((project) => {
     const projectElement = createProjectCard(project);
@@ -358,6 +414,8 @@ const addProjectsToContainer = (projects, container) => {
 addProjectsToContainer(projects, projectsOne);
 addProjectsToContainer(projectsTwo, projectsTwoContainer);
 
+// Handle theme switcher change event
+
 themeSwitcher.addEventListener("change", () => {
   body.classList.toggle("light-theme", themeSwitcher.checked);
 
@@ -365,11 +423,15 @@ themeSwitcher.addEventListener("change", () => {
   localStorage.setItem("theme", isLightTheme ? "light" : "default");
 });
 
+// Load saved theme preference from localStorage
+
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "light") {
   body.classList.add("light-theme");
   themeSwitcher.checked = true;
 }
+
+// Function to toggle the navigation menu
 
 function toggleNav() {
   const navLinks = document.getElementById("navLinks");

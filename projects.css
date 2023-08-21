@@ -125,6 +125,31 @@ body {
   transform: rotate(55deg);
 }
 
+li.active .items_line_one{
+  border-radius: 20px;
+  width: 130px;
+  height: 35px;
+  position: absolute;
+  left: -64px;
+  top: 60px;
+  transition:ease-in-out 0.3s;
+  background-color:  rgba(150, 143, 216, 0.5);
+  transform:rotate(55deg) translate(-50px,-50px);
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.8);
+}
+
+li.active .items_line_two{
+  border-radius: 20px;
+  width: 130px;
+  height: 35px;
+  position: absolute;
+  transition: ease-in-out  0.3s;
+  background-color: rgba(183, 36, 92, 0.8);
+  transform:rotate(55deg) translate(50px,50px);
+  bottom: 80px;
+  left: -8px;
+}
+
 li:hover .items_line_one {
   transform:rotate(55deg) translate(-50px,-50px);
   left: -64px;
@@ -323,14 +348,14 @@ li:hover .items_line_two{
     overflow: auto;
     grid-template-columns: auto auto auto ;
     position: relative;
-    border-radius: 20px;
     background-color: var(--secondary-bg-color);
     animation: projects-one-animation linear 0.5s;
     padding: 10px;
     gap: 0.6rem;
     box-shadow: 0px 0px 10px 1px #000000;
     height: 80vh;
-    width: 90%;
+    width: 85%;
+    border-radius: 5px;
   }
 
   .projects-two {
@@ -345,7 +370,8 @@ li:hover .items_line_two{
     gap: 0.6rem;
     box-shadow: 0px 0px 10px 1px #000000;
     height: 80vh;
-    width: 90%;
+    width: 85%;
+    border-radius: 5px;
   }
 
   @keyframes projects-one-animation {
@@ -392,14 +418,15 @@ li:hover .items_line_two{
     display: flex;
     font-family: 'Quicksand', sans-serif;
     width: 100%;
-    height: 37vh;
     flex-direction: column;
     justify-content: center;
-    border-radius: 20px;
     background-color: rgba(41, 41, 57);
     cursor: pointer;
-    
+    border-radius: 5px;
   }
+
+  
+
 
   .project-card[data-tooltip]::before {
     content: attr(data-tooltip);
@@ -527,6 +554,7 @@ display: block;
 .project-card.expanded .project-img {
   width: 100%;
   height: 100%;
+  
 }
 
 .project-card.expanded .project-desc{
@@ -918,7 +946,7 @@ footer {
     position: relative;
     width: 100%;
     border-radius: none;
-    background-color: rgba(150, 143, 216, 0.5);;
+    background-color: transparent;
     gap: 1rem;
     box-shadow: none;
   }
@@ -933,7 +961,7 @@ footer {
     position: relative;
     width: 100%;
     border-radius: none;
-    background-color: rgba(150, 143, 216, 0.5);;
+    background-color: transparent;
     gap: 1rem;
     box-shadow: none;
   }
@@ -969,7 +997,7 @@ footer {
     height: 250px;
     flex-direction: column;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: rgba(41, 41, 57, 0.9);
     backdrop-filter: blur(5px);
     cursor: pointer;

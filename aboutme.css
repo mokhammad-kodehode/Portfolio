@@ -152,6 +152,34 @@ body {
     left: -61px;
     top: 60px;
   }
+
+  li.active .items_line_one{
+    border-radius: 20px;
+    width: 130px;
+    height: 35px;
+    position: absolute;
+    left: -61px;
+    top: 60px;
+    transition:ease-in-out 0.6s;
+    background-color:  rgba(150, 143, 216, 0.5);
+    transform:rotate(55deg) translate(-50px,-50px);
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.8);
+    animation: 1s normal lineanim;
+  }
+  
+  li.active .items_line_two{
+    border-radius: 20px;
+    width: 130px;
+    height: 35px;
+    position: absolute;
+    transition: ease-in-out  0.6s;
+    background-color: rgba(183, 36, 92, 0.8);
+    transform:rotate(55deg) translate(50px,50px);
+    height: 40px;
+    bottom: 75px;
+    left: -0px;
+    animation: 1s normal lineanim_two;
+  }
   
 
   .theme-switch {
