@@ -75,6 +75,19 @@ window.onload = function () {
     "rgba(85, 80, 129, 0.5)",
   ];
 
+  const originalPathColors = [
+    "rgba(85, 80, 129, 1)",
+    "rgba(255, 255, 255, 0.5)",
+    "rgba(85, 80, 129, 0.5)",
+    "rgba(255, 255, 255, 1)",
+    "rgba(85, 80, 129, 0.5)",
+    "rgba(183, 36, 92, 0.5)",
+    "rgba(255, 255, 255, 0.5)",
+    "rgba(85, 80, 129, 0.5)",
+    "rgba(255, 255, 255, 0.5)",
+    "rgba(85, 80, 129, 0.5)",
+  ];
+
   const savedThemeColors = localStorage.getItem("themeColors");
   if (savedThemeColors) {
     const parsedColors = JSON.parse(savedThemeColors);
@@ -111,19 +124,6 @@ window.onload = function () {
     }
     path[i].smooth();
   }
-
-  const originalPathColors = [
-    "rgba(85, 80, 129, 1)",
-    "rgba(255, 255, 255, 0.5)",
-    "rgba(85, 80, 129, 0.5)",
-    "rgba(255, 255, 255, 1)",
-    "rgba(85, 80, 129, 0.5)",
-    "rgba(183, 36, 92, 0.5)",
-    "rgba(255, 255, 255, 0.5)",
-    "rgba(85, 80, 129, 0.5)",
-    "rgba(255, 255, 255, 0.5)",
-    "rgba(85, 80, 129, 0.5)",
-  ];
 
   function restoreOriginalColors() {
     for (let p = 0; p < path.length; p++) {
