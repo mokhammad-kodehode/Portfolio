@@ -24,35 +24,34 @@
                         <a class="nav_item" href="index.html" >Home</a> 
                         <div class="items_line_one"></div>
                         <div class="items_line_two"></div>
-                        <!-- <img src="Images/itemanimone.svg" class="oneline" alt=""> 
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                     </li>
                     <li class="fix navbar_item">
                         <a class="nav_item" href="about.html" >About me</a> 
                         <div class="items_line_one"></div>
                         <div class="items_line_two"></div>
-                        <!-- <img src="Images/itemanimone.svg" class="oneline" alt=""> 
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                     </li>
                     <li class="navbar_item">
                         <a class="nav_item" href="projects.html"> Projects</a> 
                         <div class="items_line_one"></div>
                         <div class="items_line_two"></div>
                     </li>
-                        <!-- <img src="Images/itemanimone.svg" class="oneline" alt="">
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                     <li class="navbar_item">
                         <a class="nav_item" href="contact.html">Contact</a>
                         <div class="items_line_one"></div>
                         <div class="items_line_two"></div>
-                        <!-- <img src="Images/itemanimone.svg" class="oneline" alt="">
-                        <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                     </li>
              </ul>
-             <div class="theme-switch">
-                <input type="checkbox" id="theme-switch-checkbox">
-                <label for="theme-switch-checkbox"></label>
-              </div>
+             <div class="theme">
+                <button id="play" class="play-button">
+                    <i class="fa-solid fa-circle-pause"></i>
+                    <span class="play_hover">Pause / Play animation</span>
+                </button>
+                <div class="theme-switch">
+                    <input type="checkbox" id="theme-switch-checkbox">
+                    <label for="theme-switch-checkbox"></label>
+                    <span  class="change_theme">Change theme</span>
+                  </div>
+             </div>
             </nav>
             <div class="navbar_dropdown" id="navLinks">
                 <ul class="navbar_items_dropdown" >
@@ -107,13 +106,20 @@
 </main>
 
 <footer>
-    <h3>PORTFOLIO</h3>
+    <div class="navi">PORTFOLIO</div>
     <div class="social">
-        <a target="_blank" href=""><i class="fa-brands fa-facebook icon"></i></a>
-        <a target="_blank" href="https://github.com/mokhammad-kodehode?tab=repositories"><i class="fa-brands fa-github icon"></i></a>
-        <a target="_blank" href=""><i class="fa-brands fa-instagram icon"></i></a>
-        <a target="_blank" href="https://t.me/stechkinshop"><i class="fa-brands fa-telegram icon"></i></a>
-        <a target="_blank" href=""><i class="fa-brands fa-linkedin icon"></i></a>
+        <!-- <a target="_blank" href=""><i class="fa-brands fa-facebook icon"></i></a> -->
+        <a aria-label="Mokhammad Kodehode Github" class="icon" target="_blank" href="https://github.com/mokhammad-kodehode?tab=repositories">
+            <i  class="fa-brands fa-github "></i>
+            <span class="icon_text">My GitHub</span>
+        </a>
+        <!-- <a target="_blank" href=""><i class="fa-brands fa-instagram icon"></i></a> -->
+        <a class="icon" target="_blank" href="https://t.me/stechkinshop">
+            <i data-hover-text="My Telegram" class="fa-brands fa-telegram "></i>
+            <span class="icon_text">My Telegram</span>
+        </a>
+
+        <!-- <a target="_blank" href=""><i class="fa-brands fa-linkedin icon"></i></a> -->
     </div>
 </footer>
 <canvas id="myCanvas">

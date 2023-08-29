@@ -25,34 +25,33 @@
                     <a href="index.html" >Home</a> 
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
-                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt=""> 
-                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                 </li>
                 <li  class="fix navbar_item active" id="active_one" >
                     <a  href="about.html" >About me</a> 
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
-                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt=""> 
-                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                 </li>
                 <li class="navbar_item">
                     <a href="projects.html"> Projects</a> 
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
-                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt="">
-                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                     <li class="navbar_item">
                     <a href="contact.html">Contact</a>
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
-                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt="">
-                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                 </li>
          </ul>
-         <div class="theme-switch">
-            <input type="checkbox" id="theme-switch-checkbox">
-            <label for="theme-switch-checkbox"></label>
-          </div>
+         <div class="theme">
+            <button id="play" class="play-button">
+                <i class="fa-solid fa-circle-pause"></i>
+                <span class="play_hover">Pause / Play animation</span>
+            </button>
+            <div class="theme-switch">
+                <input type="checkbox" id="theme-switch-checkbox">
+                <label for="theme-switch-checkbox"></label>
+                <span  class="change_theme">Change theme</span>
+              </div>
+         </div>
         </nav>
         <div class="navbar_dropdown" id="navLinks">
             <ul class="navbar_items_dropdown" >
@@ -85,27 +84,32 @@
          </div>
     </header>
 
+
     <section class="container">
-        <h1>About me</h1>
-        <!-- <img class="photo" src="Images/photo.svg" alt=""> -->
-        <div class="container_title">
-            <p>My name is Mohammad, I am a front-end developer. 
-                Since the beginning of 2023, I have started a Kodehode course focused on the 
-                front-end developer. In a short time, I was able to master everything that is
-                needed for front-end development and realized that I had found my calling.
-                I do not want to stop there and want to become a full-stack developer,
-                which I am currently working on.
-            </p>
-            <p>
-                I used to be an entrepreneur, I had several successful
-                businesses and projects in the service and entertainment sector. 
-                Thanks to this, I was able to gain experience in commerce and marketing.
-                Now I have a huge desire to combine all my skills and create something big.
-            </p>
-            <p>
-                About myself I can say that I am honest, responsible, motivated. I can be competitive at work
-                One of my future goals that I would like to achieve in my life is to get a pilot's license.
-            </p>
+        <div class="container_main">
+            <div class="photo">
+
+            </div>
+            <div class="container_title">
+                <h1>About me</h1>
+                <p>My name is Mohammad, I am a front-end developer. 
+                    Since the beginning of 2023, I have started a Kodehode course focused on the 
+                    front-end developer. In a short time, I was able to master everything that is
+                    needed for front-end development and realized that I had found my calling.
+                    I do not want to stop there and want to become a full-stack developer,
+                    which I am currently working on.
+                </p>
+                <p>
+                    I used to be an entrepreneur, I had several successful
+                    businesses and projects in the service and entertainment sector. 
+                    Thanks to this, I was able to gain experience in commerce and marketing.
+                    Now I have a huge desire to combine all my skills and create something big.
+                </p>
+                <p>
+                    About myself I can say that I am honest, responsible, motivated. I can be competitive at work
+                    One of my future goals that I would like to achieve in my life is to get a pilot's license.
+                </p>
+            </div>
         </div>
     </section>
     <canvas id="myCanvas" >
@@ -113,7 +117,7 @@
     </canvas>
     <footer>
 
-        <h3>ABOUT ME</h3>
+        <div class="navi">ABOUT ME</div>
         <div class="my_skills">
                 <a 
                     target="_blank" 
@@ -121,6 +125,7 @@
                     <i class="fa-brands fa-github icon"></i>
                 </a>
                 <i class="fa-brands fa-square-js icon"></i>
+                <i class="fa-brands fa-node icon"></i>
                 <i class="fa-brands fa-html5 icon"></i>
                 <i class="fa-brands fa-css3-alt icon"></i>
                 <a 
@@ -129,14 +134,8 @@
                     <i class="fa-brands fa-figma icon"></i>
                 </a>
                 <i title="react" class="fa-brands fa-react icon"></i>
+                <span class="icon_mongo">MongoDB</span>
         </div>
-        <!-- <div class="social">
-            <a href=""><img class="icon"  src="Images/icons/facebook.svg" alt=""></a>
-            <a href=""><img class="icon" src="Images/icons/mdi_github.svg" alt=""></a>
-            <a href=""><img class="icon" src="Images/icons/instagram.svg" alt=""></a>
-            <a href=""><img class="icon" src="Images/icons/telegram.svg" alt=""></a>
-            <a href=""><img class="icon" src="Images/icons/linkedin.svg" alt=""></a>
-        </div> -->
     </footer>
 </body>
 </html>

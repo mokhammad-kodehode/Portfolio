@@ -63,7 +63,7 @@ const projects = [
     languages: "HTML  CSS JavaScript",
     description:
       "The Weather App is a web application that allows users to fetch current weather data for a specific city. The app utilizes an open API to retrieve weather information. Users can enter the name of a city in the search field, and the app will display details such as the current temperature, weather conditions, wind speed, humidity,and other relevant data.",
-    imageSrc: "Images/Weather.jpg",
+    imageSrc: "Images/Weather.png",
     iframeSrc: "https://mokhammad-kodehode.github.io/Weather-forcast/",
     gitLink: "https://mokhammad-kodehode.github.io/calculator/",
     pageSrc: "https://mokhammad-kodehode.github.io/Weather-forcast/",
@@ -94,23 +94,24 @@ const projectsTwo = [
   },
 
   {
-    title: "Unit Converter",
-    languages: "HTML , CSS, JavaScript",
+    title: "Todo list",
+    languages: "HTML CSS JavaScript",
     description:
-      "The 'Unit Converter' project is a web application that allows users to convert between different units of measurement. It provides a simple and intuitive interface for converting values from one unit to another, making it convenient for various conversion needs.",
-    imageSrc: "Images/Unit.jpg",
-    iframeSrc: "https://mokhammad-kodehode.github.io/Unit-converter/",
-    pageSrc: "https://mokhammad-kodehode.github.io/Unit-converter/",
+      "This is a web application - a simple to-do list that allows users to manage their tasks and activities. This application provides a user-friendly interface for adding, editing, marking completion, and deleting tasks. It is developed using HTML, CSS, and JavaScript.",
+    imageSrc: "Images/shoping.png",
+    iframeSrc: "https://mokhammad-kodehode.github.io/shopingList/",
+    gitLink: "https://github.com/mokhammad-kodehode/shopingList.git",
+    pageSrc: "https://mokhammad-kodehode.github.io/shopingList/",
   },
   {
-    title: "Age calculator",
-    languages: "HTML , CSS, JavaScript",
+    title: "Todo list",
+    languages: "HTML CSS JavaScript",
     description:
-      "The Age Calculator is a powerful and user-friendly tool designed to effortlessly calculate your age based on your birthdate. Whether you're curious about your current age or need to determine the age of someone else, this handy calculator provides accurate results within seconds.",
-    imageSrc: "Images/Age.jpg",
-    iframeSrc: "https://mokhammad-kodehode.github.io/Age-calculator/",
-    gitLink: "",
-    pageSrc: "https://mokhammad-kodehode.github.io/Age-calculator/",
+      "This is a web application - a simple to-do list that allows users to manage their tasks and activities. This application provides a user-friendly interface for adding, editing, marking completion, and deleting tasks. It is developed using HTML, CSS, and JavaScript.",
+    imageSrc: "Images/shoping.png",
+    iframeSrc: "https://mokhammad-kodehode.github.io/shopingList/",
+    gitLink: "https://github.com/mokhammad-kodehode/shopingList.git",
+    pageSrc: "https://mokhammad-kodehode.github.io/shopingList/",
   },
   {
     title: "Calculator",
