@@ -84,6 +84,16 @@ const projectsTwo = [
   },
 
   {
+    title: "Drum Kit",
+    languages: "HTML CSS JavaScript",
+    description:
+      "The DRUMkit project is an interactive web application created using HTML, CSS, and JavaScript. It offers a virtual drum kit that allows users to play various drum sounds both by clicking corresponding buttons on the screen and using keyboard keys.",
+    imageSrc: "Images/Drum.png",
+    iframeSrc: "https://mokhammad-kodehode.github.io/DrumKitnew/",
+    gitLink: "https://github.com/mokhammad-kodehode/DrumKitnew.git",
+    pageSrc: "https://mokhammad-kodehode.github.io/DrumKitnew/",
+  },
+  {
     title: "Unit Converter",
     languages: ["HTML   CSS   JavaScript"],
     description:
@@ -91,27 +101,6 @@ const projectsTwo = [
     imageSrc: "Images/Unit.jpg",
     iframeSrc: "https://mokhammad-kodehode.github.io/Unit-converter/",
     pageSrc: "https://mokhammad-kodehode.github.io/Unit-converter/",
-  },
-
-  {
-    title: "Todo list",
-    languages: "HTML CSS JavaScript",
-    description:
-      "This is a web application - a simple to-do list that allows users to manage their tasks and activities. This application provides a user-friendly interface for adding, editing, marking completion, and deleting tasks. It is developed using HTML, CSS, and JavaScript.",
-    imageSrc: "Images/shoping.png",
-    iframeSrc: "https://mokhammad-kodehode.github.io/shopingList/",
-    gitLink: "https://github.com/mokhammad-kodehode/shopingList.git",
-    pageSrc: "https://mokhammad-kodehode.github.io/shopingList/",
-  },
-  {
-    title: "Todo list",
-    languages: "HTML CSS JavaScript",
-    description:
-      "This is a web application - a simple to-do list that allows users to manage their tasks and activities. This application provides a user-friendly interface for adding, editing, marking completion, and deleting tasks. It is developed using HTML, CSS, and JavaScript.",
-    imageSrc: "Images/shoping.png",
-    iframeSrc: "https://mokhammad-kodehode.github.io/shopingList/",
-    gitLink: "https://github.com/mokhammad-kodehode/shopingList.git",
-    pageSrc: "https://mokhammad-kodehode.github.io/shopingList/",
   },
   {
     title: "Calculator",

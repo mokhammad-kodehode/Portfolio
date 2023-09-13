@@ -40,20 +40,23 @@
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
                 </li>
-                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt="">
-                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                 <li class="navbar_item">
                     <a class="nav_item" href="contact.html">Contact</a>
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
-                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt="">
-                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                 </li>
          </ul>
-         <div class="theme-switch">
-            <input type="checkbox" id="theme-switch-checkbox">
-            <label for="theme-switch-checkbox"></label>
-          </div>
+         <div class="theme">
+            <button id="play" class="play-button">
+                <i class="fa-solid fa-circle-pause"></i>
+                <span class="play_hover">Pause / Play animation</span>
+            </button>
+            <div class="theme-switch">
+                <input type="checkbox" id="theme-switch-checkbox">
+                <label for="theme-switch-checkbox"></label>
+                <span  class="change_theme">Change theme</span>
+              </div>
+         </div>
         </nav>
         <div class="navbar_dropdown" id="navLinks">
             <ul class="navbar_items_dropdown" >
@@ -66,8 +69,6 @@
                         <img src="Images/icons/person.svg" >
                     </a> 
                     <p class="navbar_item_name">About me</p> 
-                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt=""> 
-                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
                 </li>
                 <li>
                     <a href="projects.html">
@@ -79,8 +80,7 @@
                         <img src="Images/icons/post.svg" >
                     </a>
                     <p class="navbar_item_name">Contact</p>
-                    <!-- <img src="Images/itemanimone.svg" class="oneline" alt="">
-                    <img class="twoline" src="Images/itemanimtwo.svg" alt=""> -->
+
                 </li>
          </ul>
          </div>
@@ -100,9 +100,8 @@
          </section>
          
          <footer>
-            <h3>PROJECTS</h3>
+            <div class="navi">PROJECTS</div> 
             <div class="projects_btn">
-                <!-- <h4>PROJECTS PAGE : </h4> -->
                 <button class="show_btn" id="show_one" >  </button>
                 <button class="show_btn" id="show_two" >  </button>
                 <button class="show_btn_resp" id="show_one_resp" >  </button>
