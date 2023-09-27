@@ -778,6 +778,7 @@ cursor: pointer;
 }  */
 
 #myCanvas {
+  display: none;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -997,6 +998,15 @@ color: var(--primary-text-color);
     border-radius: 20px;
     padding: 5px 0;
   }
+
+  .play-button {
+    display: none;
+  }
+
+  .navi {
+    display: none;
+  }
+
 
   .projects {
     display: flex;

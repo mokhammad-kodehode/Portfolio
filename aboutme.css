@@ -327,19 +327,31 @@ body {
     position: relative;
   align-items: center;
   gap: 5px;
-  padding-top: 20px;
+  padding: 40px 100px;
   }
 
   .photo{
-    width: 650px;
-    height: 450px;
-    background-color: #0a0b0c;
-  }
+    width: 390px;
+    height: 590px;
+    padding-top: 50px;
+    padding-bottom: 35px;
+   }
+  
+   .circle{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    overflow: hidden;
+    background-color: white;
+    border: 5px var(--primary-text-color) solid;
+   }
 
   .container_title {
   display: flex;
   flex-direction: column;
-  padding: 40px 10px;
   justify-content: center;
   align-items: center;
   color: #ffffff;
@@ -353,10 +365,12 @@ body {
 
   .container_main{
     display: flex;
-    justify-content: center;
+    width: 1200px;
+    gap: 3rem;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-bg-color);
-    padding: 30px 20px;
+    padding: 40px 50px;
     backdrop-filter: blur(1px);
     z-index: 2;
     border-radius: 5px;
@@ -533,6 +547,10 @@ font-weight: 600;
   height: 20px;
 }
 
+.play-button {
+ display: none;
+}
+
 .bar {
   width: 30px;
   height: 3px;
@@ -641,6 +659,31 @@ display: none;
   overflow: auto;
   }
 
+  .photo{
+    display: none;
+    width: 250px;
+    height: 150px;
+    background-color: #0a0b0c;
+  }
+
+  .navi {
+    display: none;
+  }
+
+  .container_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-bg-color);
+    padding: 30px 20px;
+    backdrop-filter: blur(1px);
+    z-index: 2;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px #000000;
+    animation: section-animation linear 1s;
+  }
+
   @keyframes section-animation {
     0% {
       opacity: 0;
@@ -675,6 +718,17 @@ display: none;
     font-size: 14px;
     z-index: 1;
     background-color: var(--secondary-bg-color);
+  }
+
+  .my_skills {
+    display: flex;
+    gap: 3rem;
+    position: relative;
+    align-items: center;
+    animation: socials 1s linear;
+    transition: .5s;
+    padding: 0;
+    
   }
 
   footer {
@@ -712,7 +766,7 @@ display: none;
  }
 
  .icon {
-  width: 35px;
+  width: 15px;
   transition: linear 0.3s;
   position: relative;
   animation: icons 0.9s linear;
