@@ -208,6 +208,7 @@ li:hover .items_line_two{
 }
 
   .play-button {
+    display: none;
     background-color: transparent;
     border: none;
     font-size: 21px;

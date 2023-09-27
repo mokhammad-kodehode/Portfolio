@@ -582,11 +582,7 @@ cursor: pointer;
   animation: icons 0.9s linear;
   text-align: center;
   z-index: 2;
-  
-  
 }
-
-
 
 
 .icon_text {
@@ -596,7 +592,7 @@ cursor: pointer;
   white-space: nowrap;
   top: -37px;
   left: -5px;
-  width: 100px;
+  width: 160px;
   border-radius: 5px;
   font-weight: 600;
   border: 2px solid var(--secondary-text-color);

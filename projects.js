@@ -72,25 +72,13 @@ const projects = [
 
 const projectsTwo = [
   {
-    title: "Car Market Place",
-    languages: "MERN STACK",
+    title: "Car rental Marketplace",
+    languages: "MERN-STACK",
     description:
-      "In this project, I have meticulously crafted a user interface design for a movie streaming platform. The focus of this design is to provide users with an engaging and intuitive experience while browsing and enjoying their favorite films and shows online. The design seamlessly blends aesthetics with functionality, ensuring an immersive journey through the world of entertainment.",
-    imageSrc: "Images/Kinoyoo.jpg",
+      "The MERN Stack Car Rental Marketplace is a dynamic web application designed to facilitate the seamless sharing of cars among users. This project showcases my proficiency in utilizing the MERN (MongoDB, Express.js, React, and Node.js) technology stack to create a user-friendly and efficient solution for car rental and sharing.",
+    imageSrc: "Images/car.jpg",
     iframeSrc: "#",
-    gitLink:
-      "https://www.figma.com/file/YAZ44hbU2ndRoZOUCZTz7I/Mohammad?type=design&node-id=25%3A2&mode=design&t=YOiVeGJq6Tfegdck-1",
-    pageSrc: "",
-  },
-  {
-    title: "KinoYoo",
-    languages: "Figma",
-    description:
-      "In this project, I have meticulously crafted a user interface design for a movie streaming platform. The focus of this design is to provide users with an engaging and intuitive experience while browsing and enjoying their favorite films and shows online. The design seamlessly blends aesthetics with functionality, ensuring an immersive journey through the world of entertainment.",
-    imageSrc: "Images/Kinoyoo.jpg",
-    iframeSrc: "#",
-    gitLink:
-      "https://www.figma.com/file/YAZ44hbU2ndRoZOUCZTz7I/Mohammad?type=design&node-id=25%3A2&mode=design&t=YOiVeGJq6Tfegdck-1",
+    gitLink: "https://github.com/mokhammad-kodehode/RentCarMarket.git",
     pageSrc: "",
   },
 
@@ -114,24 +102,25 @@ const projectsTwo = [
     pageSrc: "https://mokhammad-kodehode.github.io/Unit-converter/",
   },
   {
-    title: "Calculator",
-    languages: "React",
+    title: "KinoYoo",
+    languages: "Figma",
     description:
-      "The Calculator App is a web application that provides a simpleand user-friendly interface for performing basic arithmeticoperations. The app allows users to perform addition, subtraction, multiplication, division,and percentage calculations with ease.The project was built using React,a popular JavaScript library for building user interfaces.",
-    imageSrc: "Images/Age.jpg",
-    iframeSrc: "https://mokhammad-kodehode.github.io/calculator/",
-    gitLink: "https://github.com/mokhammad-kodehode/calculator.git",
-    pageSrc: "https://mokhammad-kodehode.github.io/calculator/",
+      "In this project, I have meticulously crafted a user interface design for a movie streaming platform. The focus of this design is to provide users with an engaging and intuitive experience while browsing and enjoying their favorite films and shows online. The design seamlessly blends aesthetics with functionality, ensuring an immersive journey through the world of entertainment.",
+    imageSrc: "Images/Kinoyoo.jpg",
+    iframeSrc: "#",
+    gitLink:
+      "https://www.figma.com/file/YAZ44hbU2ndRoZOUCZTz7I/Mohammad?type=design&node-id=25%3A2&mode=design&t=YOiVeGJq6Tfegdck-1",
+    pageSrc: "http://localhost:5173/",
   },
   {
-    title: "The Weather App",
-    languages: "HTML , CSS, JavaScript",
+    title: "Mars Rover",
+    languages: "HTML CSS JavaScript",
     description:
-      "The Weather App is a web application that allows users to fetch current weather data for a specific city. The app utilizes an open API to retrieve weather information. Users can enter the name of a city in the search field, and the app will display details such as the current temperature, weather conditions, wind speed, humidity,and other relevant data.",
-    imageSrc: "Images/Weather.jpg",
-    iframeSrc: "https://mokhammad-kodehode.github.io/Weather-forcast/",
-    gitLink: "https://mokhammad-kodehode.github.io/calculator/",
-    pageSrc: "https://mokhammad-kodehode.github.io/Weather-forcast/",
+      "The Mars Rover Exploration Viewer is an interactive web application that I developed, leveraging API (Application Programming Interface) integration to fetch and display real-time images captured by various Mars rovers. This project is a testament to my skills in web development and API utilization, offering users a visually engaging experience of exploring the Martian landscape through the eyes of rovers.",
+    imageSrc: "Images/Mars.png",
+    iframeSrc: "https://mokhammad-kodehode.github.io/marsrover/",
+    gitLink: "https://github.com/mokhammad-kodehode/marsrover.git",
+    pageSrc: "https://mokhammad-kodehode.github.io/marsrover/",
   },
 ];
 
