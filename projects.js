@@ -2,6 +2,16 @@
 
 const projects = [
   {
+    title: "Car rental Marketplace",
+    languages: "MERN-STACK",
+    description:
+      "The MERN Stack Car Rental Marketplace is a dynamic web application designed to facilitate the seamless sharing of cars among users. This project showcases my proficiency in utilizing the MERN (MongoDB, Express.js, React, and Node.js) technology stack to create a user-friendly and efficient solution for car rental and sharing.",
+    imageSrc: "Images/car.jpg",
+    iframeSrc: "#",
+    gitLink: "https://github.com/mokhammad-kodehode/RentCarMarket.git",
+    pageSrc: "",
+  },
+  {
     title: "Planet project",
     languages: "HTML  CSS",
     description:
@@ -49,16 +59,6 @@ const projects = [
       "https://mokhammad-kodehode.github.io/Age-calculator-main/Age-calculator-main/",
   },
   {
-    title: "Calculator",
-    languages: "React",
-    description:
-      "The Calculator App is a web application that provides a simpleand user-friendly interface for performing basic arithmeticoperations. The app allows users to perform addition, subtraction, multiplication, division,and percentage calculations with ease.The project was built using React,a popular JavaScript library for building user interfaces.",
-    imageSrc: "Images/Calculator.jpg",
-    iframeSrc: "https://mokhammad-kodehode.github.io/calculator/",
-    gitLink: "https://github.com/mokhammad-kodehode/calculator.git",
-    pageSrc: "https://mokhammad-kodehode.github.io/calculator/",
-  },
-  {
     title: "The Weather App",
     languages: "HTML  CSS JavaScript",
     description:
@@ -72,14 +72,14 @@ const projects = [
 
 const projectsTwo = [
   {
-    title: "Car rental Marketplace",
-    languages: "MERN-STACK",
+    title: "Calculator",
+    languages: "React",
     description:
-      "The MERN Stack Car Rental Marketplace is a dynamic web application designed to facilitate the seamless sharing of cars among users. This project showcases my proficiency in utilizing the MERN (MongoDB, Express.js, React, and Node.js) technology stack to create a user-friendly and efficient solution for car rental and sharing.",
-    imageSrc: "Images/car.jpg",
-    iframeSrc: "#",
-    gitLink: "https://github.com/mokhammad-kodehode/RentCarMarket.git",
-    pageSrc: "",
+      "The Calculator App is a web application that provides a simpleand user-friendly interface for performing basic arithmeticoperations. The app allows users to perform addition, subtraction, multiplication, division,and percentage calculations with ease.The project was built using React,a popular JavaScript library for building user interfaces.",
+    imageSrc: "Images/Calculator.jpg",
+    iframeSrc: "https://mokhammad-kodehode.github.io/calculator/",
+    gitLink: "https://github.com/mokhammad-kodehode/calculator.git",
+    pageSrc: "https://mokhammad-kodehode.github.io/calculator/",
   },
 
   {
@@ -300,15 +300,17 @@ const createProjectCard = (project) => {
     "_blank",
     "Link to GitHub page"
   );
-  gitLink.className = "footer_link";
+  gitLink.className = "icon";
+
+  const gitIcon = document.createElement("i");
+  gitIcon.className = "fa-brands fa-github";
+  gitLink.appendChild(gitIcon);
+
   links.appendChild(gitLink);
-
-  const gitImage = createImage("Images/icons/Gitlink.svg", "GitHub Link");
-
-  gitLink.appendChild(gitImage);
 
   const languagess = document.createElement("li");
   languagess.textContent = project.languages;
+  languagess.className = "lang";
   languagesContainer.appendChild(languagess);
 
   const iframeContainer = document.createElement("div");

@@ -437,7 +437,7 @@ li:hover .items_line_two{
     grid-template-columns: auto auto auto ;
     position: relative;
     background-color: var(--secondary-bg-color);
-    animation: projects-one-animation linear 0.5s;
+    animation: projects-one-animation linear 1s;
     padding: 10px;
     gap: 0.6rem;
     box-shadow: 0px 0px 10px 1px #000000;
@@ -465,12 +465,10 @@ li:hover .items_line_two{
   @keyframes projects-one-animation {
     0% {
       opacity: 0;
-      transform: translate(-180px);
     }
   
     100% {
       opacity: 1;
-      transform: translate(0deg);
     
     }
   }
@@ -480,12 +478,10 @@ li:hover .items_line_two{
   @keyframes projects-two-animation {
     0% {
       opacity: 0;
-      transform: translate(180px);
     }
   
     100% {
       opacity: 1;
-      transform: translate(0deg);
     
     }
   }
@@ -544,12 +540,13 @@ li:hover .items_line_two{
 
 
 
-
   .icon {
-    width: 20px;
+    color:var(--primary-text-color);
+    font-size: 44px;
     transition: linear 0.3s;
+    text-align: center;
+    z-index: 2;
   }
-
 
 
   .project-title{
@@ -614,6 +611,20 @@ display: block;
 .project-card.expanded .visit {
   display: block;
   font-family: "Roboto",sans-serif;
+}
+
+.icon {
+  display: none;
+}
+
+.project-card.expanded .icon {
+  display: block;
+  font-family: "Roboto",sans-serif;
+}
+
+.lang {
+  color: var(--primary-text-color);
+  font-weight: 700;
 }
 
 .project-card.expanded ul {
