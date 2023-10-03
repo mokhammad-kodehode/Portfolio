@@ -116,11 +116,7 @@ body {
     position: relative;
   }
 
-  .navbar_items {
-    display: flex;
-    gap: 3rem;
-    margin-right: 5rem;
-  }
+
 
 .items_line_one {
   border-radius: 20px;
