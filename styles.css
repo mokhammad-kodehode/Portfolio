@@ -233,7 +233,7 @@ Resets margins and paddings
   .navbar_items {
     display: flex;
     gap: 3rem;
-    margin-right: 10rem;
+    margin-right: 5rem;
   }
 
 
@@ -469,6 +469,27 @@ cursor: pointer;
   font-weight: 500;
  }
 
+ 
+ .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+ }
+
+ .CV {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-text-color); 
+  font-weight: 900;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 28px;
+ }
+
+
+
 
 
  /* .image {
@@ -590,9 +611,9 @@ cursor: pointer;
   opacity: .8;
   position: absolute;
   white-space: nowrap;
-  top: -37px;
-  left: -5px;
-  width: 160px;
+  bottom:63px; 
+  left: -30px;
+  width: 90px;
   border-radius: 5px;
   font-weight: 600;
   border: 2px solid var(--secondary-text-color);
@@ -804,6 +825,7 @@ cursor: pointer;
   
  }
 
+
  .btn {
   display: flex;
   flex-direction: row;
@@ -820,6 +842,7 @@ cursor: pointer;
   font-size: 14px;
   cursor: pointer;
  }
+
 
 
  .social {
