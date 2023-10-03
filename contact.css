@@ -567,7 +567,7 @@ color: var(--primary-text-color);
     background-color: rgba(85, 80, 129, 0.5);
     /* background-image: linear-gradient(to right, #706d8a, #716c95, #676294, #5c5887, #68629d, #635e95, #52507f, #504c7b, #4c496f, #5f5b89, #585778, #373646); */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 50px;
     position: relative;
