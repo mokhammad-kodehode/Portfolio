@@ -126,11 +126,24 @@ Resets margins and paddings
   
   }
 
+  .navbar_items {
+    display: flex;
+    gap: 3rem;
+    margin-right: 10rem;
+  }
+
 .theme {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: .5rem;
+  width: 65px;
+}
+
+.theme-switch {
+  position: relative;
+  width: 48px;
+  height: 24px;
 }
 
   .play-button {
@@ -167,11 +180,6 @@ Resets margins and paddings
 
 
   
-.theme-switch {
-  position: relative;
-  width: 48px;
-  height: 24px;
-}
 
 .change_theme {
   display: none;
@@ -230,11 +238,7 @@ Resets margins and paddings
   transform: translateX(24px);
 }
 
-  .navbar_items {
-    display: flex;
-    gap: 3rem;
-    margin-right: 5rem;
-  }
+
 
 
 
@@ -577,30 +581,16 @@ cursor: pointer;
   gap: 1rem;
   position: relative;
   align-items: center;
-  animation: socials 1s linear;
-  transition: .5s;
   display: inline-flex;
   position: relative;
 }
 
-@keyframes socials {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
 
 
 .icon {
   color:var(--primary-text-color);
   font-size: 44px;
   transition: linear 0.3s;
-  animation: icons 0.9s linear;
   text-align: center;
   z-index: 2;
 }
@@ -872,8 +862,6 @@ cursor: pointer;
   gap: 2rem;
   position: relative;
   align-items: center;
-  animation: socials 1s linear;
-  transition: .5s;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -882,9 +870,7 @@ cursor: pointer;
 
 .icon {
   width: 35px;
-  transition: linear 0.3s;
   position: relative;
-  animation: icons 0.9s linear;
 }
 
 .navi {

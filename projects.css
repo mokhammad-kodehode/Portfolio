@@ -75,7 +75,6 @@ body {
 
 .navbar {
   background-color: var(--secondary-bg-color);
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,7 +119,7 @@ body {
   .navbar_items {
     display: flex;
     gap: 3rem;
-    margin-right: 10rem;
+    margin-right: 5rem;
   }
 
 .items_line_one {
@@ -205,6 +204,7 @@ li:hover .items_line_two{
   justify-content: center;
   align-items: center;
   gap: .5rem;
+  width: 65px;
 }
 
   .play-button {

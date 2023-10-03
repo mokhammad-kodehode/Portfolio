@@ -86,6 +86,9 @@ body {
     padding: 0 20px;
   }
 
+  a {
+    text-decoration: none;
+  }
 
   .navbar_logo {
     color: var(--primary-text-color);
@@ -100,9 +103,9 @@ body {
   ul {
     list-style-type: none;
   }
-  li a {
-    position: relative;
-    text-decoration: none;
+
+
+  .nav_item {
     position: relative;
     text-decoration: none;
     color: var(--primary-text-color);
@@ -113,9 +116,8 @@ body {
     text-shadow: var(--text-shadow);
     font-weight: var(--bolt);
     white-space: nowrap;
+
   }
-
-
 
   li  {
     text-align: center;
@@ -239,18 +241,19 @@ body {
   display: block;
 }
   
-  .theme {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-  }
+.theme {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: .5rem;
+  width: 65px;
+}
+
 
   .theme-switch {
     position: relative;
     width: 48px;
     height: 24px;
-    margin-right: 2rem;
   }
 
     
@@ -432,6 +435,64 @@ body {
     color: var(--primary-text-color);
   }
 
+  .CV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-text-color); 
+    font-weight: 900;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 28px;
+   }
+
+  .social {
+    gap: 1rem;
+    position: relative;
+    align-items: center;
+    animation: socials 1s linear;
+    transition: .5s;
+    display: inline-flex;
+    position: relative;
+  }
+
+  .icon {
+    color:var(--primary-text-color);
+    font-size: 44px;
+    transition: linear 0.3s;
+    animation: icons 0.9s linear;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  
+  .icon_text {
+    display: none;
+    opacity: .8;
+    position: absolute;
+    white-space: nowrap;
+    bottom:63px; 
+    left: -30px;
+    width: 90px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: 2px solid var(--secondary-text-color);
+    font-size: 14px;
+    background-color: white;
+    color: #000000;
+    padding: 5px;
+    z-index: 2;
+  }
+  
+  .icon:hover .icon_text {
+    display: block;
+  }
+  
+  
+  .icon:hover {
+    color: var(--secondary-text-color);
+  }
+
 .my_skills {
   display: flex;
   gap: 1rem;
@@ -442,48 +503,7 @@ body {
   
 }
 
-.icon_mongo {
-  color: rgb(0, 0, 0);
-  background-color: white;
-border-radius: 50px;
-font-weight: 600;
-  padding: 13px 1px;
-  font-size: 12px;
-  transition: .5s;
-}
 
-
-.icon_mongo:hover {
-  background-color: var(--secondary-text-color);
-}
-
-
-@keyframes socials {
-0% {
-  opacity: 0;
-  transform: scale(0);
-}
-
-100% {
-  opacity: 1;
-  transform: scale(1);
-}
-}
-
-
-.icon {
-  color:var(--primary-text-color);
-  font-size: 44px;
-  transition: linear 0.3s;
-  position: relative;
-  animation: icons 0.9s linear;
-  text-align: center;
-}
-
-
-.icon:hover {
-  color: var(--secondary-text-color);
-}
 
 #myCanvas {
   width: 100vw;
