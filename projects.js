@@ -300,7 +300,7 @@ const createProjectCard = (project) => {
     "_blank",
     "Link to GitHub page"
   );
-  gitLink.className = "icon";
+  gitLink.className = "icon-git";
 
   const gitIcon = document.createElement("i");
   gitIcon.className = "fa-brands fa-github";

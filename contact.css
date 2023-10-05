@@ -32,12 +32,16 @@ Resets margins and paddings
 }
 
 
+html,
 body {
     margin: 0;
-    font-family: 'Quicksand', sans-serif;
-    overflow: hidden;
+    padding: 0;
     background: var(--primary-bg-color);
-  }
+    font-family: 'Quicksand', sans-serif;
+    z-index: -1;
+    overflow: hidden;
+    transition: .5s;
+}
 
 
 
@@ -590,28 +594,27 @@ color: var(--primary-text-color);
     background-color: #fff;
   }
 
-  nav {
+  .navbar {
     background-color: rgba(85, 80, 129, 0.5);
-    /* background-image: linear-gradient(to right, #706d8a, #716c95, #676294, #5c5887, #68629d, #635e95, #52507f, #504c7b, #4c496f, #5f5b89, #585778, #373646); */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    padding: 0;
     height: 50px;
     position: relative;
     overflow: hidden;
     box-shadow: 0px 0px 11px 3px #000000;
+    padding: 0 10px;
   }
-
+  
   .navbar_logo {
-    padding-left:30px ;
     color: white;
     font-weight: 1000;
     font-size: 20px;
     text-shadow: -2px 2px 3px black;
-    left: 1rem;
     position: relative;
+    white-space: nowrap;
   }
-
 .navbar_dropdown {
   display: none;
   position: absolute;
@@ -702,7 +705,8 @@ gap: 10px;
 border: none;
 width: 350px;
 height: 35px;
-background: var(--primary-bg-color);
+color: var(--primary-text-color);
+background-color: var(--line_color);
 border-radius: 10px;
 }
 
@@ -723,6 +727,7 @@ border-radius: 10px;
   border-radius: 20px;
   padding: 0 0;
 }
+
 
 
  
@@ -788,25 +793,27 @@ border-radius: 10px;
  }
 
 
- /* .image {
-  background-image: url(Images/Ellipse\ 1.svg);
-  background-position: 50%;
-  background-size: 500px;
-  background-repeat: no-repeat;
-  height: 450px;
-  width: 500px;
-  
- } */
+
  footer {
   z-index: 1;
   background-color: rgba(150, 143, 216, 0.5);
-  /* background-image: linear-gradient(to right, #706d8a, #716c95, #676294, #5c5887,#716c95, #68629d, #635e95, #52507f, #504c7b, #4c496f, #5f5b89, #585778,#676294,#716c95, #706d8a); */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 70px;
   position: relative;
   box-shadow: 0px 0px 11px 3px #000000;
+  padding: 0;
+  padding: 0 20px;
+}
+
+.social {
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
 }
 
 .icon {
