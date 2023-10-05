@@ -101,17 +101,17 @@ const projectsTwo = [
     iframeSrc: "https://mokhammad-kodehode.github.io/Unit-converter/",
     pageSrc: "https://mokhammad-kodehode.github.io/Unit-converter/",
   },
-  {
-    title: "KinoYoo",
-    languages: "Figma",
-    description:
-      "In this project, I have meticulously crafted a user interface design for a movie streaming platform. The focus of this design is to provide users with an engaging and intuitive experience while browsing and enjoying their favorite films and shows online. The design seamlessly blends aesthetics with functionality, ensuring an immersive journey through the world of entertainment.",
-    imageSrc: "Images/Kinoyoo.jpg",
-    iframeSrc: "#",
-    gitLink:
-      "https://www.figma.com/file/YAZ44hbU2ndRoZOUCZTz7I/Mohammad?type=design&node-id=25%3A2&mode=design&t=YOiVeGJq6Tfegdck-1",
-    pageSrc: "http://localhost:5173/",
-  },
+  // {
+  //   title: "KinoYoo",
+  //   languages: "Figma",
+  //   description:
+  //     "In this project, I have meticulously crafted a user interface design for a movie streaming platform. The focus of this design is to provide users with an engaging and intuitive experience while browsing and enjoying their favorite films and shows online. The design seamlessly blends aesthetics with functionality, ensuring an immersive journey through the world of entertainment.",
+  //   imageSrc: "Images/Kinoyoo.jpg",
+  //   iframeSrc: "#",
+  //   gitLink:
+  //     "https://www.figma.com/file/YAZ44hbU2ndRoZOUCZTz7I/Mohammad?type=design&node-id=25%3A2&mode=design&t=YOiVeGJq6Tfegdck-1",
+  //   pageSrc: "http://localhost:5173/",
+  // },
   {
     title: "Mars Rover",
     languages: "HTML CSS JavaScript",
