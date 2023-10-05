@@ -346,6 +346,7 @@ li:hover .items_line_two{
     border-radius: 50%;
     overflow: hidden;
     border: 5px var(--secondary-text-color) solid;
+    z-index: 1;
    }
 
 
@@ -363,7 +364,7 @@ li:hover .items_line_two{
   @keyframes section-animation {
     0% {
       opacity: 0;
-      padding-right: 100px;
+      transform: translate(-250px);
     }
   
     100% {
