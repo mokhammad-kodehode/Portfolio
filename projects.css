@@ -615,6 +615,12 @@ display: block;
   font-family: "Roboto",sans-serif;
 }
 
+.project-card.expanded .icon-git {
+  display: block;
+  color: white;
+  font-size: 32px;
+}
+
 .lang {
   color: var(--primary-text-color);
   font-weight: 700;
