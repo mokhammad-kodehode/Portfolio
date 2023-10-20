@@ -12,6 +12,16 @@ const projects = [
     pageSrc: "https://github.com/mokhammad-kodehode/rentCarServer.git",
   },
   {
+    title: "ReNoise",
+    languages: "REACT TypeScript",
+    description:
+      "ReNoise is an interactive web application designed by me to provide users with the opportunity to immerse themselves in the soothing sounds of nature. The project is developed using modern web technologies and frameworks, ensuring a pleasant and intuitive user experience.",
+    imageSrc: "Images/reNoiseTwo.png",
+    iframeSrc: "https://mokhammad-kodehode.github.io/ReNoiseTwo/",
+    gitLink: "https://github.com/mokhammad-kodehode/ReNoiseTwo.git",
+    pageSrc: "https://mokhammad-kodehode.github.io/ReNoiseTwo/",
+  },
+  {
     title: "Planet project",
     languages: "HTML  CSS",
     description:
@@ -23,7 +33,6 @@ const projects = [
     pageSrc:
       "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/",
   },
-
   {
     title: "Password generator",
     languages: "HTML  CSS JavaScript",
@@ -34,17 +43,6 @@ const projects = [
     gitLink:
       "https://github.com/mokhammad-kodehode/Password-generator-main.git",
     pageSrc: "https://mokhammad-kodehode.github.io/Password-generator-main/",
-  },
-
-  {
-    title: "Relax Sounds",
-    languages: "HTML  CSS JavaScript",
-    description:
-      "ReNoise is an interactive web application designed by me to provide users with the opportunity to immerse themselves in the soothing sounds of nature. The project is developed using modern web technologies and frameworks, ensuring a pleasant and intuitive user experience.",
-    imageSrc: "Images/ReNoise.jpg",
-    iframeSrc: "https://mokhammad-kodehode.github.io/ReNoise/",
-    gitLink: "https://github.com/mokhammad-kodehode/ReNoise.git",
-    pageSrc: "https://mokhammad-kodehode.github.io/ReNoise/",
   },
   {
     title: "Age calculator",
@@ -101,17 +99,16 @@ const projectsTwo = [
     iframeSrc: "https://mokhammad-kodehode.github.io/Unit-converter/",
     pageSrc: "https://mokhammad-kodehode.github.io/Unit-converter/",
   },
-  // {
-  //   title: "KinoYoo",
-  //   languages: "Figma",
-  //   description:
-  //     "In this project, I have meticulously crafted a user interface design for a movie streaming platform. The focus of this design is to provide users with an engaging and intuitive experience while browsing and enjoying their favorite films and shows online. The design seamlessly blends aesthetics with functionality, ensuring an immersive journey through the world of entertainment.",
-  //   imageSrc: "Images/Kinoyoo.jpg",
-  //   iframeSrc: "#",
-  //   gitLink:
-  //     "https://www.figma.com/file/YAZ44hbU2ndRoZOUCZTz7I/Mohammad?type=design&node-id=25%3A2&mode=design&t=YOiVeGJq6Tfegdck-1",
-  //   pageSrc: "http://localhost:5173/",
-  // },
+  {
+    title: "Relax Sounds",
+    languages: "HTML CSS JavaScript",
+    description:
+      "ReNoise is an interactive web application designed by me to provide users with the opportunity to immerse themselves in the soothing sounds of nature. The project is developed using modern web technologies and frameworks, ensuring a pleasant and intuitive user experience.",
+    imageSrc: "Images/ReNoise.jpg",
+    iframeSrc: "https://mokhammad-kodehode.github.io/ReNoise/",
+    gitLink: "https://github.com/mokhammad-kodehode/ReNoise.git",
+    pageSrc: "https://mokhammad-kodehode.github.io/ReNoise/",
+  },
   {
     title: "Mars Rover",
     languages: "HTML CSS JavaScript",
