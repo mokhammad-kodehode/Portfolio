@@ -6,7 +6,7 @@ const projects = [
     languages: "HTML  CSS",
     description:
       "Nettstedet Saturn informasjon er et gruppeprosjekt jeg utviklet for porteføljen min, som viser min dyktighet i HTML og CSS. Dette nettstedet fungerer som en omfattende ressurs dedikert til å tilby innsiktsfull informasjon om Saturn, den sjette planeten fra solen i vårt solsystem.",
-    imageSrc: "/Images/Planet.png",
+    imageSrc: "../Images/Planet.png",
     iframeSrc:
       "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/",
     gitLink: "https://github.com/mokhammad-kodehode/Age-calculator.git",
@@ -18,7 +18,7 @@ const projects = [
     languages: "MERN-STACK",
     description:
       "Nettstedet for leie av biler med MERN-stacken er en dynamisk webapplikasjon designet for å lette sømløs deling av biler blant brukere. Dette prosjektet viser min dyktighet i å bruke MERN-teknologistabelen (MongoDB, Express.js, React og Node.js) for å lage en brukervennlig og effektiv løsning for bilutleie og deling.",
-    imageSrc: "/Images/car.jpg",
+    imageSrc: "../Images/car.jpg",
     iframeSrc: "https://github.com/mokhammad-kodehode/rentCarServer.git",
     gitLink: "https://github.com/mokhammad-kodehode/RentCarMarket.git",
     pageSrc: "https://github.com/mokhammad-kodehode/rentCarServer.git",
@@ -28,7 +28,7 @@ const projects = [
     languages: "REACT TypeScript",
     description:
       "ReNoise er en interaktiv webapplikasjon designet av meg for å gi brukere muligheten til å fordype seg i beroligende lyder fra naturen. Prosjektet er utviklet med moderne webteknologier og rammeverk, som sikrer en hyggelig og intuitiv brukeropplevelse.",
-    imageSrc: "/Images/reNoiseTwo.png",
+    imageSrc: "../Images/reNoiseTwo.png",
     iframeSrc: "https://mokhammad-kodehode.github.io/ReNoiseTwo/",
     gitLink: "https://github.com/mokhammad-kodehode/ReNoiseTwo.git",
     pageSrc: "https://mokhammad-kodehode.github.io/ReNoiseTwo/",
@@ -38,7 +38,7 @@ const projects = [
     languages: "HTML  CSS JavaScript",
     description:
       "Passordgeneratoren er et prosjekt jeg utviklet for å vise mine programmeringsferdigheter og gi en praktisk tjeneste for å generere sterke og sikre passord. Dette prosjektet viser min kompetanse innen webutvikling, spesielt bruk av HTML, CSS og JavaScript.",
-    imageSrc: "/Images/pass.jpg",
+    imageSrc: "../Images/pass.jpg",
     iframeSrc: "https://mokhammad-kodehode.github.io/Password-generator-main/",
     gitLink:
       "https://github.com/mokhammad-kodehode/Password-generator-main.git",
@@ -49,7 +49,7 @@ const projects = [
     languages: "HTML  CSS JavaScript",
     description:
       "Alderskalkulatoren er et kraftig og brukervennlig verktøy designet for enkelt å beregne alderen din basert på fødselsdatoen din. Enten du er nysgjerrig på din nåværende alder eller trenger å bestemme alderen til noen andre, gir denne hendige kalkulatoren nøyaktige resultater på sekunder.",
-    imageSrc: "/Images/Age.jpg",
+    imageSrc: "../Images/Age.jpg",
     iframeSrc:
       "https://mokhammad-kodehode.github.io/Age-calculator-main/Age-calculator-main/",
     gitLink: "",
@@ -61,7 +61,7 @@ const projects = [
     languages: "HTML  CSS JavaScript",
     description:
       "Værappen er en webapplikasjon som lar brukere hente gjeldende værdata for en bestemt by. Appen bruker en åpen API for å hente værinformasjon. Brukere kan skrive inn navnet på en by i søkefeltet, og appen vil vise detaljer som gjeldende temperatur, værforhold, vindhastighet, luftfuktighet og annen relevant informasjon.",
-    imageSrc: "/Images/Weather.png",
+    imageSrc: "../Images/Weather.png",
     iframeSrc: "https://mokhammad-kodehode.github.io/Weather-forcast/",
     gitLink: "https://mokhammad-kodehode.github.io/calculator/",
     pageSrc: "https://mokhammad-kodehode.github.io/Weather-forcast/",
@@ -74,7 +74,7 @@ const projectsTwo = [
     languages: "React",
     description:
       "Kalkulatorappen er en webapplikasjon som gir en enkel og brukervennlig grensesnitt for å utføre grunnleggende aritmetiske operasjoner. Appen lar brukere enkelt utføre addisjon, subtraksjon, multiplikasjon, divisjon og prosentberegninger. Prosjektet ble bygget med React, et populært JavaScript-bibliotek for å lage brukergrensesnitt.",
-    imageSrc: "/Images/Calculator.jpg",
+    imageSrc: "../Images/Calculator.jpg",
     iframeSrc: "https://mokhammad-kodehode.github.io/calculator/",
     gitLink: "https://github.com/mokhammad-kodehode/calculator.git",
     pageSrc: "https://mokhammad-kodehode.github.io/calculator/",
@@ -85,7 +85,7 @@ const projectsTwo = [
     languages: "HTML CSS JavaScript",
     description:
       "DRUMkit-prosjektet er en interaktiv webapplikasjon opprettet med HTML, CSS og JavaScript. Den tilbyr et virtuelt trommesett som lar brukere spille ulike trommelyder både ved å klikke på tilsvarende knapper på skjermen og ved å bruke tastaturet.",
-    imageSrc: "/Images/Drum.png",
+    imageSrc: "../Images/Drum.png",
     iframeSrc: "https://mokhammad-kodehode.github.io/DrumKitnew/",
     gitLink: "https://github.com/mokhammad-kodehode/DrumKitnew.git",
     pageSrc: "https://mokhammad-kodehode.github.io/DrumKitnew/",
@@ -95,7 +95,7 @@ const projectsTwo = [
     languages: ["HTML   CSS   JavaScript"],
     description:
       "The 'Unit Converter' project is a web application that allows users to convert between different units of measurement. It provides a simple and intuitive interface for converting values from one unit to another, making it convenient for various conversion needs.",
-    imageSrc: "/Images/Unit.jpg",
+    imageSrc: "../Images/Unit.jpg",
     iframeSrc: "https://mokhammad-kodehode.github.io/Unit-converter/",
     pageSrc: "https://mokhammad-kodehode.github.io/Unit-converter/",
   },
@@ -104,7 +104,7 @@ const projectsTwo = [
     languages: "HTML CSS JavaScript",
     description:
       "ReNoise is an interactive web application designed by me to provide users with the opportunity to immerse themselves in the soothing sounds of nature. The project is developed using modern web technologies and frameworks, ensuring a pleasant and intuitive user experience.",
-    imageSrc: "/Images/ReNoise.jpg",
+    imageSrc: "../Images/ReNoise.jpg",
     iframeSrc: "https://mokhammad-kodehode.github.io/ReNoise/",
     gitLink: "https://github.com/mokhammad-kodehode/ReNoise.git",
     pageSrc: "https://mokhammad-kodehode.github.io/ReNoise/",
@@ -114,7 +114,7 @@ const projectsTwo = [
     languages: "HTML CSS JavaScript",
     description:
       "The Mars Rover Exploration Viewer is an interactive web application that I developed, leveraging API (Application Programming Interface) integration to fetch and display real-time images captured by various Mars rovers. This project is a testament to my skills in web development and API utilization, offering users a visually engaging experience of exploring the Martian landscape through the eyes of rovers.",
-    imageSrc: "/Images/Mars.png",
+    imageSrc: "../Images/Mars.png",
     iframeSrc: "https://mokhammad-kodehode.github.io/marsrover/",
     gitLink: "https://github.com/mokhammad-kodehode/marsrover.git",
     pageSrc: "https://mokhammad-kodehode.github.io/marsrover/",
