@@ -1,44 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <script defer src="projects.js"></script>
+    <script defer src="projects_no.js"></script>
     <script src="https://kit.fontawesome.com/c8568fcb0c.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c8568fcb0c.js" crossorigin="anonymous"></script>
     <script src="libraries/paperjs-v0.12.17/docs/assets/js/paper.js"></script>
-    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="/projects.css">
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav  class="navbar">
             <div class="navbar_logo">MOHAMMAD DZHABRAILOV</div>
             <button class="menu-btn" onclick="toggleNav()">
                 <div id="bar" class="bar"></div>
                 <div id="bar" class="bar"></div>
-                <div id="bar" class="bar"></div>
               </button>
-              <ul class="navbar_items" >
+            <ul class="navbar_items" >
                 <li class="navbar_item">
-                    <a class="nav_item" href="index.html" >Home</a> 
+                    <a class="nav_item" href="index.html" >Hjem</a> 
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
                 </li>
                 <li class="fix navbar_item">
-                    <a class="nav_item" href="about.html" >About me</a> 
+                    <a class="nav_item" href="about.html" >Om meg</a> 
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
                 </li>
-                <li id="active_one" class="navbar_item active">
-                    <a class="nav_item" href="projects.html"> Projects</a> 
+                <li id="active_one" class="navbar_item_fix active">
+                    <a class="nav_item" href="projects.html">Prosjekter</a> 
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
                 </li>
                 <li class="navbar_item">
-                    <a class="nav_item" href="contact.html">Contact</a>
+                    <a class="nav_item" href="contact.html">Kontakt</a>
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
                 </li>
@@ -46,39 +45,39 @@
          <div class="theme">
             <button id="play" class="play-button">
                 <i class="fa-solid fa-circle-pause"></i>
-                <span class="play_hover">Pause / Play animation</span>
+                <span class="play_hover">Pause/spill av animasjon</span>
             </button>
             <div class="theme-switch">
                 <input type="checkbox" id="theme-switch-checkbox">
                 <label for="theme-switch-checkbox"></label>
-                <span  class="change_theme">Change theme</span>
-            </div>
-            <img class="flag"  src="Images/icons/norway.png" alt="change_language" data-lang="no" >
+                <span  class="change_theme">Endre tema</span>
+              </div>
+              <img class="flag"  src="/Images/icons/united-kingdom.png" alt="change_language" data-lang="en" >
          </div>
         </nav>
         <div class="navbar_dropdown" id="navLinks">
             <ul class="navbar_items_dropdown" >
                 <li>
                     <a class="orange" href="index.html"> <img src="Images/icons/Home.svg" alt="" srcset=""></a>
-                    <p class="navbar_item_name orange_text">Home</p> 
+                    <p class="navbar_item_name orange_text">Hjem</p> 
                 </li>
                 <li>
                     <a  href="about.html">
                         <img src="Images/icons/person.svg" >
                     </a> 
-                    <p class="navbar_item_name">About me</p> 
+                    <p class="navbar_item_name">Om meg</p> 
+        
                 </li>
                 <li>
                     <a href="projects.html">
                         <img src="Images/icons/projects.svg" >
                     </a> 
-                    <p class="navbar_item_name">Projects</p>
+                    <p class="navbar_item_name">Prosjekter</p>
                 <li>
                     <a href="contact.html">
                         <img src="Images/icons/post.svg" >
                     </a>
-                    <p class="navbar_item_name">Contact</p>
-
+                    <p class="navbar_item_name">Kontakt</p>
                 </li>
          </ul>
          </div>

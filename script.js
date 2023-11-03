@@ -3,6 +3,37 @@ const themeSwitcher = document.getElementById("theme-switch-checkbox");
 const projectCards = Array.from(document.querySelectorAll(".project-card"));
 const navbarItems = document.querySelectorAll(".navbar_item");
 const activateItem = document.getElementById("active_one");
+const flag = document.querySelectorAll(".flag");
+
+function switchLanguage(lang, currentPageUrl) {
+  // Получите текущий путь страницы без домена и параметров запроса
+  const currentPagePath = currentPageUrl
+    .split(window.location.origin)[1]
+    .split("?")[0];
+
+  // Определите новый путь на другом языке на основе текущего пути
+  let newPagePath;
+  if (lang === "en") {
+    newPagePath = currentPagePath.replace("/no/", "/");
+  } else if (lang === "no") {
+    newPagePath = `/no${currentPagePath}`;
+  }
+
+  // Скомбинируйте новый путь с доменом и параметрами запроса
+  const newUrl = window.location.origin + newPagePath + window.location.search;
+
+  // Перенаправьте пользователя на новую страницу
+  window.location.href = newUrl;
+}
+
+flag.forEach((flag) => {
+  flag.addEventListener("click", function () {
+    const lang = flag.getAttribute("data-lang");
+    const currentPageUrl = window.location.href;
+    console.log(`Switching language to ${lang} from page: ${currentPageUrl}`);
+    switchLanguage(lang, currentPageUrl);
+  });
+});
 
 navbarItems.forEach((item) => {
   item.addEventListener("mouseenter", () => {

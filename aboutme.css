@@ -127,7 +127,11 @@ body {
   .navbar_items {
     display: flex;
     gap: 3rem;
-    margin-right: 10rem;
+  }
+
+  .flag {
+    width: 30px;
+    cursor: pointer;
   }
 
   .items_line_one {
@@ -246,7 +250,6 @@ body {
   justify-content: end;
   align-items: center;
   gap: .5rem;
-  width: 65px;
 }
 
 .photo {

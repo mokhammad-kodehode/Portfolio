@@ -1,42 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
-    <script defer src="script.js"></script>
+    <script defer src="/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c8568fcb0c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="/aboutme.css">
     <script src="libraries/paperjs-v0.12.17/docs/assets/js/paper.js"></script>
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav  class="navbar">
             <div class="navbar_logo">MOHAMMAD DZHABRAILOV</div>
             <button class="menu-btn" onclick="toggleNav()">
-                <div id="bar" class="bar"></div>
                 <div id="bar" class="bar"></div>
                 <div id="bar" class="bar"></div>
               </button>
             <ul class="navbar_items" >
                 <li class="navbar_item">
-                    <a class="nav_item " href="index.html" >Home</a> 
+                    <a class="nav_item " href="index.html" >Hjem</a> 
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
                 </li>
                 <li  class="fix navbar_item active" id="active_one" >
-                    <a class="nav_item " href="about.html" >About me</a> 
+                    <a class="nav_item " href="about.html" >Om meg</a> 
+                    <div class="items_line_one"></div>
+                    <div class="items_line_two"></div>
+                </li>
+                <li class="navbar_item fix">
+                    <a class="nav_item" href="projects.html">Prosjekter</a> 
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
                 </li>
                 <li class="navbar_item">
-                    <a class="nav_item " href="projects.html"> Projects</a> 
-                    <div class="items_line_one"></div>
-                    <div class="items_line_two"></div>
-                <li class="navbar_item">
-                    <a class="nav_item " href="contact.html">Contact</a>
+                    <a class="nav_item" href="contact.html">Kontakt</a>
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
                 </li>
@@ -44,38 +44,39 @@
          <div class="theme">
             <button id="play" class="play-button">
                 <i class="fa-solid fa-circle-pause"></i>
-                <span class="play_hover">Pause / Play animation</span>
+                <span class="play_hover">Pause/spill av animasjon</span>
             </button>
             <div class="theme-switch">
                 <input type="checkbox" id="theme-switch-checkbox">
                 <label for="theme-switch-checkbox"></label>
-                <span  class="change_theme">Change theme</span>
+                <span  class="change_theme">Endre tema</span>
               </div>
-              <img class="flag"  src="Images/icons/norway.png" alt="change_language" data-lang="no" >
+              <img class="flag"  src="/Images/icons/united-kingdom.png" alt="change_language" data-lang="en" >
          </div>
         </nav>
         <div class="navbar_dropdown" id="navLinks">
             <ul class="navbar_items_dropdown" >
                 <li>
                     <a class="orange" href="index.html"> <img src="Images/icons/Home.svg" alt="" srcset=""></a>
-                    <p class="navbar_item_name orange_text">Home</p> 
+                    <p class="navbar_item_name orange_text">Hjem</p> 
                 </li>
                 <li>
                     <a  href="about.html">
                         <img src="Images/icons/person.svg" >
                     </a> 
-                    <p class="navbar_item_name">About me</p> 
+                    <p class="navbar_item_name">Om meg</p> 
+        
                 </li>
                 <li>
                     <a href="projects.html">
                         <img src="Images/icons/projects.svg" >
                     </a> 
-                    <p class="navbar_item_name">Projects</p>
+                    <p class="navbar_item_name">Prosjekter</p>
                 <li>
                     <a href="contact.html">
                         <img src="Images/icons/post.svg" >
                     </a>
-                    <p class="navbar_item_name">Contact</p>
+                    <p class="navbar_item_name">Kontakt</p>
                 </li>
          </ul>
          </div>
@@ -83,37 +84,30 @@
 
 
     <section class="container">
-        <h1>About me</h1>
+        <h1>Om meg</h1>
         <div class="container_main">
             <div class="circle">
                 <img class="photo" src="Images/photo.svg" alt="photo">
             </div>
             <div class="container_title">
-                <p>My name is Mohammad, I am a full stack developer. 
-                    Since the beginning of 2023, I have started a Kodehode course focused on the 
-                    front-end developer. In a short time, I was able to master everything that is
-                    needed for full-stack development and realized that I had found my calling.
+                <p>Jeg heter Mohammad, og jeg er en fullstack-utvikler. 
+                    Siden begynnelsen av 2023 har jeg startet et Kodehode-kurs med fokus på front-end-utvikling. 
+                    På kort tid klarte jeg å mestre alt som kreves for full-stack-utvikling og innså at jeg hadde funnet min lidenskap.
                 </p>
                 <p>
-                    I used to be an entrepreneur, I had several successful
-                    businesses and projects in the service and entertainment sector. 
-                    Thanks to this, I was able to gain experience in commerce and marketing.
-                    Now I have a huge desire to combine all my skills and create something big.
+                    Tidligere var jeg gründer, og jeg hadde flere vellykkede virksomheter og prosjekter innen tjeneste- og underholdningssektoren. Takket være dette fikk jeg erfaring innen handel og markedsføring. Nå har jeg en brennende lyst til å kombinere alle mine ferdigheter og skape noe stort.
                 </p>
                 <p>
-                    About myself I can say that I am honest, responsible, motivated. I can be competitive at work
-                    One of my future goals that I would like to achieve in my life is to get a pilot's license.
+                    Om meg selv kan jeg si at jeg er ærlig, ansvarlig og motivert. Jeg kan være konkurransedyktig på jobb. En av mine fremtidige mål, som jeg ønsker å oppnå i livet mitt, er å få en pilotlisens.
                 </p>
             </div>
             <div class="my_skills">
-                <!-- <i class="custem_icon">TS</i> -->
                 <i class="fa-brands fa-square-js icon"></i>
                 <i class="fa-brands fa-node icon"></i>
                 <i class="fa-brands fa-react icon"></i>
                 <i class="fa-brands fa-html5 icon"></i>
                 <i class="fa-brands fa-css3-alt icon"></i>
                 <i class="fa-brands fa-figma icon"></i>
-                <!-- <div class="custem_icon">MongoDB</div> -->
         </div>
         </div>
     </section>

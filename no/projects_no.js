@@ -2,10 +2,10 @@
 
 const projects = [
   {
-    title: "Planet project",
+    title: "Planetprosjekt",
     languages: "HTML  CSS",
     description:
-      "The Saturn Information Website is a group project I developed for my portfolio, showcasing my proficiency in HTML and CSS. This website serves as a comprehensive resource dedicated to providing insightful information about Saturn, the sixth planet from the Sun in our solar system.",
+      "Nettstedet Saturn informasjon er et gruppeprosjekt jeg utviklet for porteføljen min, som viser min dyktighet i HTML og CSS. Dette nettstedet fungerer som en omfattende ressurs dedikert til å tilby innsiktsfull informasjon om Saturn, den sjette planeten fra solen i vårt solsystem.",
     imageSrc: "/Images/Planet.png",
     iframeSrc:
       "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/",
@@ -17,7 +17,7 @@ const projects = [
     title: "Car rental Marketplace",
     languages: "MERN-STACK",
     description:
-      "The MERN Stack Car Rental Marketplace is a dynamic web application designed to facilitate the seamless sharing of cars among users. This project showcases my proficiency in utilizing the MERN (MongoDB, Express.js, React, and Node.js) technology stack to create a user-friendly and efficient solution for car rental and sharing.",
+      "Nettstedet for leie av biler med MERN-stacken er en dynamisk webapplikasjon designet for å lette sømløs deling av biler blant brukere. Dette prosjektet viser min dyktighet i å bruke MERN-teknologistabelen (MongoDB, Express.js, React og Node.js) for å lage en brukervennlig og effektiv løsning for bilutleie og deling.",
     imageSrc: "/Images/car.jpg",
     iframeSrc: "https://github.com/mokhammad-kodehode/rentCarServer.git",
     gitLink: "https://github.com/mokhammad-kodehode/RentCarMarket.git",
@@ -27,7 +27,7 @@ const projects = [
     title: "ReNoise",
     languages: "REACT TypeScript",
     description:
-      "ReNoise is an interactive web application designed by me to provide users with the opportunity to immerse themselves in the soothing sounds of nature. The project is developed using modern web technologies and frameworks, ensuring a pleasant and intuitive user experience.",
+      "ReNoise er en interaktiv webapplikasjon designet av meg for å gi brukere muligheten til å fordype seg i beroligende lyder fra naturen. Prosjektet er utviklet med moderne webteknologier og rammeverk, som sikrer en hyggelig og intuitiv brukeropplevelse.",
     imageSrc: "/Images/reNoiseTwo.png",
     iframeSrc: "https://mokhammad-kodehode.github.io/ReNoiseTwo/",
     gitLink: "https://github.com/mokhammad-kodehode/ReNoiseTwo.git",

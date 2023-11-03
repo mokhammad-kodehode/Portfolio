@@ -144,12 +144,12 @@ body {
   transform: rotate(55deg);
 }
 
-li.active .items_line_one{
+.navbar_item_fix.active .items_line_one{
   border-radius: 20px;
   width: 130px;
   height: 35px;
   position: absolute;
-  left: -64px;
+  left: -60px;
   top: 60px;
   transition:ease-in-out 0.5s;
   background-color:  var(--line_color);
@@ -157,16 +157,16 @@ li.active .items_line_one{
   box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.8);
 }
 
-li.active .items_line_two{
+.navbar_item_fix.active .items_line_two{
   border-radius: 20px;
   width: 130px;
-  height: 35px;
+  height: 40px;
   position: absolute;
   transition: ease-in-out  0.4s;
   background-color: var(--secondary-line-color);
   transform:rotate(55deg) translate(50px,50px);
-  bottom: 80px;
-  left: -8px;
+  bottom: 75px;
+  left: -0px;
 }
 
 li:hover .items_line_one {
@@ -195,12 +195,18 @@ li:hover .items_line_two{
 }
 
 
+
 .theme {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   gap: .5rem;
-  width: 65px;
+  width: 115px;
+}
+
+.flag {
+  width: 30px;
+  cursor: pointer;
 }
 
   .play-button {
@@ -304,7 +310,6 @@ li:hover .items_line_two{
   .navbar_items {
     display: flex;
     gap: 3rem;
-    margin-right: 10rem;
   }
 
   .container {
@@ -1037,7 +1042,7 @@ color: var(--primary-text-color);
   
   .navbar_item_name {
     color: white;
-   font-size: 12px;
+    font-size: 12px;
   }
   
   li {
