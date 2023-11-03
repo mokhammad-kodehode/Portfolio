@@ -121,7 +121,6 @@ body {
   .navbar_items {
     display: flex;
     gap: 3rem;
-    margin-right: 10rem;
   }
 
 .items_line_one {

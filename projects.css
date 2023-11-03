@@ -166,7 +166,7 @@ body {
   background-color: var(--secondary-line-color);
   transform:rotate(55deg) translate(50px,50px);
   bottom: 75px;
-  left: -0px;
+  left: -5px;
 }
 
 .navbar_item.active .items_line_one{
@@ -174,7 +174,7 @@ body {
   width: 130px;
   height: 35px;
   position: absolute;
-  left: -60px;
+  left: -64px;
   top: 60px;
   transition:ease-in-out 0.5s;
   background-color:  var(--line_color);
@@ -191,7 +191,7 @@ body {
   background-color: var(--secondary-line-color);
   transform:rotate(55deg) translate(50px,50px);
   bottom: 75px;
-  left: -0px;
+  left: -2px;
 }
 
 li:hover .items_line_one {
