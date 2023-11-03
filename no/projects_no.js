@@ -148,7 +148,7 @@ function switchLanguage(lang, currentPageUrl) {
   if (lang === "en") {
     newPagePath = currentPagePath.replace("/no", ""); // Удаляем "/no" из пути
   } else if (lang === "no") {
-    newPagePath = currentPagePath.replace("/Portfolio/", "/Portfolio/no/"); // Добавляем "/no" перед текущим путем
+    newPagePath = "/no" + currentPagePath; // Добавляем "/no" перед текущим путем
   }
 
   // Скомбинируйте новый путь с доменом и параметрами запроса
