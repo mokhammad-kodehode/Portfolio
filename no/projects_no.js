@@ -275,7 +275,7 @@ const createProjectCard = (project) => {
   projectCard.className = "project-card";
   projectCard.setAttribute(
     "data-tooltip",
-    "Click on a project for more information"
+    "Klikk på et prosjekt for mer informasjon"
   );
 
   let button;
@@ -313,7 +313,7 @@ const createProjectCard = (project) => {
   links.className = "links";
   footer.appendChild(links);
 
-  const visit = createLink("Visit page", project.pageSrc, "_blank");
+  const visit = createLink("Besøk siden", project.pageSrc, "_blank");
   visit.className = "visit";
   links.appendChild(visit);
 

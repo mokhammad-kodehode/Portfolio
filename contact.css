@@ -302,7 +302,23 @@ li:hover .items_line_two{
   background-repeat: no-repeat;
 }
 
+.play-button {
+display: none;
+}
 
+
+.theme {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: .5rem;
+  width: 115px;
+}
+
+.flag {
+  width: 30px;
+  cursor: pointer;
+}
 
   form {
   display: flex;

@@ -5,38 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="contact.css">
+    <script defer src="../script.js"></script>
+    <link rel="stylesheet" href="../contact.css">
     <script src="https://kit.fontawesome.com/c8568fcb0c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav  class="navbar">
             <div class="navbar_logo">MOHAMMAD DZHABRAILOV</div>
-            <div class="menu-btn" onclick="toggleNav()">
+            <button class="menu-btn" onclick="toggleNav()">
                 <div id="bar" class="bar"></div>
                 <div id="bar" class="bar"></div>
-                <div id="bar" class="bar"></div>
-              </div>
-              <ul class="navbar_items" >
-                <li  class="navbar_item">
-                    <a class="nav_item" href="index.html" >Home</a> 
+              </button>
+            <ul class="navbar_items" >
+                <li id="active_one" class="navbar_item active">
+                    <a class="nav_item" href="index.html" >Hjem</a> 
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
                 </li>
                 <li class="fix navbar_item">
-                    <a class="nav_item" href="about.html" >About me</a> 
+                    <a class="nav_item" href="about.html" >Om meg</a> 
+                    <div class="items_line_one"></div>
+                    <div class="items_line_two"></div>
+                </li>
+                <li class="navbar_item fix">
+                    <a class="nav_item" href="projects.html">Prosjekter</a> 
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
                 </li>
                 <li class="navbar_item">
-                    <a class="nav_item" href="projects.html"> Projects</a> 
-                    <div class="items_line_one"></div>
-                    <div class="items_line_two"></div>
-                </li>
-                <li id="active_one" class="navbar_item active">
-                    <a class="nav_item" href="contact.html">Contact</a>
+                    <a class="nav_item" href="contact.html">Kontakt</a>
                     <div class="items_line_one"></div>
                     <div class="items_line_two"></div>
                 </li>
@@ -49,33 +48,34 @@
             <div class="theme-switch">
                 <input type="checkbox" id="theme-switch-checkbox">
                 <label for="theme-switch-checkbox"></label>
-
+                <span  class="change_theme">Endre tema</span>
               </div>
-              <img class="flag"  src="Images/icons/norway.png" alt="norway" data-lang="no" >
+              <img class="flag"  src="../Images/icons/united-kingdom.png" alt="english" data-lang="en" >
          </div>
         </nav>
         <div class="navbar_dropdown" id="navLinks">
             <ul class="navbar_items_dropdown" >
                 <li>
                     <a class="orange" href="index.html"> <img src="Images/icons/Home.svg" alt="" srcset=""></a>
-                    <p class="navbar_item_name orange_text">Home</p> 
+                    <p class="navbar_item_name orange_text">Hjem</p> 
                 </li>
                 <li>
                     <a  href="about.html">
                         <img src="Images/icons/person.svg" >
                     </a> 
-                    <p class="navbar_item_name">About me</p> 
+                    <p class="navbar_item_name">Om meg</p> 
+        
                 </li>
                 <li>
                     <a href="projects.html">
                         <img src="Images/icons/projects.svg" >
                     </a> 
-                    <p class="navbar_item_name">Projects</p>
+                    <p class="navbar_item_name">Prosjekter</p>
                 <li>
                     <a href="contact.html">
                         <img src="Images/icons/post.svg" >
                     </a>
-                    <p class="navbar_item_name">Contact</p>
+                    <p class="navbar_item_name">Kontakt</p>
                 </li>
          </ul>
          </div>
@@ -85,32 +85,32 @@
         <div class="container_title">
            <div class="container_form">
                 <form action="https://formsubmit.co/mokhammad.d.kodehode@gmail.com" method="POST">
-                        <legend>Contact Me</legend>
+                        <legend>Kontakt meg</legend>
                         <div class="names">
                             <div class="container_form_input">
-                                <label for="first-name">Name:</label>
+                                <label for="first-name">Navn:</label>
                                 <input name="first-name" class="names_input" id="first-name"  type="text" placeholder="Enter your name">
                             </div>
                             <div class="container_form_input">
-                                <label for="last-name">Last name:</label>
+                                <label for="last-name">Etternavn:</label>
                                 <input name="last-name" class="names_input" id="last-name"  type="text" placeholder="Enter your last name">
                             </div>
                         </div>
                         <div class="container_form_input">
-                            <label for="email">Email:</label>
+                            <label for="email">E-post:</label>
                             <input type="hidden" name="_next" value="https://mokhammad-kodehode.github.io/Portfolio/thanks.html">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="email" name="email" id="email" type="text" placeholder="Enter your email">
                         </div>
                         <div class="container_form_input">
-                            <label for="title">Title:</label>
+                            <label for="title">Tittel:</label>
                             <input name="title" required id="title"  type="text" placeholder="Title">
                         </div>
                         <div class="container_form_input">
-                            <label for="message">Message: </label>
+                            <label for="message">Beskjed: </label>
                             <textarea name="message" required id="message" class="email" type="text" placeholder="Message"></textarea>
                         </div>
-                        <button class="btn" >Send</button>
+                        <button class="btn" >Sende</button>
                             
             </form>
            </div>
@@ -119,7 +119,7 @@
     </section>
 
     <footer>
-        <div class="navi">CONTACT</div>
+        <div class="navi">Kontakt</div>
         <ul class="social">
             <li>
                 <a  class="CV" href="CVMohammad.pdf" download="">
