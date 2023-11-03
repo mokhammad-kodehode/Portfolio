@@ -139,14 +139,16 @@ const flag = document.querySelectorAll(".flag");
 
 function switchLanguage(lang, currentPageUrl) {
   // Получите текущий путь страницы без домена и параметров запроса
-  const currentPagePath = new URL(currentPageUrl).pathname;
+  const currentPagePath = currentPageUrl
+    .split(window.location.origin)[1]
+    .split("?")[0];
 
   // Определите новый путь на другом языке на основе текущего пути
   let newPagePath;
   if (lang === "en") {
-    newPagePath = currentPagePath.replace(/\/no\//, "/");
+    newPagePath = currentPagePath.replace("/no/", "/"); // Удалите эту строку
   } else if (lang === "no") {
-    newPagePath = `/no${currentPagePath}`;
+    newPagePath = currentPagePath; // Измените эту строку
   }
 
   // Скомбинируйте новый путь с доменом и параметрами запроса
