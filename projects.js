@@ -146,9 +146,9 @@ function switchLanguage(lang, currentPageUrl) {
   // Определите новый путь на другом языке на основе текущего пути
   let newPagePath;
   if (lang === "en") {
-    newPagePath = currentPagePath.replace("/no/", "/"); // Удалите эту строку
+    newPagePath = currentPagePath; // Оставьте текущий путь без изменений для английского
   } else if (lang === "no") {
-    newPagePath = currentPagePath; // Измените эту строку
+    newPagePath = "/no" + currentPagePath; // Добавьте "/no/" для норвежского
   }
 
   // Скомбинируйте новый путь с доменом и параметрами запроса
