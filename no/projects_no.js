@@ -34,10 +34,10 @@ const projects = [
     pageSrc: "https://mokhammad-kodehode.github.io/ReNoiseTwo/",
   },
   {
-    title: "Password generator",
+    title: "Passordgeneratoren",
     languages: "HTML  CSS JavaScript",
     description:
-      "The Password Generator is a project I developed to showcase my programming skills and provide a practical utility for generating strong and secure passwords. This project demonstrates my proficiency in web development, specifically using HTML, CSS, and JavaScript.",
+      "Passordgeneratoren er et prosjekt jeg utviklet for å vise mine programmeringsferdigheter og gi en praktisk tjeneste for å generere sterke og sikre passord. Dette prosjektet viser min kompetanse innen webutvikling, spesielt bruk av HTML, CSS og JavaScript.",
     imageSrc: "/Images/pass.jpg",
     iframeSrc: "https://mokhammad-kodehode.github.io/Password-generator-main/",
     gitLink:
@@ -45,10 +45,10 @@ const projects = [
     pageSrc: "https://mokhammad-kodehode.github.io/Password-generator-main/",
   },
   {
-    title: "Age calculator",
+    title: "Alderskalkulatoren",
     languages: "HTML  CSS JavaScript",
     description:
-      "The Age Calculator is a powerful and user-friendly tool designed to effortlessly calculate your age based on your birthdate. Whether you're curious about your current age or need to determine the age of someone else, this handy calculator provides accurate results within seconds.",
+      "Alderskalkulatoren er et kraftig og brukervennlig verktøy designet for enkelt å beregne alderen din basert på fødselsdatoen din. Enten du er nysgjerrig på din nåværende alder eller trenger å bestemme alderen til noen andre, gir denne hendige kalkulatoren nøyaktige resultater på sekunder.",
     imageSrc: "/Images/Age.jpg",
     iframeSrc:
       "https://mokhammad-kodehode.github.io/Age-calculator-main/Age-calculator-main/",
@@ -60,7 +60,7 @@ const projects = [
     title: "The Weather App",
     languages: "HTML  CSS JavaScript",
     description:
-      "The Weather App is a web application that allows users to fetch current weather data for a specific city. The app utilizes an open API to retrieve weather information. Users can enter the name of a city in the search field, and the app will display details such as the current temperature, weather conditions, wind speed, humidity,and other relevant data.",
+      "Værappen er en webapplikasjon som lar brukere hente gjeldende værdata for en bestemt by. Appen bruker en åpen API for å hente værinformasjon. Brukere kan skrive inn navnet på en by i søkefeltet, og appen vil vise detaljer som gjeldende temperatur, værforhold, vindhastighet, luftfuktighet og annen relevant informasjon.",
     imageSrc: "/Images/Weather.png",
     iframeSrc: "https://mokhammad-kodehode.github.io/Weather-forcast/",
     gitLink: "https://mokhammad-kodehode.github.io/calculator/",
@@ -70,10 +70,10 @@ const projects = [
 
 const projectsTwo = [
   {
-    title: "Calculator",
+    title: "Kalkulator",
     languages: "React",
     description:
-      "The Calculator App is a web application that provides a simpleand user-friendly interface for performing basic arithmeticoperations. The app allows users to perform addition, subtraction, multiplication, division,and percentage calculations with ease.The project was built using React,a popular JavaScript library for building user interfaces.",
+      "Kalkulatorappen er en webapplikasjon som gir en enkel og brukervennlig grensesnitt for å utføre grunnleggende aritmetiske operasjoner. Appen lar brukere enkelt utføre addisjon, subtraksjon, multiplikasjon, divisjon og prosentberegninger. Prosjektet ble bygget med React, et populært JavaScript-bibliotek for å lage brukergrensesnitt.",
     imageSrc: "/Images/Calculator.jpg",
     iframeSrc: "https://mokhammad-kodehode.github.io/calculator/",
     gitLink: "https://github.com/mokhammad-kodehode/calculator.git",
@@ -84,7 +84,7 @@ const projectsTwo = [
     title: "Drum Kit",
     languages: "HTML CSS JavaScript",
     description:
-      "The DRUMkit project is an interactive web application created using HTML, CSS, and JavaScript. It offers a virtual drum kit that allows users to play various drum sounds both by clicking corresponding buttons on the screen and using keyboard keys.",
+      "DRUMkit-prosjektet er en interaktiv webapplikasjon opprettet med HTML, CSS og JavaScript. Den tilbyr et virtuelt trommesett som lar brukere spille ulike trommelyder både ved å klikke på tilsvarende knapper på skjermen og ved å bruke tastaturet.",
     imageSrc: "/Images/Drum.png",
     iframeSrc: "https://mokhammad-kodehode.github.io/DrumKitnew/",
     gitLink: "https://github.com/mokhammad-kodehode/DrumKitnew.git",
@@ -139,14 +139,12 @@ const flag = document.querySelectorAll(".flag");
 
 function switchLanguage(lang, currentPageUrl) {
   // Получите текущий путь страницы без домена и параметров запроса
-  const currentPagePath = currentPageUrl
-    .split(window.location.origin)[1]
-    .split("?")[0];
+  const currentPagePath = new URL(currentPageUrl).pathname;
 
   // Определите новый путь на другом языке на основе текущего пути
   let newPagePath;
   if (lang === "en") {
-    newPagePath = currentPagePath.replace("/no/", "/");
+    newPagePath = currentPagePath.replace(/\/no\//, "/");
   } else if (lang === "no") {
     newPagePath = `/no${currentPagePath}`;
   }

@@ -157,6 +157,31 @@ body {
   box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.8);
 }
 
+.navbar_item.active .items_line_two{
+  border-radius: 20px;
+  width: 130px;
+  height: 35px;
+  position: absolute;
+  transition: ease-in-out  0.4s;
+  background-color: var(--secondary-line-color);
+  transform:rotate(55deg) translate(50px,50px);
+  bottom: 75px;
+  left: -0px;
+}
+
+.navbar_item.active .items_line_one{
+  border-radius: 20px;
+  width: 130px;
+  height: 35px;
+  position: absolute;
+  left: -60px;
+  top: 60px;
+  transition:ease-in-out 0.5s;
+  background-color:  var(--line_color);
+  transform:rotate(55deg) translate(-50px,-50px);
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.8);
+}
+
 .navbar_item_fix.active .items_line_two{
   border-radius: 20px;
   width: 130px;
