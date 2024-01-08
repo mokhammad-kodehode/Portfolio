@@ -2,16 +2,14 @@
 
 const projects = [
   {
-    title: "Planet project",
-    languages: "HTML  CSS",
+    title: "ReNoise",
+    languages: "REACT TypeScript",
     description:
-      "The Saturn Information Website is a group project I developed for my portfolio, showcasing my proficiency in HTML and CSS. This website serves as a comprehensive resource dedicated to providing insightful information about Saturn, the sixth planet from the Sun in our solar system.",
-    imageSrc: "Images/Planet.png",
-    iframeSrc:
-      "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/",
-    gitLink: "https://github.com/mokhammad-kodehode/Age-calculator.git",
-    pageSrc:
-      "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/",
+      "ReNoise is an interactive web application designed by me to provide users with the opportunity to immerse themselves in the soothing sounds of nature. The project is developed using modern web technologies and frameworks, ensuring a pleasant and intuitive user experience.",
+    imageSrc: "Images/Ren.png",
+    iframeSrc: "https://mokhammad-kodehode.github.io/ReNoiseTwo/",
+    gitLink: "https://github.com/mokhammad-kodehode/ReNoiseTwo.git",
+    pageSrc: "https://re-noise-next-js-87lk.vercel.app/",
   },
   {
     title: "Car rental Marketplace",
@@ -24,14 +22,16 @@ const projects = [
     pageSrc: "https://github.com/mokhammad-kodehode/rentCarServer.git",
   },
   {
-    title: "ReNoise",
-    languages: "REACT TypeScript",
+    title: "Planet project",
+    languages: "HTML  CSS",
     description:
-      "ReNoise is an interactive web application designed by me to provide users with the opportunity to immerse themselves in the soothing sounds of nature. The project is developed using modern web technologies and frameworks, ensuring a pleasant and intuitive user experience.",
-    imageSrc: "Images/reNoiseTwo.png",
-    iframeSrc: "https://mokhammad-kodehode.github.io/ReNoiseTwo/",
-    gitLink: "https://github.com/mokhammad-kodehode/ReNoiseTwo.git",
-    pageSrc: "https://mokhammad-kodehode.github.io/ReNoiseTwo/",
+      "The Saturn Information Website is a group project I developed for my portfolio, showcasing my proficiency in HTML and CSS. This website serves as a comprehensive resource dedicated to providing insightful information about Saturn, the sixth planet from the Sun in our solar system.",
+    imageSrc: "Images/Planet.png",
+    iframeSrc:
+      "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/",
+    gitLink: "https://github.com/mokhammad-kodehode/Age-calculator.git",
+    pageSrc:
+      "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/",
   },
   {
     title: "Password generator",
