@@ -575,7 +575,7 @@ li:hover .items_line_two{
 
 
   .project-title{
-    font-size: 32px;
+    font-size: 26px;
     font-family: 'Robot', sans-serif;
     font-weight: 500;
     letter-spacing: 1.5px;
@@ -687,7 +687,7 @@ display: block;
 
 .project-card.expanded:hover .project-desc{
   width: 100%;
-  height: 280px;
+  height: 60%;
   position: absolute;
   bottom: 0;
   gap: 1rem;

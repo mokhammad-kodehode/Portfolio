@@ -2,12 +2,12 @@
 
 const projects = [
   {
-    title: "ReNoise",
-    languages: "REACT TypeScript",
+    title: "ReNoise (not ready)",
+    languages: "FULL-STACK Next.js TypeScript",
     description:
-      "ReNoise is an interactive web application designed by me to provide users with the opportunity to immerse themselves in the soothing sounds of nature. The project is developed using modern web technologies and frameworks, ensuring a pleasant and intuitive user experience.",
+      "ReNoise is an interactive web application that I have designed to offer users an immersive experience with the soothing sounds of nature. This is a full-stack project, developed using modern web technologies and frameworks, ensuring a pleasant and intuitive user experience. In ReNoise, users have the capability to register and log into their accounts, providing a personalized experience. Looking ahead, the application is poised to introduce subscription plans. These plans will unlock more features and enhance the capabilities of the web application, further enriching the user experience with additional sounds and functionalities.",
     imageSrc: "Images/Ren.png",
-    iframeSrc: "https://mokhammad-kodehode.github.io/ReNoiseTwo/",
+    iframeSrc: "https://re-noise-next-js-87lk.vercel.app/",
     gitLink: "https://github.com/mokhammad-kodehode/ReNoiseTwo.git",
     pageSrc: "https://re-noise-next-js-87lk.vercel.app/",
   },
@@ -22,6 +22,16 @@ const projects = [
     pageSrc: "https://github.com/mokhammad-kodehode/rentCarServer.git",
   },
   {
+    title: "Travel and Study (not ready)",
+    languages: "Next.js TypeScript",
+    description:
+      "As a freelance project, I developed a comprehensive website for a Visa Processing Center. The website was designed to provide detailed visa-related information and services for various countries. It was implemented using Next.js with TypeScript, offering a modern, user-friendly interface that ensures an intuitive user experience. This project showcases my ability to create sophisticated web solutions that cater to specific business needs.",
+    imageSrc: "Images/Travel.png",
+    iframeSrc: "https://travel-study-visa.vercel.app/",
+    gitLink: "https://github.com/mokhammad-kodehode/travel-study-visa.git",
+    pageSrc: "https://travel-study-visa.vercel.app/",
+  },
+  {
     title: "Planet project",
     languages: "HTML  CSS",
     description:
@@ -32,17 +42,6 @@ const projects = [
     gitLink: "https://github.com/mokhammad-kodehode/Age-calculator.git",
     pageSrc:
       "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/",
-  },
-  {
-    title: "Password generator",
-    languages: "HTML  CSS JavaScript",
-    description:
-      "The Password Generator is a project I developed to showcase my programming skills and provide a practical utility for generating strong and secure passwords. This project demonstrates my proficiency in web development, specifically using HTML, CSS, and JavaScript.",
-    imageSrc: "Images/pass.jpg",
-    iframeSrc: "https://mokhammad-kodehode.github.io/Password-generator-main/",
-    gitLink:
-      "https://github.com/mokhammad-kodehode/Password-generator-main.git",
-    pageSrc: "https://mokhammad-kodehode.github.io/Password-generator-main/",
   },
   {
     title: "Age calculator",
@@ -69,6 +68,17 @@ const projects = [
 ];
 
 const projectsTwo = [
+  {
+    title: "Password generator",
+    languages: "HTML  CSS JavaScript",
+    description:
+      "The Password Generator is a project I developed to showcase my programming skills and provide a practical utility for generating strong and secure passwords. This project demonstrates my proficiency in web development, specifically using HTML, CSS, and JavaScript.",
+    imageSrc: "Images/pass.jpg",
+    iframeSrc: "https://mokhammad-kodehode.github.io/Password-generator-main/",
+    gitLink:
+      "https://github.com/mokhammad-kodehode/Password-generator-main.git",
+    pageSrc: "https://mokhammad-kodehode.github.io/Password-generator-main/",
+  },
   {
     title: "Calculator",
     languages: "React",
