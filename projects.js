@@ -7,12 +7,12 @@ const projects = [
     description:
       "ReNoise is an interactive web application that I have designed to offer users an immersive experience with the soothing sounds of nature. This is a full-stack project, developed using modern web technologies and frameworks, ensuring a pleasant and intuitive user experience. In ReNoise, users have the capability to register and log into their accounts, providing a personalized experience. Looking ahead, the application is poised to introduce subscription plans. These plans will unlock more features and enhance the capabilities of the web application, further enriching the user experience with additional sounds and functionalities.",
     imageSrc: "Images/Ren.png",
-    iframeSrc: "https://re-noise-next-js-87lk.vercel.app/",
+    iframeSrc: "https://re-noise-my.vercel.app/soundPage",
     gitLink: "https://github.com/mokhammad-kodehode/ReNoiseTwo.git",
-    pageSrc: "https://re-noise-next-js-87lk.vercel.app/",
+    pageSrc: "https://re-noise-my.vercel.app/soundPage",
   },
   {
-    title: "Car rental Marketplace",
+    title: "Car rental  (not ready)",
     languages: "MERN-STACK",
     description:
       "The MERN Stack Car Rental Marketplace is a dynamic web application designed to facilitate the seamless sharing of cars among users. This project showcases my proficiency in utilizing the MERN (MongoDB, Express.js, React, and Node.js) technology stack to create a user-friendly and efficient solution for car rental and sharing.",
