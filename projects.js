@@ -2,7 +2,7 @@
 
 const projects = [
   {
-    title: "ReNoise (not ready)",
+    title: "ReNoise (in progress)",
     languages: "FULL-STACK Next.js TypeScript",
     description:
       "ReNoise is an interactive web application that I have designed to offer users an immersive experience with the soothing sounds of nature. This is a full-stack project, developed using modern web technologies and frameworks, ensuring a pleasant and intuitive user experience. In ReNoise, users have the capability to register and log into their accounts, providing a personalized experience. Looking ahead, the application is poised to introduce subscription plans. These plans will unlock more features and enhance the capabilities of the web application, further enriching the user experience with additional sounds and functionalities.",
@@ -12,7 +12,7 @@ const projects = [
     pageSrc: "https://re-noise-my.vercel.app/soundPage",
   },
   {
-    title: "Car rental  (not ready)",
+    title: "Car rental  (in progress)",
     languages: "MERN-STACK",
     description:
       "The MERN Stack Car Rental Marketplace is a dynamic web application designed to facilitate the seamless sharing of cars among users. This project showcases my proficiency in utilizing the MERN (MongoDB, Express.js, React, and Node.js) technology stack to create a user-friendly and efficient solution for car rental and sharing.",
@@ -22,7 +22,7 @@ const projects = [
     pageSrc: "https://github.com/mokhammad-kodehode/rentCarServer.git",
   },
   {
-    title: "Travel and Study (not ready)",
+    title: "Travel and Study (in progress)",
     languages: "Next.js TypeScript",
     description:
       "As a freelance project, I developed a comprehensive website for a Visa Processing Center. The website was designed to provide detailed visa-related information and services for various countries. It was implemented using Next.js with TypeScript, offering a modern, user-friendly interface that ensures an intuitive user experience. This project showcases my ability to create sophisticated web solutions that cater to specific business needs.",
