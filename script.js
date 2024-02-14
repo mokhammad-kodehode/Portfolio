@@ -88,7 +88,7 @@ window.onload = function () {
   const w = window.innerWidth;
   const halfH = h * 0.3;
   const speed = 0.09;
-  const strokeWidth = 55;
+  const strokeWidth = 105;
   const frequency = 4;
   const pathCount = 8;
 
