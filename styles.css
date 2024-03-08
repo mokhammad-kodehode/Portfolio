@@ -117,6 +117,15 @@ Resets margins and paddings
     white-space: nowrap;
 
   }
+
+  .LinkPortfolio {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+  }
   
   li  {
     text-align: center;
@@ -694,7 +703,9 @@ cursor: pointer;
     padding: 0;
     margin: 0;
     }
+    
 
+    
 .items_line_one {
   display: none;
   
