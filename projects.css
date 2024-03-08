@@ -939,9 +939,11 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   height: 20px;
+  display: none;
 }
 
 .bar {
+  
   width: 30px;
   height: 3px;
   background-color: #fff;
