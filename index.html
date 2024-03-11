@@ -42,16 +42,21 @@
                     </li>
              </ul>
              <div class="theme">
-                <button id="play" class="play-button">
-                    <i class="fa-solid fa-circle-pause"></i>
-                    <span class="play_hover">Pause / Play animation</span>
+                <button id="settingsButton" class="settings-button">
+                    <i  class="fas fa-cog"></i> <!-- Иконка настройки -->
                 </button>
-                <div class="theme-switch">
-                    <input type="checkbox" id="theme-switch-checkbox">
-                    <label for="theme-switch-checkbox"></label>
-                    <span  class="change_theme">Change theme</span>
-                  </div>
-                  <img class="flag"  src="Images/icons/norway.png" alt="norway" data-lang="no" >
+                <div id="settingsPanel" class="settings-panel">
+                    <button id="play" class="play-button">
+                        <i class="fa-solid fa-circle-pause"></i>
+                        <span class="play_hover">Pause / Play animation</span>
+                    </button>
+                    <div class="theme-switch">
+                        <input type="checkbox" id="theme-switch-checkbox">
+                        <label for="theme-switch-checkbox"></label>
+                        <span  class="change_theme">Change theme</span>
+                    </div>
+                    <img class="flag"  src="Images/icons/norway.png" alt="norway" data-lang="no" >
+                </div>
              </div>
             </nav>
             <div class="navbar_dropdown" id="navLinks">
@@ -86,7 +91,7 @@
         <!-- <div class="circle">
             <img class="photo" src="Images/photo.svg" alt="photo">
         </div> -->
-        <a class="LinkPortfolio" href="https://new-portfolio-pi-mocha.vercel.app/"> CHECK OUT MY NEW PORTFOLIO</a>
+        <!-- <a class="LinkPortfolio" href="https://new-portfolio-pi-mocha.vercel.app/"> CHECK OUT MY NEW PORTFOLIO</a> -->
         <div class="container_title">
            <h1 class="title_text" id="text">Hi. I'm <span>Mohammad</span></h1>
            <div class="info">
