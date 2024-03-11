@@ -307,19 +307,24 @@ display: none;
 
 .email-icon {
   display: flex;
+  bottom: 55px;
   justify-content: center;
   align-items: center;
-  gap: .7rem;
-  position: absolute;
-  right: 25px;
-  bottom: 55px;
+  right: 20px;
+  gap: .5rem;
+  padding: 5px;
+  border-radius: 5px;
 }
-
 
 
 .email_icon {
   font-size: 32px;
+  color: white;
+}
 
+.my_email {
+  font-size: 18px;
+  color: white;
 }
 
 

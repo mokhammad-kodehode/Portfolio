@@ -560,7 +560,6 @@ li:hover .items_line_two{
   .project-card {
     position: relative;
     overflow: hidden;
-    display: flex;
     font-family: 'Quicksand', sans-serif;
     width: 100%;
     flex-direction: column;
@@ -603,10 +602,12 @@ li:hover .items_line_two{
     display: none;
   }
 
+
+
   .project-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 80%;
+    object-fit: fill;
   }
 
 
@@ -708,24 +709,14 @@ display: block;
 }
 
 .project-card.expanded .project-desc{
-  width: 100%;
-  height: 280px;
   position: absolute;
   bottom: 0;
-  gap: 1rem;
-  background-color: var(--desc-bg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(3px) ;
   display: none;
 }
 
 .project-card.expanded:hover .project-desc{
   width: 100%;
-  height: 60%;
-  position: absolute;
+  height: 55%;
   bottom: 0;
   gap: 1rem;
  background-color: var(--desc-bg);
