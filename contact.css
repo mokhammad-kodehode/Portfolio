@@ -305,14 +305,66 @@ li:hover .items_line_two{
 display: none;
 }
 
+.email-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .7rem;
+  position: absolute;
+  right: 25px;
+  bottom: 55px;
+}
+
+
+
+.email_icon {
+  font-size: 32px;
+
+}
+
 
 .theme {
   display: flex;
-  justify-content: end;
+  width: 110px;
+  justify-content: flex-end;
   align-items: center;
   gap: .5rem;
-  width: 115px;
 }
+
+.settings-button {
+  border: none;
+  background-color: transparent;
+  transition: 0.4s ease;
+}
+
+.settings-button-a {
+  color: #FEC342;
+  border: none;
+  background-color: transparent;
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+
+.settings-button-a i{
+  color: #FEC342;
+
+}
+
+.settings-panel {
+  display: none;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items:center ;
+  margin-left: 10px;
+
+}
+
+.fa-cog {
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
 
 .flag {
   width: 30px;

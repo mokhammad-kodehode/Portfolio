@@ -42,16 +42,16 @@
                 </li>
          </ul>
          <div class="theme">
-            <button id="play" class="play-button">
-                <i class="fa-solid fa-circle-pause"></i>
-                <span class="play_hover">Pause/spill av animasjon</span>
+            <button id="settingsButton" class="settings-button">
+                <i  class="fas fa-cog"></i> <!-- Иконка настройки -->
             </button>
-            <div class="theme-switch">
-                <input type="checkbox" id="theme-switch-checkbox">
-                <label for="theme-switch-checkbox"></label>
-
-              </div>
-              <img class="flag"  src="Images/icons/norway.png" alt="norway" data-lang="no" >
+            <div id="settingsPanel" class="settings-panel">
+                <div class="theme-switch">
+                    <input type="checkbox" id="theme-switch-checkbox">
+                    <label for="theme-switch-checkbox"></label>
+                </div>
+                <img class="flag"  src="Images/icons/norway.png" alt="norway" data-lang="no" >
+            </div>
          </div>
         </nav>
         <div class="navbar_dropdown" id="navLinks">
@@ -84,6 +84,10 @@
     <section class="container">
         <div class="container_title">
            <div class="container_form">
+            <div class="email-icon">
+                    <i class="fas fa-envelope email_icon"></i>
+                    <span>mohammad.djabrail@gmail.com</span>
+            </div>
                 <form action="https://formsubmit.co/mokhammad.d.kodehode@gmail.com" method="POST">
                         <legend>Contact Me</legend>
                         <div class="names">

@@ -223,11 +223,46 @@ li:hover .items_line_two{
 
 .theme {
   display: flex;
-  justify-content: end;
+  width: 110px;
+  justify-content: flex-end;
   align-items: center;
   gap: .5rem;
-  width: 115px;
 }
+
+.settings-button {
+  border: none;
+  background-color: transparent;
+  transition: 0.4s ease;
+}
+
+.settings-button-a {
+  color: #FEC342;
+  border: none;
+  background-color: transparent;
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+
+.settings-button-a i{
+  color: #FEC342;
+
+}
+
+.settings-panel {
+  display: none;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items:center ;
+  margin-left: 10px;
+
+}
+
+.fa-cog {
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
 
 .flag {
   width: 30px;
@@ -339,7 +374,7 @@ li:hover .items_line_two{
 
   .container {
     display: flex;
-    height: calc(100vh - 85px);
+    height: calc(100vh - 45px);
     justify-content: center;
     align-items: center;
   }
@@ -358,13 +393,13 @@ li:hover .items_line_two{
     opacity: 0.7;
     content: "";
     position: absolute;
-    left: -100px; /* Регулируйте это значение для точного позиционирования */
-    top: -90px;
+    left: -60px; /* Регулируйте это значение для точного позиционирования */
+    top: -70px;
     transform: rotate(-180deg) translateY(-50%);
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 40px  40px 40px;
+    border-width: 25px  25px 25px;
     border-color: transparent transparent transparent white;}
 
     .left_arrow:hover:before {
@@ -386,7 +421,7 @@ li:hover .items_line_two{
       opacity: 0.9;
       content: "";
       position: absolute;
-      left: 5px; /* Регулируйте это значение для точного позиционирования */
+      left: 10px; /* Регулируйте это значение для точного позиционирования */
       top: -10px;
       transform:  translateY(-50%);
       width: 0;
@@ -473,8 +508,8 @@ li:hover .items_line_two{
     padding: 10px;
     gap: 0.6rem;
     box-shadow: 0px 0px 10px 1px #000000;
-    height: 95%;
-    width: 95%;
+    height: 97%;
+    width: 94%;
     border-radius: 5px;
     transition: 1s;
   }
@@ -484,15 +519,15 @@ li:hover .items_line_two{
     overflow: auto;
     grid-template-columns: auto auto auto ;
     position: relative;
-    border-radius: 20px;
     background-color: var(--secondary-bg-color);
-    animation: projects-two-animation linear 0.5s;
+    animation: projects-one-animation linear 0.7s;
     padding: 10px;
     gap: 0.6rem;
     box-shadow: 0px 0px 10px 1px #000000;
-    height: 80vh;
-    width: 85%;
+    height: 95%;
+    width: 93%;
     border-radius: 5px;
+    transition: 1s;
   }
 
   @keyframes projects-one-animation {
@@ -831,16 +866,18 @@ cursor: pointer;
   
    
 footer {
-  z-index: 1;
-    background-color: var(--secondary-bg-color);
+  /* z-index: 1;
+    background-color: var(--secondary-bg-color); */
     /* background-image: linear-gradient(to right, #706d8a, #716c95, #676294, #5c5887,#716c95, #68629d, #635e95, #52507f, #504c7b, #4c496f, #5f5b89, #585778,#676294,#716c95, #706d8a); */
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
     height: 45px;
     padding: 0 30px;
     position: relative;
-    box-shadow: 0px 0px 11px 3px #000000;
+    box-shadow: 0px 0px 11px 3px #000000; */
+    display: none;
+    height: 10px;
 }
 
 .CV {

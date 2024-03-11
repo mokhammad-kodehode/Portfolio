@@ -147,6 +147,22 @@ const navbarItems = document.querySelectorAll(".navbar_item");
 const activateItem = document.getElementById("active_one");
 const flag = document.querySelectorAll(".flag");
 
+document.addEventListener("DOMContentLoaded", function () {
+  const settingsButton = document.getElementById("settingsButton");
+  const settingsPanel = document.getElementById("settingsPanel");
+
+  settingsButton.addEventListener("click", function () {
+    // При клике на кнопку настройки показываем или скрываем панель настроек
+    if (settingsPanel.style.display === "flex") {
+      settingsPanel.style.display = "none";
+      settingsButton.className = "settings-button";
+    } else {
+      settingsPanel.style.display = "flex";
+      settingsButton.className = "settings-button-a";
+    }
+  });
+});
+
 function switchLanguage(lang, currentPageUrl) {
   // Получите текущий путь страницы без домена и параметров запроса
   const currentPagePath = currentPageUrl
