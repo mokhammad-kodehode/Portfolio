@@ -299,6 +299,10 @@ const createImage = (src, alt) => {
 const createProjectCard = (project) => {
   const projectCard = document.createElement("div");
   projectCard.className = "project-card";
+  projectCard.setAttribute(
+    "data-tooltip",
+    "Click on a project for more information"
+  );
 
   let button;
   let btnClose;

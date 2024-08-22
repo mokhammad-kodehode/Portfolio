@@ -572,30 +572,6 @@ li:hover .items_line_two{
   
 
 
-  .project-card[data-tooltip]::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 5px;
-    z-index: 2;
-    background-color: #333;
-    color: #fff;
-    border-radius: 4px;
-    white-space: nowrap;
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s, visibility 0.2s;
-  }
-  
-  .project-card[data-tooltip]:hover::before {
-    opacity: 1;
-    visibility: visible;
-  }
-  
 
 
   .project-desc p {
@@ -649,6 +625,21 @@ li:hover .items_line_two{
 
 .project-card.expanded[data-tooltip]:hover::before {
   content: "X";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  z-index: 2;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
   margin-left: 48%;
   margin-top: 5px;
   opacity: 1;
