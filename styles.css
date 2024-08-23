@@ -437,7 +437,7 @@ li:hover .items_line_two{
   }
 
   .title_text {
-    font-size: 78px;
+    font-size: 68px;
     color: var(--primary-text-color);
     margin: 0;
     font-weight: 700;
@@ -457,7 +457,7 @@ li:hover .items_line_two{
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: 1.3px;
     font-family: 'Roboto', sans-serif;
