@@ -12,6 +12,16 @@ const projects = [
     pageSrc: "https://re-noise-my.vercel.app/soundPage",
   },
   {
+    title: "Travel and Study",
+    languages: "Next.js TypeScript",
+    description:
+      "As a freelance project, I developed a comprehensive website for a Visa Processing Center. The website was designed to provide detailed visa-related information and services for various countries. It was implemented using Next.js with TypeScript, offering a modern, user-friendly interface that ensures an intuitive user experience. This project showcases my ability to create sophisticated web solutions that cater to specific business needs.",
+    imageSrc: "Images/Travel.png",
+    iframeSrc: "https://www.travelandstudy.ru/",
+    gitLink: "https://github.com/mokhammad-kodehode/travel-study-visa.git",
+    pageSrc: "https://www.travelandstudy.ru/",
+  },
+  {
     title: "Car rental",
     languages: "MERN-STACK",
     description:
@@ -20,16 +30,6 @@ const projects = [
     iframeSrc: "https://github.com/mokhammad-kodehode/rentCarServer.git",
     gitLink: "https://github.com/mokhammad-kodehode/RentCarMarket.git",
     pageSrc: "https://github.com/mokhammad-kodehode/rentCarServer.git",
-  },
-  {
-    title: "Travel and Study (in progress)",
-    languages: "Next.js TypeScript",
-    description:
-      "As a freelance project, I developed a comprehensive website for a Visa Processing Center. The website was designed to provide detailed visa-related information and services for various countries. It was implemented using Next.js with TypeScript, offering a modern, user-friendly interface that ensures an intuitive user experience. This project showcases my ability to create sophisticated web solutions that cater to specific business needs.",
-    imageSrc: "Images/Travel.png",
-    iframeSrc: "https://travel-study-visa.vercel.app/",
-    gitLink: "https://github.com/mokhammad-kodehode/travel-study-visa.git",
-    pageSrc: "https://travel-study-visa.vercel.app/",
   },
   {
     title: "Planet project",
@@ -44,16 +44,14 @@ const projects = [
       "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/",
   },
   {
-    title: "Age calculator",
+    title: "Minesweeper Game",
     languages: "HTML  CSS JavaScript",
     description:
-      "The Age Calculator is a powerful and user-friendly tool designed to effortlessly calculate your age based on your birthdate. Whether you're curious about your current age or need to determine the age of someone else, this handy calculator provides accurate results within seconds.",
-    imageSrc: "Images/Age.jpg",
-    iframeSrc:
-      "https://mokhammad-kodehode.github.io/Age-calculator-main/Age-calculator-main/",
-    gitLink: "",
-    pageSrc:
-      "https://mokhammad-kodehode.github.io/Age-calculator-main/Age-calculator-main/",
+      "Minesweeper is a classic logic-based puzzle game where players must uncover all non-mined cells on the board without triggering any mines. Featuring three difficulty levels (Beginner, Intermediate, and Expert), players can enjoy increasing challenges as they clear the board. The game includes a timer, a bomb counter, and a restart option, all designed with responsive and mobile-friendly features for an optimal gaming experience on any device.",
+    imageSrc: "Images/mine.png",
+    iframeSrc: "https://mokhammad-kodehode.github.io/minesweeper/",
+    gitLink: "https://github.com/mokhammad-kodehode/minesweeper.git",
+    pageSrc: "https://mokhammad-kodehode.github.io/minesweeper/",
   },
   {
     title: "The Weather App",
@@ -110,14 +108,16 @@ const projectsTwo = [
     pageSrc: "https://mokhammad-kodehode.github.io/Unit-converter/",
   },
   {
-    title: "Relax Sounds",
-    languages: "HTML CSS JavaScript",
+    title: "Age calculator",
+    languages: "HTML  CSS JavaScript",
     description:
-      "ReNoise is an interactive web application designed by me to provide users with the opportunity to immerse themselves in the soothing sounds of nature. The project is developed using modern web technologies and frameworks, ensuring a pleasant and intuitive user experience.",
-    imageSrc: "Images/ReNoise.jpg",
-    iframeSrc: "https://mokhammad-kodehode.github.io/ReNoise/",
-    gitLink: "https://github.com/mokhammad-kodehode/ReNoise.git",
-    pageSrc: "https://mokhammad-kodehode.github.io/ReNoise/",
+      "The Age Calculator is a powerful and user-friendly tool designed to effortlessly calculate your age based on your birthdate. Whether you're curious about your current age or need to determine the age of someone else, this handy calculator provides accurate results within seconds.",
+    imageSrc: "Images/Age.jpg",
+    iframeSrc:
+      "https://mokhammad-kodehode.github.io/Age-calculator-main/Age-calculator-main/",
+    gitLink: "",
+    pageSrc:
+      "https://mokhammad-kodehode.github.io/Age-calculator-main/Age-calculator-main/",
   },
   {
     title: "Mars Rover",

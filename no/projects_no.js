@@ -2,16 +2,24 @@
 
 const projects = [
   {
-    title: "Planetprosjekt",
-    languages: "HTML  CSS",
+    title: "ReNoise",
+    languages: "REACT TypeScript",
     description:
-      "Nettstedet Saturn informasjon er et gruppeprosjekt jeg utviklet for porteføljen min, som viser min dyktighet i HTML og CSS. Dette nettstedet fungerer som en omfattende ressurs dedikert til å tilby innsiktsfull informasjon om Saturn, den sjette planeten fra solen i vårt solsystem.",
-    imageSrc: "../Images/Planet.png",
-    iframeSrc:
-      "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/",
-    gitLink: "https://github.com/mokhammad-kodehode/Age-calculator.git",
-    pageSrc:
-      "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/",
+      "ReNoise er en interaktiv webapplikasjon designet av meg for å gi brukere muligheten til å fordype seg i beroligende lyder fra naturen. Prosjektet er utviklet med moderne webteknologier og rammeverk, som sikrer en hyggelig og intuitiv brukeropplevelse.",
+    imageSrc: "../Images/ReNoise.png",
+    iframeSrc: "https://mokhammad-kodehode.github.io/ReNoiseTwo/",
+    gitLink: "https://github.com/mokhammad-kodehode/ReNoiseTwo.git",
+    pageSrc: "https://mokhammad-kodehode.github.io/ReNoiseTwo/",
+  },
+  {
+    title: "Travel and Study",
+    languages: "Next.js TypeScript",
+    description:
+      "Som et frilansprosjekt utviklet jeg en omfattende nettside for et visumbehandlingssenter. Nettsiden ble designet for å tilby detaljert visumrelatert informasjon og tjenester for ulike land. Den ble implementert ved bruk av Next.js med TypeScript, og tilbyr et moderne, brukervennlig grensesnitt som sikrer en intuitiv brukeropplevelse. Dette prosjektet viser min evne til å lage sofistikerte nettløsninger som imøtekommer spesifikke forretningsbehov.",
+    imageSrc: "../Images/Travel.png",
+    iframeSrc: "https://www.travelandstudy.ru/",
+    gitLink: "https://github.com/mokhammad-kodehode/travel-study-visa.git",
+    pageSrc: "https://www.travelandstudy.ru/",
   },
   {
     title: "Car rental Marketplace",
@@ -24,14 +32,16 @@ const projects = [
     pageSrc: "https://github.com/mokhammad-kodehode/rentCarServer.git",
   },
   {
-    title: "ReNoise",
-    languages: "REACT TypeScript",
+    title: "Planetprosjekt",
+    languages: "HTML  CSS",
     description:
-      "ReNoise er en interaktiv webapplikasjon designet av meg for å gi brukere muligheten til å fordype seg i beroligende lyder fra naturen. Prosjektet er utviklet med moderne webteknologier og rammeverk, som sikrer en hyggelig og intuitiv brukeropplevelse.",
-    imageSrc: "../Images/reNoiseTwo.png",
-    iframeSrc: "https://mokhammad-kodehode.github.io/ReNoiseTwo/",
-    gitLink: "https://github.com/mokhammad-kodehode/ReNoiseTwo.git",
-    pageSrc: "https://mokhammad-kodehode.github.io/ReNoiseTwo/",
+      "Nettstedet Saturn informasjon er et gruppeprosjekt jeg utviklet for porteføljen min, som viser min dyktighet i HTML og CSS. Dette nettstedet fungerer som en omfattende ressurs dedikert til å tilby innsiktsfull informasjon om Saturn, den sjette planeten fra solen i vårt solsystem.",
+    imageSrc: "../Images/Planet.png",
+    iframeSrc:
+      "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/",
+    gitLink: "https://github.com/mokhammad-kodehode/Age-calculator.git",
+    pageSrc:
+      "https://kristian-kodehode.github.io/005-Gruppeprosjekt-Saturn-Mokhammad-Kristian/",
   },
   {
     title: "Passordgeneratoren",
@@ -45,26 +55,14 @@ const projects = [
     pageSrc: "https://mokhammad-kodehode.github.io/Password-generator-main/",
   },
   {
-    title: "Alderskalkulatoren",
+    title: "Minesweeper Game",
     languages: "HTML  CSS JavaScript",
     description:
-      "Alderskalkulatoren er et kraftig og brukervennlig verktøy designet for enkelt å beregne alderen din basert på fødselsdatoen din. Enten du er nysgjerrig på din nåværende alder eller trenger å bestemme alderen til noen andre, gir denne hendige kalkulatoren nøyaktige resultater på sekunder.",
-    imageSrc: "../Images/Age.jpg",
-    iframeSrc:
-      "https://mokhammad-kodehode.github.io/Age-calculator-main/Age-calculator-main/",
-    gitLink: "",
-    pageSrc:
-      "https://mokhammad-kodehode.github.io/Age-calculator-main/Age-calculator-main/",
-  },
-  {
-    title: "The Weather App",
-    languages: "HTML  CSS JavaScript",
-    description:
-      "Værappen er en webapplikasjon som lar brukere hente gjeldende værdata for en bestemt by. Appen bruker en åpen API for å hente værinformasjon. Brukere kan skrive inn navnet på en by i søkefeltet, og appen vil vise detaljer som gjeldende temperatur, værforhold, vindhastighet, luftfuktighet og annen relevant informasjon.",
-    imageSrc: "../Images/Weather.png",
-    iframeSrc: "https://mokhammad-kodehode.github.io/Weather-forcast/",
-    gitLink: "https://mokhammad-kodehode.github.io/calculator/",
-    pageSrc: "https://mokhammad-kodehode.github.io/Weather-forcast/",
+      "Minesveiper er et klassisk logikkbasert puslespill der spillerne må avdekke alle rutene uten miner på brettet uten å utløse noen miner. Med tre vanskelighetsgrader (Nybegynner, Middels og Ekspert) kan spillerne nyte stadig større utfordringer mens de rydder brettet. Spillet inkluderer en timer, en tellefunksjon for bomber og en restart-knapp, alt designet med responsive og mobilvennlige funksjoner for en optimal spillopplevelse på alle enheter.",
+    imageSrc: "../Images/mine.png",
+    iframeSrc: "https://mokhammad-kodehode.github.io/minesweeper/",
+    gitLink: "https://github.com/mokhammad-kodehode/minesweeper.git",
+    pageSrc: "https://mokhammad-kodehode.github.io/minesweeper/",
   },
 ];
 
@@ -100,14 +98,16 @@ const projectsTwo = [
     pageSrc: "https://mokhammad-kodehode.github.io/Unit-converter/",
   },
   {
-    title: "Relax Sounds",
-    languages: "HTML CSS JavaScript",
+    title: "Alderskalkulatoren",
+    languages: "HTML  CSS JavaScript",
     description:
-      "ReNoise is an interactive web application designed by me to provide users with the opportunity to immerse themselves in the soothing sounds of nature. The project is developed using modern web technologies and frameworks, ensuring a pleasant and intuitive user experience.",
-    imageSrc: "../Images/ReNoise.jpg",
-    iframeSrc: "https://mokhammad-kodehode.github.io/ReNoise/",
-    gitLink: "https://github.com/mokhammad-kodehode/ReNoise.git",
-    pageSrc: "https://mokhammad-kodehode.github.io/ReNoise/",
+      "Alderskalkulatoren er et kraftig og brukervennlig verktøy designet for enkelt å beregne alderen din basert på fødselsdatoen din. Enten du er nysgjerrig på din nåværende alder eller trenger å bestemme alderen til noen andre, gir denne hendige kalkulatoren nøyaktige resultater på sekunder.",
+    imageSrc: "../Images/Age.jpg",
+    iframeSrc:
+      "https://mokhammad-kodehode.github.io/Age-calculator-main/Age-calculator-main/",
+    gitLink: "",
+    pageSrc:
+      "https://mokhammad-kodehode.github.io/Age-calculator-main/Age-calculator-main/",
   },
   {
     title: "Mars Rover",
@@ -118,6 +118,16 @@ const projectsTwo = [
     iframeSrc: "https://mokhammad-kodehode.github.io/marsrover/",
     gitLink: "https://github.com/mokhammad-kodehode/marsrover.git",
     pageSrc: "https://mokhammad-kodehode.github.io/marsrover/",
+  },
+  {
+    title: "The Weather App",
+    languages: "HTML  CSS JavaScript",
+    description:
+      "Værappen er en webapplikasjon som lar brukere hente gjeldende værdata for en bestemt by. Appen bruker en åpen API for å hente værinformasjon. Brukere kan skrive inn navnet på en by i søkefeltet, og appen vil vise detaljer som gjeldende temperatur, værforhold, vindhastighet, luftfuktighet og annen relevant informasjon.",
+    imageSrc: "../Images/Weather.png",
+    iframeSrc: "https://mokhammad-kodehode.github.io/Weather-forcast/",
+    gitLink: "https://mokhammad-kodehode.github.io/calculator/",
+    pageSrc: "https://mokhammad-kodehode.github.io/Weather-forcast/",
   },
 ];
 
